@@ -33,6 +33,8 @@ public final class BaseUtils {
     // todo -- add this to the generalized base abstraction using the Base enum.
     public static final byte[] BASES = {'A', 'C', 'G', 'T'};
     public static final char[] BASE_CHARS = {'A', 'C', 'G', 'T'};
+    public final static byte[] EXTENDED_BASES = {'A', 'C', 'G', 'T', 'N', 'D'};
+    public final static byte[] EXTENDED_BASES_CHARS = {'A', 'C', 'G', 'T', 'N', 'D'};
 
     private static final int[] baseIndexMap = new int[256];
     static {
@@ -138,6 +140,24 @@ public final class BaseUtils {
             throw new IllegalArgumentException("Non-standard bases were encountered in either the input reference or BAM file(s)");
         }
         return baseIndexMap[base];
+    }
+
+    /**
+     * Converts a simple base to a base index, including unknownw bases and deletions
+     * @param base [AaCcGgTtNnDd]
+     * @return 0, 1, 2, 3, 4, 5, or -1 if the base can't be understood
+     */
+    public static int extendedBaseToBaseIndex(byte base) {
+        switch (base) {
+            case 'n':
+            case 'N':
+                return Base.N.ordinal();
+            case 'd':
+            case 'D':
+                return Base.D.ordinal();
+            default:
+                return simpleBaseToBaseIndex(base);
+        }
     }
 
     /**

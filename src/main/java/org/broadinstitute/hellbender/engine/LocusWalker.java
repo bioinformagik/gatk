@@ -22,7 +22,7 @@ import java.util.stream.StreamSupport;
  * variants/Features.
  *
  * LocusWalker authors must implement the apply() method to process each position, and may optionally implement
- * onTraversalStart() and/or onTraversalDone().
+ * onTraversalStart() and/or onTraversalSuccess().
  *
  * @author Daniel Gómez-Sánchez (magicDGS)
  */
@@ -56,7 +56,7 @@ public abstract class LocusWalker extends GATKTool {
     /**
      * Returns the read filter (simple or composite) that will be applied to the reads in each window.
      *
-     * The default implementation uses the {@link org.broadinstitute.hellbender.engine.filters.WellformedReadFilter} filter with all default options,
+     * The default implementation uses the {@link WellformedReadFilter} filter with all default options,
      * as well as the {@link ReadFilterLibrary#MAPPED} filter.
      *
      * Default implementation of {@link #traverse()} calls this method once before iterating
@@ -71,7 +71,7 @@ public abstract class LocusWalker extends GATKTool {
     }
 
     /**
-     * Get the information about how to downsample the reads. By default {@link org.broadinstitute.hellbender.utils.downsampling.DownsamplingMethod#NONE} is returned.
+     * Get the information about how to downsample the reads. By default {@link DownsamplingMethod#NONE} is returned.
      * Subclasses should override it to provide their own downsampling methods.
      *
      * @return the downsampling method for the reads
@@ -98,7 +98,7 @@ public abstract class LocusWalker extends GATKTool {
      *
      * The default implementation iterates over all positions in the reference covered by reads for all samples in the read groups, using
      * the downsampling method provided by {@link #getDownsamplingMethod()}
-     * and including deletions if {@link #includeDeletions()} returns {@code true}.
+     * and including deletions only if {@link #includeDeletions()} returns {@code true}.
      */
     @Override
     public void traverse() {
@@ -142,7 +142,7 @@ public abstract class LocusWalker extends GATKTool {
     public abstract void apply(AlignmentContext alignmentContext, ReferenceContext referenceContext, FeatureContext featureContext);
 
     /**
-     * Marked final so that tool authors don't override it. Tool authors should override onTraversalDone() instead.
+     * Marked final so that tool authors don't override it. Tool authors should override onTraversalSuccess() instead.
      */
     @Override
     protected final void onShutdown() {

@@ -16,7 +16,7 @@ import java.util.stream.Stream;
 /**
  * Represents a pileup of reads at a given position.
  */
-public final class ReadPileup implements Iterable<PileupElement>{
+public final class ReadPileup implements Locatable, Iterable<PileupElement>{
     private final Locatable loc;
     private final List<PileupElement> pileupElements;
 
@@ -52,6 +52,21 @@ public final class ReadPileup implements Iterable<PileupElement>{
      */
     public ReadPileup(final Locatable loc, final List<GATKRead> reads, final List<Integer> offsets) {
         this(loc, readsOffsetsToPileup(reads, offsets));
+    }
+
+    @Override
+    public String getContig() {
+        return loc.getContig();
+    }
+
+    @Override
+    public int getStart() {
+        return loc.getStart();
+    }
+
+    @Override
+    public int getEnd() {
+        return loc.getEnd();
     }
 
     /**
@@ -184,6 +199,23 @@ public final class ReadPileup implements Iterable<PileupElement>{
         return counts;
     }
 
+    /**
+     * Get counts of A, C, G, T, N, D in order, which returns a int[6] vector with counts according
+     * to BaseUtils.extendedBaseToBaseIndex for each base.
+     */
+    public int[] getExtendedBaseCounts() {
+        final int[] counts = new int[6];
+
+        for (final PileupElement pile: this) {
+            final int index = BaseUtils.extendedBaseToBaseIndex(pile.getBase());
+            if (index != 1) {
+                counts[index]++;
+            }
+        }
+
+        return counts;
+    }
+
     @Override
     public String toString() {
         return String.format("%s %s %s %s",
@@ -191,6 +223,21 @@ public final class ReadPileup implements Iterable<PileupElement>{
                 loc.getStart(),
                 new String(getBases()),
                 getQualsString());
+    }
+
+    /**
+     * Get a Pileup-like format: genomic position, reference base, read bases and read qualities
+     *
+     * @param ref the reference base
+     */
+    public String getPileupString(byte ref) {
+        // In the pileup format, each line represents a genomic position, consisting of chromosome name,
+        // coordinate, reference base, read bases, read qualities and alignment mapping qualities.
+        return String.format("%s %s %c %s %s",
+                getContig(), getStart(),       // chromosome name and coordinate
+                ref,                           // reference base
+                new String(getBases()),        // the bases as a String
+                getQualsString());             // the quality as a string
     }
 
     /**

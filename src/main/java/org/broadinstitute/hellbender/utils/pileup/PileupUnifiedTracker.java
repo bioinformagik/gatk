@@ -1,6 +1,7 @@
 package org.broadinstitute.hellbender.utils.pileup;
 
 import htsjdk.samtools.SAMFileHeader;
+import org.broadinstitute.hellbender.utils.read.ReadUtils;
 
 import java.util.*;
 
@@ -9,13 +10,13 @@ import java.util.*;
  *
  * @author Daniel Gómez Sánchez (magicDGS)
  */
-class PileupSingleTracker extends PileupTracker {
+class PileupUnifiedTracker extends PileupTracker {
 
     private String sample;
 
     final List<PileupElement> backedList;
 
-    public PileupSingleTracker(final String sample, final SAMFileHeader header) {
+    public PileupUnifiedTracker(final String sample, final SAMFileHeader header) {
         super(header);
         this.sample = sample;
         this.backedList = new ArrayList<>();
@@ -33,7 +34,7 @@ class PileupSingleTracker extends PileupTracker {
     @Override
     public PileupTracker getTrackerForSample(String sample) {
         if(!this.sample.equals(sample)) {
-            throw new NoSuchElementException(sample + " not contained in this tracker");
+            return new EmptyPileupTracker(sample);
         }
         return this;
     }
@@ -55,7 +56,9 @@ class PileupSingleTracker extends PileupTracker {
 
     @Override
     public boolean add(PileupElement pileupElement) {
-        // TODO: check if the name is correct?
+        if(!sample.equals(ReadUtils.getSampleName(pileupElement.getRead(), header))) {
+            return false;
+        }
         return backedList.add(pileupElement);
     }
 

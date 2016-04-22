@@ -1,13 +1,9 @@
 package org.broadinstitute.hellbender.utils.pileup;
 
 import htsjdk.samtools.SAMFileHeader;
-import htsjdk.samtools.SAMReadGroupRecord;
 import htsjdk.samtools.util.AbstractIterator;
-import org.apache.commons.collections.iterators.ArrayListIterator;
-import org.broadinstitute.hellbender.utils.read.ReadUtils;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
 /**
  * {@link PileupTracker} implementation stratified by sample.
@@ -16,13 +12,13 @@ import java.util.stream.Collectors;
  */
 class PileupStratifiedTracker extends PileupTracker {
 
-    private final NavigableMap<String, PileupSingleTracker> stratifiedTracker;
+    private final NavigableMap<String, PileupUnifiedTracker> stratifiedTracker;
 
     PileupStratifiedTracker(final Set<String> samples, final SAMFileHeader header) {
         super(header);
         stratifiedTracker = new TreeMap<>();
         for(final String s: samples) {
-            stratifiedTracker.put(s, new PileupSingleTracker(s, header));
+            stratifiedTracker.put(s, new PileupUnifiedTracker(s, header));
         }
     }
 
@@ -33,12 +29,16 @@ class PileupStratifiedTracker extends PileupTracker {
 
     @Override
     public int size() {
-        return stratifiedTracker.values().stream().mapToInt(PileupSingleTracker::size).sum();
+        return stratifiedTracker.values().stream().mapToInt(PileupUnifiedTracker::size).sum();
     }
 
     @Override
     public PileupTracker getTrackerForSample(String sample) {
-        return stratifiedTracker.get(sample);
+        if(stratifiedTracker.containsKey(sample)) {
+            return stratifiedTracker.get(sample);
+        } else {
+            return new EmptyPileupTracker(sample);
+        }
     }
 
     @Override
@@ -65,7 +65,7 @@ class PileupStratifiedTracker extends PileupTracker {
     @Override
     public Object[] toArray() {
         final ArrayList<Object> array = new ArrayList<Object>(size());
-        for(PileupSingleTracker tracker: stratifiedTracker.values()) {
+        for(PileupUnifiedTracker tracker: stratifiedTracker.values()) {
             array.addAll(tracker.backedList);
         }
         return array.toArray();
@@ -74,7 +74,7 @@ class PileupStratifiedTracker extends PileupTracker {
     @Override
     public <T> T[] toArray(T[] a) {
         final ArrayList<Object> array = new ArrayList<Object>(size());
-        for(PileupSingleTracker tracker: stratifiedTracker.values()) {
+        for(PileupUnifiedTracker tracker: stratifiedTracker.values()) {
             array.addAll(tracker.backedList);
         }
         return array.toArray(a);
@@ -87,7 +87,7 @@ class PileupStratifiedTracker extends PileupTracker {
 
     @Override
     public void clear() {
-        for(PileupSingleTracker tracker: stratifiedTracker.values()) {
+        for(PileupUnifiedTracker tracker: stratifiedTracker.values()) {
             tracker.clear();
         }
     }

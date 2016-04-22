@@ -39,7 +39,7 @@ public abstract class PileupTracker implements Collection<PileupElement> {
      */
     public PileupTracker newInstance(final Set<String> samples, final SAMFileHeader header) {
         if (samples.size() == 1) {
-            return new PileupSingleTracker(samples.iterator().next(), header);
+            return new PileupUnifiedTracker(samples.iterator().next(), header);
         } else {
             return new PileupStratifiedTracker(samples, header);
         }
@@ -82,7 +82,6 @@ public abstract class PileupTracker implements Collection<PileupElement> {
      *
      * @param sample the sample to retrieve
      * @return the tracker for only one sample
-     * @throws NoSuchElementException if the sample is not tracked
      */
     public abstract PileupTracker getTrackerForSample(String sample);
 
@@ -91,7 +90,6 @@ public abstract class PileupTracker implements Collection<PileupElement> {
      *
      * @param e the pileup element
      * @return the tracker
-     * @throws NoSuchElementException if the sample for the element is not tracked
      */
     protected PileupTracker getTrackerForElement(PileupElement e) {
         return getTrackerForSample(ReadUtils.getSampleName(e.getRead(), header));
@@ -107,7 +105,7 @@ public abstract class PileupTracker implements Collection<PileupElement> {
     public abstract <T> T[] toArray(T[] a);
 
     /**
-     * Add a pileup element
+     * Add a pileup element. If the sample is not tracked in this list, it is not added.
      *
      * @param pileupElement the pileup element
      * @return {@code true} if it is added; {@code false} otherwise
@@ -116,7 +114,7 @@ public abstract class PileupTracker implements Collection<PileupElement> {
     public abstract boolean add(PileupElement pileupElement);
 
     /**
-     * Add a read with an offset to the tracker
+     * Add a read with an offset to the tracker. If the sample is not tracked in this list, is not added.
      *
      * @param read   the read
      * @param offset the offsett for the element
@@ -170,5 +168,58 @@ public abstract class PileupTracker implements Collection<PileupElement> {
 
     @Override
     public abstract void clear();
+
+    protected static class EmptyPileupTracker extends PileupTracker {
+
+        private final String sample;
+
+        EmptyPileupTracker(String sample) {
+            super(null);
+            this.sample = sample;
+        }
+
+        @Override
+        public int size() {
+            return 0;
+        }
+
+        @Override
+        public Set<String> sampleNames() {
+            return Collections.singleton(sample);
+        }
+
+        @Override
+        public PileupTracker getTrackerForSample(String sample) {
+            return this;
+        }
+
+        @Override
+        public Iterator<PileupElement> iterator() {
+            return Collections.emptyIterator();
+        }
+
+        @Override
+        public Object[] toArray() {
+            return new Object[0];
+        }
+
+        @Override
+        public <T> T[] toArray(T[] a) {
+            if(a.length > 0) {
+                a[0] = null;
+            }
+            return a;
+        }
+
+        @Override
+        public boolean add(PileupElement pileupElement) {
+            return false;
+        }
+
+        @Override
+        public void clear() {
+
+        }
+    }
 
 }

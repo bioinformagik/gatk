@@ -3,9 +3,12 @@ package org.broadinstitute.hellbender.engine;
 import htsjdk.samtools.SAMFileHeader;
 import htsjdk.samtools.SAMReadGroupRecord;
 import org.broadinstitute.hellbender.cmdline.Argument;
+import org.broadinstitute.hellbender.cmdline.ArgumentCollection;
+import org.broadinstitute.hellbender.cmdline.argumentcollections.ReadTransformerArgumentCollection;
 import org.broadinstitute.hellbender.engine.filters.CountingReadFilter;
 import org.broadinstitute.hellbender.engine.filters.ReadFilterLibrary;
 import org.broadinstitute.hellbender.engine.filters.WellformedReadFilter;
+import org.broadinstitute.hellbender.transformers.ReadTransformer;
 import org.broadinstitute.hellbender.utils.iterators.IntervalOverlappingIterator;
 import org.broadinstitute.hellbender.utils.iterators.ReadFilteringIterator;
 import org.broadinstitute.hellbender.utils.SimpleInterval;
@@ -27,6 +30,9 @@ import java.util.stream.StreamSupport;
  * @author Daniel Gomez-Sanchez (magicDGS)
  */
 public abstract class LocusWalker extends GATKTool {
+
+    @ArgumentCollection
+    public ReadTransformerArgumentCollection readTransformerArguments = new ReadTransformerArgumentCollection();
 
     @Argument(fullName = "disable_all_read_filters", shortName = "f", doc = "Disable all read filters", common = false, optional = true)
     public boolean disableAllReadFilters = false;
@@ -118,11 +124,14 @@ public abstract class LocusWalker extends GATKTool {
         final Set<String> samples = header.getReadGroups().stream()
                                           .map(SAMReadGroupRecord::getSample)
                                           .collect(Collectors.toSet());
-        CountingReadFilter countedFilter = disableAllReadFilters ?
+        final CountingReadFilter countedFilter = disableAllReadFilters ?
                 new CountingReadFilter("Allow all", ReadFilterLibrary.ALLOW_ALL_READS ) :
                 makeReadFilter();
+        final ReadTransformer readTransformer = readTransformerArguments.makeReadTransformer(reference);
         // get the LIBS
-        LocusIteratorByState libs = new LocusIteratorByState(new ReadFilteringIterator(reads.iterator(), countedFilter), getDownsamplingMethod(), includeDeletions(), includeNs(), keepUniqueReadListInLibs(), samples, header);
+        LocusIteratorByState libs = new LocusIteratorByState(
+                new ReadFilteringIterator(StreamSupport.stream(reads.spliterator(), false).map(readTransformer).iterator(), countedFilter),
+                getDownsamplingMethod(), includeDeletions(), includeNs(), keepUniqueReadListInLibs(), samples, header);
         // prepare the iterator
         Spliterator<AlignmentContext> iterator = (hasIntervals()) ? new IntervalOverlappingIterator<>(libs, intervalsForTraversal, header.getSequenceDictionary()).spliterator() : libs.spliterator();
         // iterate over each alignment, and apply the function

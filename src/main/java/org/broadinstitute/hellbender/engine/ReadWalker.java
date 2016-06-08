@@ -1,6 +1,12 @@
 package org.broadinstitute.hellbender.engine;
 
+import org.broadinstitute.hellbender.cmdline.ArgumentCollection;
+import org.broadinstitute.hellbender.cmdline.argumentcollections.ReadTransformerArgumentCollection;
 import org.broadinstitute.hellbender.engine.filters.WellformedReadFilter;
+import org.broadinstitute.hellbender.exceptions.UserException;
+import org.broadinstitute.hellbender.transformers.BAQReadTransformer;
+import org.broadinstitute.hellbender.transformers.MisencodedBaseQualityReadTransformer;
+import org.broadinstitute.hellbender.transformers.ReadTransformer;
 import org.broadinstitute.hellbender.utils.SimpleInterval;
 import org.broadinstitute.hellbender.cmdline.Argument;
 import org.broadinstitute.hellbender.engine.filters.CountingReadFilter;
@@ -19,6 +25,9 @@ import java.util.stream.StreamSupport;
  * onTraversalStart() and/or onTraversalSuccess(). See the PrintReadsWithReference walker for an example.
  */
 public abstract class ReadWalker extends GATKTool {
+
+    @ArgumentCollection
+    public ReadTransformerArgumentCollection readTransformerArguments = new ReadTransformerArgumentCollection();
 
     @Argument(fullName = "disable_all_read_filters", shortName = "f", doc = "Disable all read filters", common = false, optional = true)
     public boolean disable_all_read_filters = false;
@@ -72,9 +81,11 @@ public abstract class ReadWalker extends GATKTool {
         final CountingReadFilter countedFilter = disable_all_read_filters ?
                                                     new CountingReadFilter("Allow all", ReadFilterLibrary.ALLOW_ALL_READS ) :
                                                     makeReadFilter();
-
+        // create a read transformer
+        final ReadTransformer readTransformer = readTransformerArguments.makeReadTransformer(reference);
         StreamSupport.stream(reads.spliterator(), false)
                 .filter(countedFilter)
+                .map(readTransformer)
                 .forEach(read -> {
                     final SimpleInterval readInterval = getReadInterval(read);
                     apply(read,

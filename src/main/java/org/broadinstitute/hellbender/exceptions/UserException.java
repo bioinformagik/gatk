@@ -162,26 +162,27 @@ public class UserException extends RuntimeException {
         }
     }
 
-    // todo - why we need this?
-    // todo - remove to use MalformedBAM?
-    public static class MalformedRead extends UserException {
+    public static class MisencodedQualityScoresRead extends MalformedBAM {
         private static final long serialVersionUID = 0L;
 
-        public MalformedRead(final GATKRead read, final String message ) {
-            super(String.format("Read %s is malformed: %s", read, message));
-        }
-        
-        public MalformedRead(final String source, final String message) {
-            super(String.format("Read from source %s is malformed: %s", source, message));
-        }
-    }
-
-    public static class MisencodedQualityScoresRead extends MalformedRead {
-        private static final long serialVersionUID = 0L;
+        private final static String MSG_FORMAT = "Read is using the wrong encoding for quality scores: %s";
 
         public MisencodedQualityScoresRead(final GATKRead read, final String message ) {
-            super(read, String.format("Read is using the wrong encoding for quality scores: %s", message));
+            super(read, String.format(MSG_FORMAT, message));
         }
+
+        public MisencodedQualityScoresRead(final GATKRead read, final File file, final String message) {
+            super(read, file, String.format(MSG_FORMAT, message));
+        }
+
+        public MisencodedQualityScoresRead(final GATKRead read, final Path path, final String message) {
+            super(read, path, String.format(MSG_FORMAT, message));
+        }
+
+        public MisencodedQualityScoresRead(final GATKRead read, final String source, final String message) {
+            super(read, source, String.format(MSG_FORMAT, message));
+        }
+
     }
 
     public static class BadInput extends UserException {

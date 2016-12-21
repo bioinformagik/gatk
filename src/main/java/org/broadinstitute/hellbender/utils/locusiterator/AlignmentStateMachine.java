@@ -238,7 +238,7 @@ public final class AlignmentStateMachine {
                     continue;
                 } else {
                     if (currentElement != null && currentElement.getOperator() == CigarOperator.D)
-                        throw new UserException.MalformedRead(read, "read ends with deletion. Cigar: " + read.getCigar().toString() + ". Although the SAM spec technically permits such reads, this is often indicative of malformed files.");
+                        throw new UserException.MalformedBAM(read, "read ends with deletion. Cigar: " + read.getCigar().toString() + ". Although the SAM spec technically permits such reads, this is often indicative of malformed files.");
 
                     // we're done, so set the offset of the cigar to 0 for cleanliness, as well as the current element
                     offsetIntoCurrentCigarElement = 0;
@@ -270,7 +270,7 @@ public final class AlignmentStateMachine {
                     break;
                 case D: // deletion w.r.t. the reference
                     if (readOffset < 0)             // we don't want reads starting with deletion, this is a malformed cigar string
-                        throw new UserException.MalformedRead(read, "read starts with deletion. Cigar: " + read.getCigar().toString() + ". Although the SAM spec technically permits such reads, this is often indicative of malformed files.");
+                        throw new UserException.MalformedBAM(read, "read starts with deletion. Cigar: " + read.getCigar().toString() + ". Although the SAM spec technically permits such reads, this is often indicative of malformed files.");
                     // should be the same as N case
                     genomeOffset++;
                     done = true;

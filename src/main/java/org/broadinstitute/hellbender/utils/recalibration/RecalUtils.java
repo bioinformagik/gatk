@@ -503,7 +503,7 @@ public final class RecalUtils {
                 readGroup.setPlatform(RAC.DEFAULT_PLATFORM);
             }
             else {
-                throw new UserException.MalformedRead(read, "The input .bam file contains reads with no platform information. First observed at read with name = " + read.getName());
+                throw new UserException.MalformedBAM(read, "no platform information.");
             }
         }
     }

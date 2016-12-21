@@ -3,7 +3,7 @@ package org.broadinstitute.hellbender.transformers;
 import htsjdk.samtools.SAMFileHeader;
 import htsjdk.samtools.SAMTag;
 import htsjdk.samtools.SAMUtils;
-import org.broadinstitute.hellbender.exceptions.UserException.MalformedRead;
+import org.broadinstitute.hellbender.exceptions.UserException;
 import org.broadinstitute.hellbender.tools.ApplyBQSRArgumentCollection;
 import org.broadinstitute.hellbender.utils.QualityUtils;
 import org.broadinstitute.hellbender.utils.Utils;
@@ -138,7 +138,7 @@ public final class BQSRReadTransformer implements ReadTransformer {
             try {
                 read.setAttribute(SAMTag.OQ.name(), SAMUtils.phredToFastq(read.getBaseQualities()));
             } catch (final IllegalArgumentException e) {
-                throw new MalformedRead(read, "illegal base quality encountered; " + e.getMessage());
+                throw new UserException.MalformedBAM(read, "illegal base quality encountered; " + e.getMessage());
             }
         }
 

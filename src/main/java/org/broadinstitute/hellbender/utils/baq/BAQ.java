@@ -432,7 +432,7 @@ public final class BAQ implements Serializable {
                 int baq_delta = baq[i] - 64;
                 int newval =  rawQual - baq_delta;
                 if ( newval < 0 )
-                    throw new UserException.MalformedRead(read, "BAQ tag error: the BAQ value is larger than the base quality");
+                    throw new UserException.MalformedBAM(read, "BAQ tag error: the BAQ value is larger than the base quality");
                 newQuals[i] = (byte)newval;
             }
         } else if ( ! useRawQualsIfNoBAQTag ) {
@@ -461,7 +461,7 @@ public final class BAQ implements Serializable {
             int baq_delta = baq[offset] - 64;
             int newval =  rawQual - baq_delta;
             if ( newval < 0 )
-                throw new UserException.MalformedRead(read, "BAQ tag error: the BAQ value is larger than the base quality");
+                throw new UserException.MalformedBAM(read, "BAQ tag error: the BAQ value is larger than the base quality");
             newQual = (byte)newval;
         
         } else if ( ! useRawQualsIfNoBAQTag ) {

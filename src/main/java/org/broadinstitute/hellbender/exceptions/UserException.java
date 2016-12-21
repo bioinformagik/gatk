@@ -434,12 +434,25 @@ public class UserException extends RuntimeException {
 	    }
     }
 
-    // todo - if this is extending MalformedBAM, we can use the source too
     public static final class ReadMissingReadGroup extends MalformedBAM {
         private static final long serialVersionUID = 0L;
 
+        private static final String MESSAGE = "missing the read group (RG) tag. This is required by the GATK. Please use " + HelpConstants.forumPost("discussion/59/companion-utilities-replacereadgroups") + "to fix this problem";
+
         public ReadMissingReadGroup(final GATKRead read) {
-            super(read, String.format("Read %s is missing the read group (RG) tag, which is required by the GATK.  Please use " + HelpConstants.forumPost("discussion/59/companion-utilities-replacereadgroups to fix this problem"), read.getName()));
+            super(read, MESSAGE);
+        }
+
+        public ReadMissingReadGroup(final GATKRead read, final File file) {
+            super(read, file, MESSAGE);
+        }
+
+        public ReadMissingReadGroup(final GATKRead read, final Path path) {
+            super(read, path, MESSAGE);
+        }
+
+        public ReadMissingReadGroup(final GATKRead read, final String source) {
+            super(read, source, MESSAGE);
         }
     }
 

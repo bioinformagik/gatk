@@ -1,11 +1,11 @@
 package org.broadinstitute.hellbender.tools.walkers.indels;
 
-import com.google.java.contract.Requires;
-import org.broadinstitute.gatk.utils.GenomeLoc;
-import org.broadinstitute.gatk.utils.GenomeLocParser;
-import org.broadinstitute.gatk.utils.HasGenomeLocation;
-import org.broadinstitute.gatk.utils.fasta.CachingIndexedFastaSequenceFile;
-import org.broadinstitute.gatk.utils.sam.GATKSAMRecord;
+import org.broadinstitute.hellbender.utils.GenomeLoc;
+import org.broadinstitute.hellbender.utils.GenomeLocParser;
+import org.broadinstitute.hellbender.utils.HasGenomeLocation;
+import org.broadinstitute.hellbender.utils.fasta.CachingIndexedFastaSequenceFile;
+import org.broadinstitute.hellbender.utils.read.GATKRead;
+import org.broadinstitute.hellbender.utils.read.ReadUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,7 +17,7 @@ import java.util.List;
 */
 class ReadBin implements HasGenomeLocation {
 
-    private final ArrayList<GATKSAMRecord> reads = new ArrayList<GATKSAMRecord>();
+    private final ArrayList<GATKRead> reads = new ArrayList<>();
     private byte[] reference = null;
     private GenomeLoc loc = null;
     private final GenomeLocParser parser;
@@ -30,23 +30,22 @@ class ReadBin implements HasGenomeLocation {
 
     // Return false if we can't process this read bin because the reads are not correctly overlapping.
     // This can happen if e.g. there's a large known indel with no overlapping reads.
-    public void add(GATKSAMRecord read) {
+    public void add(GATKRead read) {
 
-        final int readStart = read.getSoftStart();
-        final int readStop = read.getSoftEnd();
+        final int readStart = ReadUtils.getSoftStart(read);
+        final int readStop = ReadUtils.getSoftEnd(read);
         if ( loc == null )
-            loc = parser.createGenomeLoc(read.getReferenceName(), readStart, Math.max(readStop, readStart)); // in case it's all an insertion
+            loc = parser.createGenomeLoc(read.getContig(), readStart, Math.max(readStop, readStart)); // in case it's all an insertion
         else if ( readStop > loc.getStop() )
             loc = parser.createGenomeLoc(loc.getContig(), loc.getStart(), readStop);
 
         reads.add(read);
     }
 
-    public List<GATKSAMRecord> getReads() {
+    public List<GATKRead> getReads() {
         return reads;
     }
 
-    @Requires("referenceReader.isUppercasingBases()")
     public byte[] getReference(CachingIndexedFastaSequenceFile referenceReader) {
         // set up the reference if we haven't done so yet
         if ( reference == null ) {

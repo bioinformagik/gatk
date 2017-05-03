@@ -29,6 +29,20 @@ public final class VariantAnnotatorEngine {
 
     private final VariantOverlapAnnotator variantOverlapAnnotator;
 
+    public VariantAnnotatorEngine(final List<InfoFieldAnnotation> infoAnnotations,
+                                  final List<GenotypeAnnotation> genotypeAnnotations,
+                                  final FeatureInput<VariantContext> dbSNPInput,
+                                  final List<FeatureInput<VariantContext>> comparisonFeatureInputs) {
+        this.infoAnnotations = new ArrayList<>(infoAnnotations);
+        this.genotypeAnnotations = new ArrayList<>(genotypeAnnotations);
+        this.variantOverlapAnnotator = initializeOverlapAnnotator(dbSNPInput, comparisonFeatureInputs);
+    }
+
+    public VariantAnnotatorEngine(final List<InfoFieldAnnotation> infoAnnotations,
+                                  final List<GenotypeAnnotation> genotypeAnnotations) {
+        this(infoAnnotations, genotypeAnnotations, null, Collections.emptyList());
+    }
+
     private VariantAnnotatorEngine(final AnnotationManager annots,
                                    final FeatureInput<VariantContext> dbSNPInput,
                                    final List<FeatureInput<VariantContext>> featureInputs){

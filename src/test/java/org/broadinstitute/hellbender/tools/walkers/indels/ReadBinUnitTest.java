@@ -23,13 +23,14 @@
 * THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 
-package org.broadinstitute.gatk.tools.walkers.indels;
+package org.broadinstitute.hellbender.tools.walkers.indels;
 
-import org.broadinstitute.gatk.utils.GenomeLoc;
-import org.broadinstitute.gatk.utils.GenomeLocParser;
-import org.broadinstitute.gatk.utils.sam.ArtificialSAMUtils;
-import org.broadinstitute.gatk.utils.sam.GATKSAMRecord;
-import org.broadinstitute.gatk.utils.sam.ReadUtils;
+import org.broadinstitute.hellbender.utils.GenomeLoc;
+import org.broadinstitute.hellbender.utils.GenomeLocParser;
+import org.broadinstitute.hellbender.utils.read.ArtificialReadUtils;
+import org.broadinstitute.hellbender.utils.read.GATKRead;
+import org.broadinstitute.hellbender.utils.read.ReadUtils;
+import org.broadinstitute.hellbender.utils.test.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
@@ -40,7 +41,7 @@ import org.testng.annotations.Test;
  * Date: 2/16/13
  * Time: 11:48 PM
  */
-public class ReadBinUnitTest {
+public class ReadBinUnitTest extends BaseTest {
     private GenomeLocParser parser;
     private ReadBin readBin;
 
@@ -49,7 +50,7 @@ public class ReadBinUnitTest {
 
     @BeforeClass
     public void init() {
-        parser = new GenomeLocParser(ArtificialSAMUtils.createArtificialSamHeader().getSequenceDictionary());
+        parser = new GenomeLocParser(ArtificialReadUtils.createArtificialSamHeader().getSequenceDictionary());
         readBin = new ReadBin(parser, referencePadding);
     }
 
@@ -73,16 +74,16 @@ public class ReadBinUnitTest {
      */
     @Test(enabled = true, dataProvider = "reads")
     public void testAddingReads(String cigarString, int alignmentStart) {
-        final GATKSAMRecord read = createReadAndAddToBin(cigarString, alignmentStart);
-        final GenomeLoc readLoc = parser.createGenomeLoc(read.getReferenceName(), read.getReferenceIndex(), read.getSoftStart(), Math.max(read.getSoftStart(), read.getSoftEnd()));
+        final GATKRead read = createReadAndAddToBin(cigarString, alignmentStart);
+        final GenomeLoc readLoc = parser.createGenomeLoc(read.getContig(), ReadUtils.getSoftStart(read), Math.max(ReadUtils.getSoftStart(read), ReadUtils.getSoftEnd(read)));
         Assert.assertEquals(readBin.getLocation(), readLoc);
         readBin.clear();
     }
 
-    public GATKSAMRecord createReadAndAddToBin(String cigarString, int alignmentStart) {
-        final GATKSAMRecord read = ReadUtils.createRandomRead(readLength);
-        read.setCigarString(cigarString);
-        read.setAlignmentStart(alignmentStart);
+    public GATKRead createReadAndAddToBin(String cigarString, int alignmentStart) {
+        final GATKRead read = ArtificialReadUtils.createRandomRead(readLength);
+        read.setCigar(cigarString);
+        read.setPosition(read.getContig(), alignmentStart);
         readBin.add(read);
         return read;
     }

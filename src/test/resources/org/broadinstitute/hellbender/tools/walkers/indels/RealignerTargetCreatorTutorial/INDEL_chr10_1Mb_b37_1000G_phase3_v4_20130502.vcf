@@ -1,0 +1,1417 @@
+##fileformat=VCFv4.2
+##ALT=<ID=CN0,Description="Copy number allele: 0 copies">
+##ALT=<ID=CN1,Description="Copy number allele: 1 copy">
+##ALT=<ID=CN10,Description="Copy number allele: 10 copies">
+##ALT=<ID=CN100,Description="Copy number allele: 100 copies">
+##ALT=<ID=CN101,Description="Copy number allele: 101 copies">
+##ALT=<ID=CN102,Description="Copy number allele: 102 copies">
+##ALT=<ID=CN103,Description="Copy number allele: 103 copies">
+##ALT=<ID=CN104,Description="Copy number allele: 104 copies">
+##ALT=<ID=CN105,Description="Copy number allele: 105 copies">
+##ALT=<ID=CN106,Description="Copy number allele: 106 copies">
+##ALT=<ID=CN107,Description="Copy number allele: 107 copies">
+##ALT=<ID=CN108,Description="Copy number allele: 108 copies">
+##ALT=<ID=CN109,Description="Copy number allele: 109 copies">
+##ALT=<ID=CN11,Description="Copy number allele: 11 copies">
+##ALT=<ID=CN110,Description="Copy number allele: 110 copies">
+##ALT=<ID=CN111,Description="Copy number allele: 111 copies">
+##ALT=<ID=CN112,Description="Copy number allele: 112 copies">
+##ALT=<ID=CN113,Description="Copy number allele: 113 copies">
+##ALT=<ID=CN114,Description="Copy number allele: 114 copies">
+##ALT=<ID=CN115,Description="Copy number allele: 115 copies">
+##ALT=<ID=CN116,Description="Copy number allele: 116 copies">
+##ALT=<ID=CN117,Description="Copy number allele: 117 copies">
+##ALT=<ID=CN118,Description="Copy number allele: 118 copies">
+##ALT=<ID=CN119,Description="Copy number allele: 119 copies">
+##ALT=<ID=CN12,Description="Copy number allele: 12 copies">
+##ALT=<ID=CN120,Description="Copy number allele: 120 copies">
+##ALT=<ID=CN121,Description="Copy number allele: 121 copies">
+##ALT=<ID=CN122,Description="Copy number allele: 122 copies">
+##ALT=<ID=CN123,Description="Copy number allele: 123 copies">
+##ALT=<ID=CN124,Description="Copy number allele: 124 copies">
+##ALT=<ID=CN13,Description="Copy number allele: 13 copies">
+##ALT=<ID=CN14,Description="Copy number allele: 14 copies">
+##ALT=<ID=CN15,Description="Copy number allele: 15 copies">
+##ALT=<ID=CN16,Description="Copy number allele: 16 copies">
+##ALT=<ID=CN17,Description="Copy number allele: 17 copies">
+##ALT=<ID=CN18,Description="Copy number allele: 18 copies">
+##ALT=<ID=CN19,Description="Copy number allele: 19 copies">
+##ALT=<ID=CN2,Description="Copy number allele: 2 copies">
+##ALT=<ID=CN20,Description="Copy number allele: 20 copies">
+##ALT=<ID=CN21,Description="Copy number allele: 21 copies">
+##ALT=<ID=CN22,Description="Copy number allele: 22 copies">
+##ALT=<ID=CN23,Description="Copy number allele: 23 copies">
+##ALT=<ID=CN24,Description="Copy number allele: 24 copies">
+##ALT=<ID=CN25,Description="Copy number allele: 25 copies">
+##ALT=<ID=CN26,Description="Copy number allele: 26 copies">
+##ALT=<ID=CN27,Description="Copy number allele: 27 copies">
+##ALT=<ID=CN28,Description="Copy number allele: 28 copies">
+##ALT=<ID=CN29,Description="Copy number allele: 29 copies">
+##ALT=<ID=CN3,Description="Copy number allele: 3 copies">
+##ALT=<ID=CN30,Description="Copy number allele: 30 copies">
+##ALT=<ID=CN31,Description="Copy number allele: 31 copies">
+##ALT=<ID=CN32,Description="Copy number allele: 32 copies">
+##ALT=<ID=CN33,Description="Copy number allele: 33 copies">
+##ALT=<ID=CN34,Description="Copy number allele: 34 copies">
+##ALT=<ID=CN35,Description="Copy number allele: 35 copies">
+##ALT=<ID=CN36,Description="Copy number allele: 36 copies">
+##ALT=<ID=CN37,Description="Copy number allele: 37 copies">
+##ALT=<ID=CN38,Description="Copy number allele: 38 copies">
+##ALT=<ID=CN39,Description="Copy number allele: 39 copies">
+##ALT=<ID=CN4,Description="Copy number allele: 4 copies">
+##ALT=<ID=CN40,Description="Copy number allele: 40 copies">
+##ALT=<ID=CN41,Description="Copy number allele: 41 copies">
+##ALT=<ID=CN42,Description="Copy number allele: 42 copies">
+##ALT=<ID=CN43,Description="Copy number allele: 43 copies">
+##ALT=<ID=CN44,Description="Copy number allele: 44 copies">
+##ALT=<ID=CN45,Description="Copy number allele: 45 copies">
+##ALT=<ID=CN46,Description="Copy number allele: 46 copies">
+##ALT=<ID=CN47,Description="Copy number allele: 47 copies">
+##ALT=<ID=CN48,Description="Copy number allele: 48 copies">
+##ALT=<ID=CN49,Description="Copy number allele: 49 copies">
+##ALT=<ID=CN5,Description="Copy number allele: 5 copies">
+##ALT=<ID=CN50,Description="Copy number allele: 50 copies">
+##ALT=<ID=CN51,Description="Copy number allele: 51 copies">
+##ALT=<ID=CN52,Description="Copy number allele: 52 copies">
+##ALT=<ID=CN53,Description="Copy number allele: 53 copies">
+##ALT=<ID=CN54,Description="Copy number allele: 54 copies">
+##ALT=<ID=CN55,Description="Copy number allele: 55 copies">
+##ALT=<ID=CN56,Description="Copy number allele: 56 copies">
+##ALT=<ID=CN57,Description="Copy number allele: 57 copies">
+##ALT=<ID=CN58,Description="Copy number allele: 58 copies">
+##ALT=<ID=CN59,Description="Copy number allele: 59 copies">
+##ALT=<ID=CN6,Description="Copy number allele: 6 copies">
+##ALT=<ID=CN60,Description="Copy number allele: 60 copies">
+##ALT=<ID=CN61,Description="Copy number allele: 61 copies">
+##ALT=<ID=CN62,Description="Copy number allele: 62 copies">
+##ALT=<ID=CN63,Description="Copy number allele: 63 copies">
+##ALT=<ID=CN64,Description="Copy number allele: 64 copies">
+##ALT=<ID=CN65,Description="Copy number allele: 65 copies">
+##ALT=<ID=CN66,Description="Copy number allele: 66 copies">
+##ALT=<ID=CN67,Description="Copy number allele: 67 copies">
+##ALT=<ID=CN68,Description="Copy number allele: 68 copies">
+##ALT=<ID=CN69,Description="Copy number allele: 69 copies">
+##ALT=<ID=CN7,Description="Copy number allele: 7 copies">
+##ALT=<ID=CN70,Description="Copy number allele: 70 copies">
+##ALT=<ID=CN71,Description="Copy number allele: 71 copies">
+##ALT=<ID=CN72,Description="Copy number allele: 72 copies">
+##ALT=<ID=CN73,Description="Copy number allele: 73 copies">
+##ALT=<ID=CN74,Description="Copy number allele: 74 copies">
+##ALT=<ID=CN75,Description="Copy number allele: 75 copies">
+##ALT=<ID=CN76,Description="Copy number allele: 76 copies">
+##ALT=<ID=CN77,Description="Copy number allele: 77 copies">
+##ALT=<ID=CN78,Description="Copy number allele: 78 copies">
+##ALT=<ID=CN79,Description="Copy number allele: 79 copies">
+##ALT=<ID=CN8,Description="Copy number allele: 8 copies">
+##ALT=<ID=CN80,Description="Copy number allele: 80 copies">
+##ALT=<ID=CN81,Description="Copy number allele: 81 copies">
+##ALT=<ID=CN82,Description="Copy number allele: 82 copies">
+##ALT=<ID=CN83,Description="Copy number allele: 83 copies">
+##ALT=<ID=CN84,Description="Copy number allele: 84 copies">
+##ALT=<ID=CN85,Description="Copy number allele: 85 copies">
+##ALT=<ID=CN86,Description="Copy number allele: 86 copies">
+##ALT=<ID=CN87,Description="Copy number allele: 87 copies">
+##ALT=<ID=CN88,Description="Copy number allele: 88 copies">
+##ALT=<ID=CN89,Description="Copy number allele: 89 copies">
+##ALT=<ID=CN9,Description="Copy number allele: 9 copies">
+##ALT=<ID=CN90,Description="Copy number allele: 90 copies">
+##ALT=<ID=CN91,Description="Copy number allele: 91 copies">
+##ALT=<ID=CN92,Description="Copy number allele: 92 copies">
+##ALT=<ID=CN93,Description="Copy number allele: 93 copies">
+##ALT=<ID=CN94,Description="Copy number allele: 94 copies">
+##ALT=<ID=CN95,Description="Copy number allele: 95 copies">
+##ALT=<ID=CN96,Description="Copy number allele: 96 copies">
+##ALT=<ID=CN97,Description="Copy number allele: 97 copies">
+##ALT=<ID=CN98,Description="Copy number allele: 98 copies">
+##ALT=<ID=CN99,Description="Copy number allele: 99 copies">
+##ALT=<ID=CNV,Description="Copy Number Polymorphism">
+##ALT=<ID=DEL,Description="Deletion">
+##ALT=<ID=DUP,Description="Duplication">
+##ALT=<ID=INS:ME:ALU,Description="Insertion of ALU element">
+##ALT=<ID=INS:ME:LINE1,Description="Insertion of LINE1 element">
+##ALT=<ID=INS:ME:SVA,Description="Insertion of SVA element">
+##ALT=<ID=INS:MT,Description="Nuclear Mitochondrial Insertion">
+##ALT=<ID=INV,Description="Inversion">
+##FILTER=<ID=PASS,Description="All filters passed">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##GATKCommandLine.SelectVariants.2=<ID=SelectVariants,Version=3.5-37-gf39d340,Date="Thu Feb 25 17:08:19 EST 2016",Epoch=1456438099738,CommandLineOptions="analysis_type=SelectVariants input_file=[] showFullBamList=false read_buffer_size=null phone_home=AWS gatk_key=null tag=NA read_filter=[] disable_read_filter=[] intervals=null excludeIntervals=null interval_set_rule=UNION interval_merging=ALL interval_padding=0 reference_sequence=/humgen/gsa-hpprojects/GATK/bundle/current/b37/human_g1k_v37_decoy.fasta nonDeterministicRandomSeed=false disableDithering=false maxRuntime=-1 maxRuntimeUnits=MINUTES downsampling_type=BY_SAMPLE downsample_to_fraction=null downsample_to_coverage=1000 baq=OFF baqGapOpenPenalty=40.0 refactor_NDN_cigar_string=false fix_misencoded_quality_scores=false allow_potentially_misencoded_quality_scores=false useOriginalQualities=false defaultBaseQualities=-1 performanceLog=null BQSR=null quantize_quals=0 static_quantized_quals=null round_down_quantized=false disable_indel_quals=false emit_original_quals=false preserve_qscores_less_than=6 globalQScorePrior=-1.0 validation_strictness=SILENT remove_program_records=false keep_program_records=false sample_rename_mapping_file=null unsafe=null disable_auto_index_creation_and_locking_when_reading_rods=false no_cmdline_in_header=false sites_only=false never_trim_vcf_format_field=false bcf=false bam_compression=null simplifyBAM=false disable_bam_indexing=false generate_md5=false num_threads=1 num_cpu_threads_per_data_thread=1 num_io_threads=0 monitorThreadEfficiency=false num_bam_file_handles=null read_group_black_list=null pedigree=[] pedigreeString=[] pedigreeValidationType=STRICT allow_intervals_with_unindexed_bam=false generateShadowBCF=false variant_index_type=DYNAMIC_SEEK variant_index_parameter=-1 reference_window_stop=0 logging_level=INFO log_to_file=null help=false version=false variant=(RodBinding name=variant source=chr10_1Mb_b37_1000G_phase3_v4_20130502.vcf) discordance=(RodBinding name= source=UNBOUND) concordance=(RodBinding name= source=UNBOUND) out=/humgen/gsa-hpprojects/GATK/tutorial/solexa/indel_realignment/INDEL_chr10_1Mb_b37_1000G_phase3_v4_20130502.vcf sample_name=[] sample_expressions=null sample_file=null exclude_sample_name=[] exclude_sample_file=[] exclude_sample_expressions=[] selectexpressions=[] invertselect=false excludeNonVariants=false excludeFiltered=false preserveAlleles=false removeUnusedAlternates=false restrictAllelesTo=ALL keepOriginalAC=false keepOriginalDP=false mendelianViolation=false invertMendelianViolation=false mendelianViolationQualThreshold=0.0 select_random_fraction=0.0 remove_fraction_genotypes=0.0 selectTypeToInclude=[INDEL] selectTypeToExclude=[] keepIDs=null excludeIDs=null fullyDecode=false justRead=false maxIndelSize=2147483647 minIndelSize=0 maxFilteredGenotypes=2147483647 minFilteredGenotypes=0 maxFractionFilteredGenotypes=1.0 minFractionFilteredGenotypes=0.0 maxNOCALLnumber=2147483647 maxNOCALLfraction=1.0 setFilteredGtToNocall=false ALLOW_NONOVERLAPPING_COMMAND_LINE_SAMPLES=false forceValidOutput=false filter_reads_with_N_cigar=false filter_mismatching_base_and_quals=false filter_bases_not_stored=false">
+##GATKCommandLine.SelectVariants=<ID=SelectVariants,Version=3.5-37-gf39d340,Date="Thu Feb 25 14:30:33 EST 2016",Epoch=1456428633198,CommandLineOptions="analysis_type=SelectVariants input_file=[] showFullBamList=false read_buffer_size=null phone_home=AWS gatk_key=null tag=NA read_filter=[] disable_read_filter=[] intervals=[10:96000000-97000000] excludeIntervals=null interval_set_rule=UNION interval_merging=ALL interval_padding=0 reference_sequence=/humgen/gsa-hpprojects/GATK/bundle/current/b37/human_g1k_v37_decoy.fasta nonDeterministicRandomSeed=false disableDithering=false maxRuntime=-1 maxRuntimeUnits=MINUTES downsampling_type=BY_SAMPLE downsample_to_fraction=null downsample_to_coverage=1000 baq=OFF baqGapOpenPenalty=40.0 refactor_NDN_cigar_string=false fix_misencoded_quality_scores=false allow_potentially_misencoded_quality_scores=false useOriginalQualities=false defaultBaseQualities=-1 performanceLog=null BQSR=null quantize_quals=0 static_quantized_quals=null round_down_quantized=false disable_indel_quals=false emit_original_quals=false preserve_qscores_less_than=6 globalQScorePrior=-1.0 validation_strictness=SILENT remove_program_records=false keep_program_records=false sample_rename_mapping_file=null unsafe=null disable_auto_index_creation_and_locking_when_reading_rods=false no_cmdline_in_header=false sites_only=false never_trim_vcf_format_field=false bcf=false bam_compression=null simplifyBAM=false disable_bam_indexing=false generate_md5=false num_threads=1 num_cpu_threads_per_data_thread=1 num_io_threads=0 monitorThreadEfficiency=false num_bam_file_handles=null read_group_black_list=null pedigree=[] pedigreeString=[] pedigreeValidationType=STRICT allow_intervals_with_unindexed_bam=false generateShadowBCF=false variant_index_type=DYNAMIC_SEEK variant_index_parameter=-1 reference_window_stop=0 logging_level=INFO log_to_file=null help=false version=false variant=(RodBinding name=variant source=/humgen/gsa-hpprojects/GATK/bundle/current/b37/1000G_phase3_v4_20130502.sites.vcf) discordance=(RodBinding name= source=UNBOUND) concordance=(RodBinding name= source=UNBOUND) out=/humgen/gsa-hpprojects/GATK/tutorial/solexa/indel_realignment/chr10_1Mb_b37_1000G_phase3_v4_20130502.vcf sample_name=[] sample_expressions=null sample_file=null exclude_sample_name=[] exclude_sample_file=[] exclude_sample_expressions=[] selectexpressions=[] invertselect=false excludeNonVariants=false excludeFiltered=false preserveAlleles=false removeUnusedAlternates=false restrictAllelesTo=ALL keepOriginalAC=false keepOriginalDP=false mendelianViolation=false invertMendelianViolation=false mendelianViolationQualThreshold=0.0 select_random_fraction=0.0 remove_fraction_genotypes=0.0 selectTypeToInclude=[] selectTypeToExclude=[] keepIDs=null excludeIDs=null fullyDecode=false justRead=false maxIndelSize=2147483647 minIndelSize=0 maxFilteredGenotypes=2147483647 minFilteredGenotypes=0 maxFractionFilteredGenotypes=1.0 minFractionFilteredGenotypes=0.0 maxNOCALLnumber=2147483647 maxNOCALLfraction=1.0 setFilteredGtToNocall=false ALLOW_NONOVERLAPPING_COMMAND_LINE_SAMPLES=false forceValidOutput=false filter_reads_with_N_cigar=false filter_mismatching_base_and_quals=false filter_bases_not_stored=false">
+##INFO=<ID=AC,Number=A,Type=Integer,Description="Allele count in genotypes, for each ALT allele, in the same order as listed">
+##INFO=<ID=AF,Number=A,Type=Float,Description="Allele Frequency, for each ALT allele, in the same order as listed">
+##INFO=<ID=AN,Number=1,Type=Integer,Description="Total number of alleles in called genotypes">
+##INFO=<ID=CIEND,Number=2,Type=Integer,Description="Confidence interval around END for imprecise variants">
+##INFO=<ID=CIPOS,Number=2,Type=Integer,Description="Confidence interval around POS for imprecise variants">
+##INFO=<ID=CS,Number=1,Type=String,Description="Source call set.">
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Approximate read depth; some reads may have been filtered">
+##INFO=<ID=END,Number=1,Type=Integer,Description="End coordinate of this variant">
+##INFO=<ID=IMPRECISE,Number=0,Type=Flag,Description="Imprecise structural variation">
+##INFO=<ID=MC,Number=.,Type=String,Description="Merged calls.">
+##INFO=<ID=MEINFO,Number=4,Type=String,Description="Mobile element info of the form NAME,START,END<POLARITY; If there is only 5' OR 3' support for this call, will be NULL NULL for START and END">
+##INFO=<ID=MEND,Number=1,Type=Integer,Description="Mitochondrial end coordinate of inserted sequence">
+##INFO=<ID=MLEN,Number=1,Type=Integer,Description="Estimated length of mitochondrial insert">
+##INFO=<ID=MSTART,Number=1,Type=Integer,Description="Mitochondrial start coordinate of inserted sequence">
+##INFO=<ID=NS,Number=1,Type=Integer,Description="Number of samples with data">
+##INFO=<ID=SVLEN,Number=.,Type=Integer,Description="Difference in length between REF and ALT alleles">
+##INFO=<ID=SVTYPE,Number=1,Type=String,Description="Type of structural variant">
+##INFO=<ID=TSD,Number=1,Type=String,Description="Precise Target Site Duplication for bases, if unknown, value will be NULL">
+##bcftools_annotateCommand=annotate -a /nfs/1000g-work/G1K/work/laura/gatk_resources/dbsnp_138.b37.vcf.gz -c CHROM,POS,ID,REF,ALT,-,-,- /nfs/1000g-archive/vol1/ftp/technical/working/20130723_phase3_wg/v3_release/ALL.chr1.phase3_shapeit2_mvncall_integrated_v3.20130502.genotypes.vcf.gz
+##bcftools_annotateVersion=0.1.0-389-gabac11f+htslib-0.2.0-rc10
+##contig=<ID=1,length=249250621,assembly=b37>
+##contig=<ID=2,length=243199373,assembly=b37>
+##contig=<ID=3,length=198022430,assembly=b37>
+##contig=<ID=4,length=191154276,assembly=b37>
+##contig=<ID=5,length=180915260,assembly=b37>
+##contig=<ID=6,length=171115067,assembly=b37>
+##contig=<ID=7,length=159138663,assembly=b37>
+##contig=<ID=8,length=146364022,assembly=b37>
+##contig=<ID=9,length=141213431,assembly=b37>
+##contig=<ID=10,length=135534747,assembly=b37>
+##contig=<ID=11,length=135006516,assembly=b37>
+##contig=<ID=12,length=133851895,assembly=b37>
+##contig=<ID=13,length=115169878,assembly=b37>
+##contig=<ID=14,length=107349540,assembly=b37>
+##contig=<ID=15,length=102531392,assembly=b37>
+##contig=<ID=16,length=90354753,assembly=b37>
+##contig=<ID=17,length=81195210,assembly=b37>
+##contig=<ID=18,length=78077248,assembly=b37>
+##contig=<ID=19,length=59128983,assembly=b37>
+##contig=<ID=20,length=63025520,assembly=b37>
+##contig=<ID=21,length=48129895,assembly=b37>
+##contig=<ID=22,length=51304566,assembly=b37>
+##contig=<ID=X,length=155270560,assembly=b37>
+##contig=<ID=Y,length=59373566,assembly=b37>
+##contig=<ID=MT,length=16569,assembly=b37>
+##contig=<ID=GL000207.1,length=4262,assembly=b37>
+##contig=<ID=GL000226.1,length=15008,assembly=b37>
+##contig=<ID=GL000229.1,length=19913,assembly=b37>
+##contig=<ID=GL000231.1,length=27386,assembly=b37>
+##contig=<ID=GL000210.1,length=27682,assembly=b37>
+##contig=<ID=GL000239.1,length=33824,assembly=b37>
+##contig=<ID=GL000235.1,length=34474,assembly=b37>
+##contig=<ID=GL000201.1,length=36148,assembly=b37>
+##contig=<ID=GL000247.1,length=36422,assembly=b37>
+##contig=<ID=GL000245.1,length=36651,assembly=b37>
+##contig=<ID=GL000197.1,length=37175,assembly=b37>
+##contig=<ID=GL000203.1,length=37498,assembly=b37>
+##contig=<ID=GL000246.1,length=38154,assembly=b37>
+##contig=<ID=GL000249.1,length=38502,assembly=b37>
+##contig=<ID=GL000196.1,length=38914,assembly=b37>
+##contig=<ID=GL000248.1,length=39786,assembly=b37>
+##contig=<ID=GL000244.1,length=39929,assembly=b37>
+##contig=<ID=GL000238.1,length=39939,assembly=b37>
+##contig=<ID=GL000202.1,length=40103,assembly=b37>
+##contig=<ID=GL000234.1,length=40531,assembly=b37>
+##contig=<ID=GL000232.1,length=40652,assembly=b37>
+##contig=<ID=GL000206.1,length=41001,assembly=b37>
+##contig=<ID=GL000240.1,length=41933,assembly=b37>
+##contig=<ID=GL000236.1,length=41934,assembly=b37>
+##contig=<ID=GL000241.1,length=42152,assembly=b37>
+##contig=<ID=GL000243.1,length=43341,assembly=b37>
+##contig=<ID=GL000242.1,length=43523,assembly=b37>
+##contig=<ID=GL000230.1,length=43691,assembly=b37>
+##contig=<ID=GL000237.1,length=45867,assembly=b37>
+##contig=<ID=GL000233.1,length=45941,assembly=b37>
+##contig=<ID=GL000204.1,length=81310,assembly=b37>
+##contig=<ID=GL000198.1,length=90085,assembly=b37>
+##contig=<ID=GL000208.1,length=92689,assembly=b37>
+##contig=<ID=GL000191.1,length=106433,assembly=b37>
+##contig=<ID=GL000227.1,length=128374,assembly=b37>
+##contig=<ID=GL000228.1,length=129120,assembly=b37>
+##contig=<ID=GL000214.1,length=137718,assembly=b37>
+##contig=<ID=GL000221.1,length=155397,assembly=b37>
+##contig=<ID=GL000209.1,length=159169,assembly=b37>
+##contig=<ID=GL000218.1,length=161147,assembly=b37>
+##contig=<ID=GL000220.1,length=161802,assembly=b37>
+##contig=<ID=GL000213.1,length=164239,assembly=b37>
+##contig=<ID=GL000211.1,length=166566,assembly=b37>
+##contig=<ID=GL000199.1,length=169874,assembly=b37>
+##contig=<ID=GL000217.1,length=172149,assembly=b37>
+##contig=<ID=GL000216.1,length=172294,assembly=b37>
+##contig=<ID=GL000215.1,length=172545,assembly=b37>
+##contig=<ID=GL000205.1,length=174588,assembly=b37>
+##contig=<ID=GL000219.1,length=179198,assembly=b37>
+##contig=<ID=GL000224.1,length=179693,assembly=b37>
+##contig=<ID=GL000223.1,length=180455,assembly=b37>
+##contig=<ID=GL000195.1,length=182896,assembly=b37>
+##contig=<ID=GL000212.1,length=186858,assembly=b37>
+##contig=<ID=GL000222.1,length=186861,assembly=b37>
+##contig=<ID=GL000200.1,length=187035,assembly=b37>
+##contig=<ID=GL000193.1,length=189789,assembly=b37>
+##contig=<ID=GL000194.1,length=191469,assembly=b37>
+##contig=<ID=GL000225.1,length=211173,assembly=b37>
+##contig=<ID=GL000192.1,length=547496,assembly=b37>
+##contig=<ID=NC_007605,length=171823,assembly=b37>
+##contig=<ID=hs37d5,length=35477943,assembly=b37>
+##fileDate=20140730
+##reference=file:///humgen/gsa-hpprojects/GATK/bundle/current/b37/human_g1k_v37_decoy.fasta
+##source=1000GenomesPhase3Pipeline
+##source=SelectVariants
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+10	96000399	.	GAACACTTACAAAGAAAATATTT	G	100	PASS	AC=9;AF=0.00179712;AN=5008;NS=2504
+10	96002035	rs199607605	G	GT	100	PASS	AC=191;AF=0.038139;AN=5008;NS=2504
+10	96002573	rs60438777	AAAAT	A	100	PASS	AC=325;AF=0.0648962;AN=5008;NS=2504
+10	96003556	rs60684851	GCC	G	100	PASS	AC=325;AF=0.0648962;AN=5008;NS=2504
+10	96004176	rs200416155	GC	G	100	PASS	AC=8;AF=0.00159744;AN=5008;NS=2504
+10	96005264	rs112078461	A	AT	100	PASS	AC=1769;AF=0.353235;AN=5008;NS=2504
+10	96006455	.	TTCATGC	T	100	PASS	AC=6;AF=0.00119808;AN=5008;NS=2504
+10	96006871	.	GA	G	100	PASS	AC=376;AF=0.0750799;AN=5008;NS=2504
+10	96007627	.	GA	G	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96008426	rs61637083	GA	G	100	PASS	AC=2161;AF=0.43151;AN=5008;NS=2504
+10	96009182	rs56780364	T	TA	100	PASS	AC=2095;AF=0.418331;AN=5008;NS=2504
+10	96010271	.	A	AG	100	PASS	AC=19;AF=0.00379393;AN=5008;NS=2504
+10	96011104	rs138654800	G	GCA	100	PASS	AC=33;AF=0.00658946;AN=5008;NS=2504
+10	96011773	rs139155464	AGT	A	100	PASS	AC=29;AF=0.00579073;AN=5008;NS=2504
+10	96048725	.	CT	C	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96049497	rs201651470	GC	G	100	PASS	AC=47;AF=0.00938498;AN=5008;NS=2504
+10	96049708	rs58783042	AC	A	100	PASS	AC=395;AF=0.0788738;AN=5008;NS=2504
+10	96050171	.	AT	A	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96053564	.	AC	A	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96054708	.	TG	T	100	PASS	AC=18;AF=0.00359425;AN=5008;NS=2504
+10	96055963	rs200197176	C	CA	100	PASS	AC=401;AF=0.0800719;AN=5008;NS=2504
+10	96057347	.	TAAAAAAAAAAAAAAAAAAAAAA	T	100	PASS	AC=924;AF=0.184505;AN=5008;NS=2504
+10	96057648	rs11346540	GA	G	100	PASS	AC=133;AF=0.0265575;AN=5008;NS=2504
+10	96060414	rs200822358	T	TGAGTCTCAACTCA	100	PASS	AC=100;AF=0.0199681;AN=5008;NS=2504
+10	96060664	rs199724228	TAAAAC	T	100	PASS	AC=19;AF=0.00379393;AN=5008;NS=2504
+10	96060745	.	T	TG	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96061619	rs140311370	ACTT	A	100	PASS	AC=393;AF=0.0784744;AN=5008;NS=2504
+10	96061663	rs5787111	C	CTT	100	PASS	AC=752;AF=0.15016;AN=5008;NS=2504
+10	96062280	rs372644202	C	CA	100	PASS	AC=242;AF=0.0483227;AN=5008;NS=2504
+10	96063031	rs372599711	CA	C	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96063268	rs370569493	TA	T	100	PASS	AC=5;AF=0.000998403;AN=5008;NS=2504
+10	96065280	.	CCCT	C	100	PASS	AC=17;AF=0.00339457;AN=5008;NS=2504
+10	96067625	.	GTTA	G	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96068069	.	T	TGATCAGGTTTTCCTACTA	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96069144	.	G	GT	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96070793	.	TCAGAA	T	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96072729	rs368767326	ATGAG	A	100	PASS	AC=1446;AF=0.288738;AN=5008;NS=2504
+10	96072801	.	AAAT	A	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96072873	rs3215794	CTA	C	100	PASS	AC=383;AF=0.0764776;AN=5008;NS=2504
+10	96073205	rs143071870	T	TA	100	PASS	AC=46;AF=0.0091853;AN=5008;NS=2504
+10	96073508	rs201053600	AGAT	A	100	PASS	AC=383;AF=0.0764776;AN=5008;NS=2504
+10	96074341	rs58361235	ACT	A	100	PASS	AC=213;AF=0.0425319;AN=5008;NS=2504
+10	96075526	rs199861114	CAAAAAAAA	C	100	PASS	AC=3158;AF=0.630591;AN=5008;NS=2504
+10	96076251	rs372850031	ATTTGT	A	100	PASS	AC=56;AF=0.0111821;AN=5008;NS=2504
+10	96077293	rs370062308	AAAT	A	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96077524	.	T	TACTA	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96077714	rs61449413	TAGAA	T	100	PASS	AC=19;AF=0.00379393;AN=5008;NS=2504
+10	96078811	.	C	CA	100	PASS	AC=8;AF=0.00159744;AN=5008;NS=2504
+10	96079609	rs113406892	C	CTCAAAGG	100	PASS	AC=1092;AF=0.218051;AN=5008;NS=2504
+10	96080108	rs145503826	CTTTA	C	100	PASS	AC=198;AF=0.0395367;AN=5008;NS=2504
+10	96080318	.	GGTTA	G	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96080485	.	AG	A	100	PASS	AC=6;AF=0.00119808;AN=5008;NS=2504
+10	96084372	rs3831084	A	AT	100	PASS	AC=1067;AF=0.213059;AN=5008;NS=2504
+10	96085457	rs201777555	G	GTCAA	100	PASS	AC=71;AF=0.0141773;AN=5008;NS=2504
+10	96086374	.	T	TACA	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96087381	.	A	ATAATC	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96087425	.	G	GTAGT	100	PASS	AC=6;AF=0.00119808;AN=5008;NS=2504
+10	96088187	.	CTT	C	100	PASS	AC=20;AF=0.00399361;AN=5008;NS=2504
+10	96088209	.	C	CATT	100	PASS	AC=19;AF=0.00379393;AN=5008;NS=2504
+10	96089533	.	C	CAAA	100	PASS	AC=3257;AF=0.650359;AN=5008;NS=2504
+10	96089919	rs111898995	G	GCTTT	100	PASS	AC=1536;AF=0.306709;AN=5008;NS=2504
+10	96090448	.	CAAAA	C	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96091577	.	ATGAGTCCCTTTGAAACACATAC	A	100	PASS	AC=46;AF=0.0091853;AN=5008;NS=2504
+10	96091626	rs149210333	CTT	C	100	PASS	AC=2745;AF=0.548123;AN=5008;NS=2504
+10	96092853	rs369358615	GTT	G	100	PASS	AC=19;AF=0.00379393;AN=5008;NS=2504
+10	96092992	rs79144106	G	GA	100	PASS	AC=396;AF=0.0790735;AN=5008;NS=2504
+10	96094328	.	T	TA	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96095271	rs138437339	CATTTT	C	100	PASS	AC=396;AF=0.0790735;AN=5008;NS=2504
+10	96096468	.	A	AT	100	PASS	AC=18;AF=0.00359425;AN=5008;NS=2504
+10	96096825	.	CAAAA	C	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96096927	.	CT	C	100	PASS	AC=5;AF=0.000998403;AN=5008;NS=2504
+10	96097114	rs71031571	CAAAAAAA	C	100	PASS	AC=1052;AF=0.210064;AN=5008;NS=2504
+10	96097304	rs200647597	AAT	A	100	PASS	AC=49;AF=0.00978435;AN=5008;NS=2504
+10	96099111	rs139024109	G	GAGTT	100	PASS	AC=1534;AF=0.30631;AN=5008;NS=2504
+10	96099791	.	TC	T	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96100257	rs34713827	TA	T	100	PASS	AC=550;AF=0.109824;AN=5008;NS=2504
+10	96100278	.	A	AG	100	PASS	AC=22;AF=0.00439297;AN=5008;NS=2504
+10	96100370	rs201917172	G	GC	100	PASS	AC=90;AF=0.0179712;AN=5008;NS=2504
+10	96100752	rs36027832	A	AG	100	PASS	AC=1480;AF=0.295527;AN=5008;NS=2504
+10	96101002	rs147083197	A	ATAGTT	100	PASS	AC=400;AF=0.0798722;AN=5008;NS=2504
+10	96102412	rs11330050	AC	A	100	PASS	AC=72;AF=0.014377;AN=5008;NS=2504
+10	96102419	.	A	AT	100	PASS	AC=16;AF=0.00319489;AN=5008;NS=2504
+10	96103170	.	CA	C	100	PASS	AC=5;AF=0.000998403;AN=5008;NS=2504
+10	96104041	.	TAAAGGCTGGTGACAATCAGA	T	100	PASS	AC=19;AF=0.00379393;AN=5008;NS=2504
+10	96104793	rs151141395	CAT	C	100	PASS	AC=31;AF=0.0061901;AN=5008;NS=2504
+10	96106869	rs11313498	AG	A	100	PASS	AC=31;AF=0.0061901;AN=5008;NS=2504
+10	96107970	rs370636298	CACAT	C	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96108697	rs3052365	ATAACCC	A	100	PASS	AC=950;AF=0.189696;AN=5008;NS=2504
+10	96109478	rs11383344	G	GA,GGA	100	PASS	AC=3326,25;AF=0.664137,0.00499201;AN=5008;NS=2504
+10	96110569	rs371593966	TAG	T	100	PASS	AC=15;AF=0.00299521;AN=5008;NS=2504
+10	96110793	.	AT	A	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96111448	.	AT	A	100	PASS	AC=964;AF=0.192492;AN=5008;NS=2504
+10	96112261	rs141353669	AAAAAAAC	A	100	PASS	AC=317;AF=0.0632987;AN=5008;NS=2504
+10	96114039	.	CAAT	C	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96114212	rs137932815	TCTC	T	100	PASS	AC=256;AF=0.0511182;AN=5008;NS=2504
+10	96114271	rs147263175	CACTTT	C	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96115062	.	TAAGCTCATAAACCAAAGGAAAATAGGATTC	T	100	PASS	AC=5;AF=0.000998403;AN=5008;NS=2504
+10	96115525	rs199854686	G	GT	100	PASS	AC=21;AF=0.00419329;AN=5008;NS=2504
+10	96115998	rs200775307	CTT	C	100	PASS	AC=35;AF=0.00698882;AN=5008;NS=2504
+10	96117558	rs200301761	T	TA	100	PASS	AC=11;AF=0.00219649;AN=5008;NS=2504
+10	96117786	.	CA	C	100	PASS	AC=7;AF=0.00139776;AN=5008;NS=2504
+10	96119219	.	C	CA	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96119664	rs150908007	CA	C	100	PASS	AC=163;AF=0.0325479;AN=5008;NS=2504
+10	96120077	.	A	AAAT	100	PASS	AC=12;AF=0.00239617;AN=5008;NS=2504
+10	96120423	rs139138533	ATTTAT	A	100	PASS	AC=34;AF=0.00678914;AN=5008;NS=2504
+10	96120760	.	CCTGT	C	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96120944	.	GT	G	100	PASS	AC=6;AF=0.00119808;AN=5008;NS=2504
+10	96123250	rs34457311	A	AT	100	PASS	AC=454;AF=0.090655;AN=5008;NS=2504
+10	96123844	rs375295131	AT	ATT,A	100	PASS	AC=215,49;AF=0.0429313,0.00978435;AN=5008;NS=2504
+10	96124053	.	CT	C	100	PASS	AC=13;AF=0.00259585;AN=5008;NS=2504
+10	96124137	rs370252648	ACACAGAGTCTGGCCT	A	100	PASS	AC=28;AF=0.00559105;AN=5008;NS=2504
+10	96125287	.	TAATTCCATTTAA	T	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96126136	rs376172184	TAAAC	T	100	PASS	AC=24;AF=0.00479233;AN=5008;NS=2504
+10	96126461	.	C	CA	100	PASS	AC=237;AF=0.0473243;AN=5008;NS=2504
+10	96126728	.	TA	T	100	PASS	AC=6;AF=0.00119808;AN=5008;NS=2504
+10	96126735	rs67892191	AC	A	100	PASS	AC=204;AF=0.0407348;AN=5008;NS=2504
+10	96126748	.	AT	A	100	PASS	AC=5;AF=0.000998403;AN=5008;NS=2504
+10	96126917	rs10545050	CA	C	100	PASS	AC=1375;AF=0.274561;AN=5008;NS=2504
+10	96126999	rs144179839	T	TTG	100	PASS	AC=3532;AF=0.705272;AN=5008;NS=2504
+10	96127038	.	AATG	A	100	PASS	AC=10;AF=0.00199681;AN=5008;NS=2504
+10	96127232	.	TGTG	T	100	PASS	AC=21;AF=0.00419329;AN=5008;NS=2504
+10	96128273	rs138311221	ATGT	A	100	PASS	AC=53;AF=0.0105831;AN=5008;NS=2504
+10	96128556	.	ATTAAGT	A	100	PASS	AC=5;AF=0.000998403;AN=5008;NS=2504
+10	96131156	.	T	TCAAA	100	PASS	AC=5;AF=0.000998403;AN=5008;NS=2504
+10	96133025	rs142332546	GTTA	GTTATTA,G	100	PASS	AC=61,2334;AF=0.0121805,0.466054;AN=5008;NS=2504
+10	96133223	.	A	AT	100	PASS	AC=5;AF=0.000998403;AN=5008;NS=2504
+10	96134461	.	A	AAAAT	100	PASS	AC=5;AF=0.000998403;AN=5008;NS=2504
+10	96136546	rs144812905	AT	A	100	PASS	AC=170;AF=0.0339457;AN=5008;NS=2504
+10	96138234	rs34139539	T	TA	100	PASS	AC=1347;AF=0.26897;AN=5008;NS=2504
+10	96138827	.	A	AT	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96139649	rs139890190	CAA	C	100	PASS	AC=2288;AF=0.456869;AN=5008;NS=2504
+10	96140495	rs60351083	ATT	A	100	PASS	AC=2177;AF=0.434704;AN=5008;NS=2504
+10	96140521	rs199606817	ATTGT	A	100	PASS	AC=155;AF=0.0309505;AN=5008;NS=2504
+10	96141692	.	A	AG	100	PASS	AC=20;AF=0.00399361;AN=5008;NS=2504
+10	96142050	rs35250870	TA	T	100	PASS	AC=2398;AF=0.478834;AN=5008;NS=2504
+10	96142750	.	TAC	T	100	PASS	AC=12;AF=0.00239617;AN=5008;NS=2504
+10	96143118	rs35116524	CT	C	100	PASS	AC=2472;AF=0.49361;AN=5008;NS=2504
+10	96143280	rs34610833	C	CT	100	PASS	AC=1722;AF=0.34385;AN=5008;NS=2504
+10	96143627	rs141503061	TTTTA	T	100	PASS	AC=2390;AF=0.477236;AN=5008;NS=2504
+10	96144938	.	A	AC	100	PASS	AC=7;AF=0.00139776;AN=5008;NS=2504
+10	96145531	.	A	AC	100	PASS	AC=143;AF=0.0285543;AN=5008;NS=2504
+10	96145571	.	G	GC	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96145682	rs374517213	CAG	C	100	PASS	AC=34;AF=0.00678914;AN=5008;NS=2504
+10	96145776	rs371969009	AAAAG	A	100	PASS	AC=11;AF=0.00219649;AN=5008;NS=2504
+10	96146289	rs141294713	GA	G	100	PASS	AC=2238;AF=0.446885;AN=5008;NS=2504
+10	96147437	.	CA	C	100	PASS	AC=19;AF=0.00379393;AN=5008;NS=2504
+10	96148976	.	TAA	T	100	PASS	AC=14;AF=0.00279553;AN=5008;NS=2504
+10	96149363	.	TC	T	100	PASS	AC=5;AF=0.000998403;AN=5008;NS=2504
+10	96150009	rs149804963	C	CA	100	PASS	AC=254;AF=0.0507188;AN=5008;NS=2504
+10	96153571	rs147718922	AC	A	100	PASS	AC=2191;AF=0.4375;AN=5008;NS=2504
+10	96154904	rs35018496	C	CT	100	PASS	AC=2155;AF=0.430312;AN=5008;NS=2504
+10	96156186	rs71031574	A	AT	100	PASS	AC=325;AF=0.0648962;AN=5008;NS=2504
+10	96156493	rs34041421	TA	T	100	PASS	AC=2491;AF=0.497404;AN=5008;NS=2504
+10	96156535	rs199943549	GT	G	100	PASS	AC=59;AF=0.0117812;AN=5008;NS=2504
+10	96157610	rs61423865	CTA	C	100	PASS	AC=191;AF=0.038139;AN=5008;NS=2504
+10	96158475	.	A	AT	100	PASS	AC=120;AF=0.0239617;AN=5008;NS=2504
+10	96160089	rs146154838	TG	T	100	PASS	AC=51;AF=0.0101837;AN=5008;NS=2504
+10	96163412	.	T	TCGGAGCCGGAGCCGGAGCCGGAGCCGGAG	100	PASS	AC=2400;AF=0.479233;AN=5008;NS=2504
+10	96163672	rs142236695	CT	C	100	PASS	AC=166;AF=0.033147;AN=5008;NS=2504
+10	96163743	.	T	TG	100	PASS	AC=13;AF=0.00259585;AN=5008;NS=2504
+10	96164782	.	GAATA	G	100	PASS	AC=20;AF=0.00399361;AN=5008;NS=2504
+10	96164803	rs59300913	CA	C	100	PASS	AC=1408;AF=0.28115;AN=5008;NS=2504
+10	96165569	rs34165101	AT	A	100	PASS	AC=1676;AF=0.334665;AN=5008;NS=2504
+10	96166619	.	C	CT	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96166811	rs35370498	TA	TAAA,T	100	PASS	AC=118,675;AF=0.0235623,0.134784;AN=5008;NS=2504
+10	96167178	rs199739029	C	CCT	100	PASS	AC=64;AF=0.0127796;AN=5008;NS=2504
+10	96167432	rs371410282	C	CA	100	PASS	AC=2463;AF=0.491813;AN=5008;NS=2504
+10	96171112	.	T	TG	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96172743	rs139816715	AC	A	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96172781	.	T	TA	100	PASS	AC=7;AF=0.00139776;AN=5008;NS=2504
+10	96174357	rs71031575	C	CT	100	PASS	AC=2551;AF=0.509385;AN=5008;NS=2504
+10	96175502	rs149798343	C	CA	100	PASS	AC=63;AF=0.0125799;AN=5008;NS=2504
+10	96175869	rs145191882	G	GA	100	PASS	AC=119;AF=0.023762;AN=5008;NS=2504
+10	96177042	rs200226563	GA	G	100	PASS	AC=53;AF=0.0105831;AN=5008;NS=2504
+10	96177455	rs201293508	T	TA	100	PASS	AC=10;AF=0.00199681;AN=5008;NS=2504
+10	96177507	rs35840263	CT	C	100	PASS	AC=2448;AF=0.488818;AN=5008;NS=2504
+10	96177639	rs35708968	T	TG	100	PASS	AC=2659;AF=0.53095;AN=5008;NS=2504
+10	96179956	.	C	CT	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96180219	.	ACTAT	A	100	PASS	AC=10;AF=0.00199681;AN=5008;NS=2504
+10	96180591	rs201802439	G	GT	100	PASS	AC=31;AF=0.0061901;AN=5008;NS=2504
+10	96182889	rs113484346	T	TAAAGG	100	PASS	AC=2614;AF=0.521965;AN=5008;NS=2504
+10	96183808	rs59236985	ATAAT	A	100	PASS	AC=119;AF=0.023762;AN=5008;NS=2504
+10	96183951	rs147728680	C	CT	100	PASS	AC=107;AF=0.0213658;AN=5008;NS=2504
+10	96184566	.	CT	C	100	PASS	AC=5;AF=0.000998403;AN=5008;NS=2504
+10	96185345	rs149232402	G	GT	100	PASS	AC=170;AF=0.0339457;AN=5008;NS=2504
+10	96191178	rs202246842	AAAAAG	A	100	PASS	AC=2160;AF=0.43131;AN=5008;NS=2504
+10	96191879	rs148439415	A	AAG	100	PASS	AC=118;AF=0.0235623;AN=5008;NS=2504
+10	96192233	rs147947299	TTA	T	100	PASS	AC=21;AF=0.00419329;AN=5008;NS=2504
+10	96192538	rs57041867	G	GT	100	PASS	AC=13;AF=0.00259585;AN=5008;NS=2504
+10	96192609	.	T	TA	100	PASS	AC=5;AF=0.000998403;AN=5008;NS=2504
+10	96193938	.	TA	T	100	PASS	AC=6;AF=0.00119808;AN=5008;NS=2504
+10	96194261	.	TAAAAAAA	T	100	PASS	AC=2;AF=0.000399361;AN=5008;NS=2504
+10	96195067	rs200836621	CAA	C	100	PASS	AC=42;AF=0.00838658;AN=5008;NS=2504
+10	96195329	rs147199266	GTT	G	100	PASS	AC=17;AF=0.00339457;AN=5008;NS=2504
+10	96196432	rs200150806	GA	G	100	PASS	AC=20;AF=0.00399361;AN=5008;NS=2504
+10	96196816	rs201479382	A	AT	100	PASS	AC=962;AF=0.192093;AN=5008;NS=2504
+10	96198181	rs34411205	T	TA	100	PASS	AC=2980;AF=0.595048;AN=5008;NS=2504
+10	96198332	.	TC	T	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96198853	.	G	GC	100	PASS	AC=8;AF=0.00159744;AN=5008;NS=2504
+10	96199537	.	T	TA	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96200634	rs113818285	GT	G	100	PASS	AC=53;AF=0.0105831;AN=5008;NS=2504
+10	96201839	rs137964875	CTTT	CT,C	100	PASS	AC=1461,1257;AF=0.291733,0.250998;AN=5008;NS=2504
+10	96202012	.	CT	C	100	PASS	AC=10;AF=0.00199681;AN=5008;NS=2504
+10	96202660	rs138559680	GA	G	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96202702	rs199998023	CT	C	100	PASS	AC=42;AF=0.00838658;AN=5008;NS=2504
+10	96202943	rs148155719	CAG	C	100	PASS	AC=30;AF=0.00599042;AN=5008;NS=2504
+10	96204490	.	CTTTT	CT,C	100	PASS	AC=5,5;AF=0.000998403,0.000998403;AN=5008;NS=2504
+10	96204665	.	ATT	A	100	PASS	AC=20;AF=0.00399361;AN=5008;NS=2504
+10	96205858	rs139748606	ATTTTCT	A	100	PASS	AC=19;AF=0.00379393;AN=5008;NS=2504
+10	96206320	rs34525105	AT	A	100	PASS	AC=673;AF=0.134385;AN=5008;NS=2504
+10	96206336	.	TG	T	100	PASS	AC=16;AF=0.00319489;AN=5008;NS=2504
+10	96207531	rs112823223	TA	T	100	PASS	AC=29;AF=0.00579073;AN=5008;NS=2504
+10	96209925	.	A	ATATATC	100	PASS	AC=5;AF=0.000998403;AN=5008;NS=2504
+10	96211523	rs140531795	CAT	C	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96211842	.	A	AAAT	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96212968	.	TC	T	100	PASS	AC=14;AF=0.00279553;AN=5008;NS=2504
+10	96213584	rs201606899	TC	T	100	PASS	AC=63;AF=0.0125799;AN=5008;NS=2504
+10	96213981	rs148492869	GTCT	G	100	PASS	AC=215;AF=0.0429313;AN=5008;NS=2504
+10	96215720	rs34881313	A	AG	100	PASS	AC=32;AF=0.00638978;AN=5008;NS=2504
+10	96217087	rs112421022	T	TA	100	PASS	AC=55;AF=0.0109824;AN=5008;NS=2504
+10	96218151	.	TA	T	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96218872	.	T	TG	100	PASS	AC=1065;AF=0.21266;AN=5008;NS=2504
+10	96219249	.	C	CT	100	PASS	AC=20;AF=0.00399361;AN=5008;NS=2504
+10	96219996	.	C	CA	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96221485	rs35865238	C	CA	100	PASS	AC=961;AF=0.191893;AN=5008;NS=2504
+10	96222448	rs34342296	AATT	A	100	PASS	AC=2215;AF=0.442292;AN=5008;NS=2504
+10	96223828	rs376744463	AG	A	100	PASS	AC=11;AF=0.00219649;AN=5008;NS=2504
+10	96225359	.	TGCCACTGCACTCCA	T	100	PASS	AC=23;AF=0.00459265;AN=5008;NS=2504
+10	96225476	rs144782745	C	CGT	100	PASS	AC=2354;AF=0.470048;AN=5008;NS=2504
+10	96225494	rs201192093	TATAC	T	100	PASS	AC=54;AF=0.0107827;AN=5008;NS=2504
+10	96225543	rs201922978	A	ATACG	100	PASS	AC=1485;AF=0.296526;AN=5008;NS=2504
+10	96225547	.	ATACG	A	100	PASS	AC=1817;AF=0.362819;AN=5008;NS=2504
+10	96225893	rs144692728	TTGTAAGAACCTTACA	T	100	PASS	AC=108;AF=0.0215655;AN=5008;NS=2504
+10	96226172	rs143453216	C	CAT	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96227412	rs34441108	C	CT	100	PASS	AC=2062;AF=0.411741;AN=5008;NS=2504
+10	96228360	.	CT	C	100	PASS	AC=20;AF=0.00399361;AN=5008;NS=2504
+10	96228598	.	A	AT	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96230627	rs149858431	TTTA	T	100	PASS	AC=119;AF=0.023762;AN=5008;NS=2504
+10	96231035	.	CA	C	100	PASS	AC=497;AF=0.0992412;AN=5008;NS=2504
+10	96232778	rs202189200	G	GT	100	PASS	AC=55;AF=0.0109824;AN=5008;NS=2504
+10	96233610	rs145811449	TATTAA	T	100	PASS	AC=42;AF=0.00838658;AN=5008;NS=2504
+10	96234095	rs75712325	CA	C	100	PASS	AC=3882;AF=0.77516;AN=5008;NS=2504
+10	96237039	rs200959124	CT	C	100	PASS	AC=14;AF=0.00279553;AN=5008;NS=2504
+10	96239207	.	AG	A	100	PASS	AC=5;AF=0.000998403;AN=5008;NS=2504
+10	96240086	rs369180542	TG	T	100	PASS	AC=5;AF=0.000998403;AN=5008;NS=2504
+10	96241032	.	AAG	A	100	PASS	AC=63;AF=0.0125799;AN=5008;NS=2504
+10	96241102	rs143490310	GT	G	100	PASS	AC=20;AF=0.00399361;AN=5008;NS=2504
+10	96241547	rs140902012	C	CT	100	PASS	AC=2381;AF=0.475439;AN=5008;NS=2504
+10	96242073	rs141846242	GGTTCCCGCTTTT	G	100	PASS	AC=20;AF=0.00399361;AN=5008;NS=2504
+10	96243489	.	GT	GTT,G	100	PASS	AC=156,56;AF=0.0311502,0.0111821;AN=5008;NS=2504
+10	96243700	rs145986369	AT	A	100	PASS	AC=696;AF=0.138978;AN=5008;NS=2504
+10	96244005	rs35799519	GTT	G	100	PASS	AC=4829;AF=0.964257;AN=5008;NS=2504
+10	96244952	.	G	GT	100	PASS	AC=20;AF=0.00399361;AN=5008;NS=2504
+10	96245803	rs200585080	CA	C	100	PASS	AC=49;AF=0.00978435;AN=5008;NS=2504
+10	96247015	.	T	TA	100	PASS	AC=12;AF=0.00239617;AN=5008;NS=2504
+10	96247451	rs35682157	CT	C	100	PASS	AC=1500;AF=0.299521;AN=5008;NS=2504
+10	96247631	rs34532625	G	GT	100	PASS	AC=2212;AF=0.441693;AN=5008;NS=2504
+10	96248365	rs201756993	TC	T	100	PASS	AC=140;AF=0.0279553;AN=5008;NS=2504
+10	96248533	.	GGT	G	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96248660	.	TCTC	T	100	PASS	AC=12;AF=0.00239617;AN=5008;NS=2504
+10	96248825	rs199517649	TCAGGAC	T	100	PASS	AC=51;AF=0.0101837;AN=5008;NS=2504
+10	96249571	.	CAT	C	100	PASS	AC=6;AF=0.00119808;AN=5008;NS=2504
+10	96250016	rs201701207	AG	A	100	PASS	AC=124;AF=0.0247604;AN=5008;NS=2504
+10	96250025	rs200031514	AAAAG	A	100	PASS	AC=42;AF=0.00838658;AN=5008;NS=2504
+10	96250618	.	AT	A	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96250958	.	T	TA	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96251712	.	TAAGAA	T	100	PASS	AC=888;AF=0.177316;AN=5008;NS=2504
+10	96252111	rs60703580	TA	T	100	PASS	AC=119;AF=0.023762;AN=5008;NS=2504
+10	96252435	.	CAA	C	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96252908	rs71953599	TACACAC	TACAC,T	100	PASS	AC=2458,263;AF=0.490815,0.052516;AN=5008;NS=2504
+10	96254418	.	AG	A	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96254622	rs370407444	GTATT	G	100	PASS	AC=5;AF=0.000998403;AN=5008;NS=2504
+10	96254784	rs34125941	C	CT	100	PASS	AC=2108;AF=0.420927;AN=5008;NS=2504
+10	96255682	.	ATC	A	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96256309	.	AGTT	A	100	PASS	AC=5;AF=0.000998403;AN=5008;NS=2504
+10	96257443	rs11352922	AT	A	100	PASS	AC=2891;AF=0.577276;AN=5008;NS=2504
+10	96258233	rs375830022	CAG	C	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96258969	rs139821906	CATT	C	100	PASS	AC=31;AF=0.0061901;AN=5008;NS=2504
+10	96259088	.	TC	T	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96260505	rs148269881	A	AT	100	PASS	AC=147;AF=0.029353;AN=5008;NS=2504
+10	96262298	.	C	CA	100	PASS	AC=6;AF=0.00119808;AN=5008;NS=2504
+10	96263443	.	G	GCTCTCT	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96265798	rs34002367	A	AT	100	PASS	AC=3363;AF=0.671526;AN=5008;NS=2504
+10	96265961	.	A	AT	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96268864	rs34029199	GT	G	100	PASS	AC=2003;AF=0.39996;AN=5008;NS=2504
+10	96269094	rs55780757	T	TCCAC	100	PASS	AC=4925;AF=0.983427;AN=5008;NS=2504
+10	96269956	.	TTG	T	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96270852	rs11299355	CT	C	100	PASS	AC=3619;AF=0.722644;AN=5008;NS=2504
+10	96272046	rs11462611	A	AT	100	PASS	AC=2392;AF=0.477636;AN=5008;NS=2504
+10	96272538	.	CAA	C	100	PASS	AC=5;AF=0.000998403;AN=5008;NS=2504
+10	96272552	.	ACT	A	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96272665	rs141135782	A	AT	100	PASS	AC=61;AF=0.0121805;AN=5008;NS=2504
+10	96272760	.	CTT	C	100	PASS	AC=7;AF=0.00139776;AN=5008;NS=2504
+10	96273807	rs34400993	CA	C	100	PASS	AC=2551;AF=0.509385;AN=5008;NS=2504
+10	96273845	rs372799129	CTGTAATCCCAGGCA	C	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96275672	rs141991089	A	ACAG	100	PASS	AC=2576;AF=0.514377;AN=5008;NS=2504
+10	96275736	.	AT	A	100	PASS	AC=21;AF=0.00419329;AN=5008;NS=2504
+10	96275829	rs35333158	A	AC	100	PASS	AC=2302;AF=0.459665;AN=5008;NS=2504
+10	96276170	rs201893594	CTTTT	C	100	PASS	AC=65;AF=0.0129792;AN=5008;NS=2504
+10	96277351	rs200320809	TAA	T	100	PASS	AC=52;AF=0.0103834;AN=5008;NS=2504
+10	96277540	rs199513722	C	CA	100	PASS	AC=24;AF=0.00479233;AN=5008;NS=2504
+10	96278166	.	AGGGTCAT	A	100	PASS	AC=11;AF=0.00219649;AN=5008;NS=2504
+10	96280308	.	CA	C	100	PASS	AC=28;AF=0.00559105;AN=5008;NS=2504
+10	96280316	rs138283162	T	TA	100	PASS	AC=2216;AF=0.442492;AN=5008;NS=2504
+10	96280789	.	CT	C	100	PASS	AC=6;AF=0.00119808;AN=5008;NS=2504
+10	96282548	.	C	CT	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96283428	rs112409985	TA	T	100	PASS	AC=31;AF=0.0061901;AN=5008;NS=2504
+10	96284681	.	C	CA	100	PASS	AC=8;AF=0.00159744;AN=5008;NS=2504
+10	96285474	rs201432345	G	GTATA	100	PASS	AC=97;AF=0.019369;AN=5008;NS=2504
+10	96285567	rs139793954	TA	T	100	PASS	AC=52;AF=0.0103834;AN=5008;NS=2504
+10	96287558	.	T	TC	100	PASS	AC=27;AF=0.00539137;AN=5008;NS=2504
+10	96288617	rs56052709	A	AG	100	PASS	AC=5003;AF=0.999002;AN=5008;NS=2504
+10	96288766	rs201651798	A	AT	100	PASS	AC=331;AF=0.0660942;AN=5008;NS=2504
+10	96289267	rs61472853	CG	C	100	PASS	AC=21;AF=0.00419329;AN=5008;NS=2504
+10	96289342	.	TCCAG	T	100	PASS	AC=8;AF=0.00159744;AN=5008;NS=2504
+10	96290018	rs368333838	CCA	C	100	PASS	AC=10;AF=0.00199681;AN=5008;NS=2504
+10	96291527	.	TTA	T	100	PASS	AC=5;AF=0.000998403;AN=5008;NS=2504
+10	96291542	.	TTA	T	100	PASS	AC=53;AF=0.0105831;AN=5008;NS=2504
+10	96292101	rs200734244	A	AT	100	PASS	AC=159;AF=0.0317492;AN=5008;NS=2504
+10	96293081	.	AG	A	100	PASS	AC=9;AF=0.00179712;AN=5008;NS=2504
+10	96295198	.	TTA	T	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96296963	rs140899375	GT	G	100	PASS	AC=119;AF=0.023762;AN=5008;NS=2504
+10	96297114	.	CAAT	CAT,C	100	PASS	AC=12,4;AF=0.00239617,0.000798722;AN=5008;NS=2504
+10	96298354	.	A	AT	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96298891	.	T	TA	100	PASS	AC=20;AF=0.00399361;AN=5008;NS=2504
+10	96299261	rs59658088	CA	C	100	PASS	AC=153;AF=0.0305511;AN=5008;NS=2504
+10	96302030	.	GGGA	G	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96302524	.	AGTCT	A	100	PASS	AC=12;AF=0.00239617;AN=5008;NS=2504
+10	96302555	rs59129617	ATTT	A	100	PASS	AC=2422;AF=0.483626;AN=5008;NS=2504
+10	96303233	.	AG	A	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96304742	.	AT	A	100	PASS	AC=13;AF=0.00259585;AN=5008;NS=2504
+10	96305470	.	CGCCAAATCTCGCGCAGCGGGGCGG	C	100	PASS	AC=10;AF=0.00199681;AN=5008;NS=2504
+10	96311856	rs57396336	AACC	A	100	PASS	AC=52;AF=0.0103834;AN=5008;NS=2504
+10	96312003	rs56857074	T	TTGTCTAGAC	100	PASS	AC=2589;AF=0.516973;AN=5008;NS=2504
+10	96312066	.	GTTAAC	G	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96313309	rs35500984	AT	A	100	PASS	AC=1984;AF=0.396166;AN=5008;NS=2504
+10	96313730	rs61547368	A	AT	100	PASS	AC=144;AF=0.028754;AN=5008;NS=2504
+10	96313842	.	CAGA	C	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96314457	.	AG	A	100	PASS	AC=5;AF=0.000998403;AN=5008;NS=2504
+10	96314482	.	GAA	G	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96316527	rs112173004	AT	A	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96316591	rs147883458	ATGT	A	100	PASS	AC=137;AF=0.0273562;AN=5008;NS=2504
+10	96317838	rs200645462	G	GT	100	PASS	AC=141;AF=0.028155;AN=5008;NS=2504
+10	96319126	.	CT	C	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96320453	rs201682761	C	CTAAA	100	PASS	AC=298;AF=0.0595048;AN=5008;NS=2504
+10	96320509	.	AGAGT	A	100	PASS	AC=5;AF=0.000998403;AN=5008;NS=2504
+10	96320832	rs35118357	CA	C	100	PASS	AC=709;AF=0.141573;AN=5008;NS=2504
+10	96321196	.	CTT	C	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96321616	rs72161998	AATGTATGAATTTC	A	100	PASS	AC=251;AF=0.0501198;AN=5008;NS=2504
+10	96323237	.	C	CT	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96324665	.	TA	T	100	PASS	AC=17;AF=0.00339457;AN=5008;NS=2504
+10	96325657	rs34468351	A	AT	100	PASS	AC=1078;AF=0.215256;AN=5008;NS=2504
+10	96325727	.	GCAGCCTCAACCTCC	G	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96327662	rs34881072	GT	G	100	PASS	AC=3319;AF=0.66274;AN=5008;NS=2504
+10	96327713	.	C	CTGGA	100	PASS	AC=13;AF=0.00259585;AN=5008;NS=2504
+10	96328602	rs36124747	C	CT	100	PASS	AC=2008;AF=0.400958;AN=5008;NS=2504
+10	96329788	.	AT	ATT,A	100	PASS	AC=309,58;AF=0.0617013,0.0115815;AN=5008;NS=2504
+10	96330970	rs111519515	ATAT	A	100	PASS	AC=19;AF=0.00379393;AN=5008;NS=2504
+10	96331831	.	ATTT	A	100	PASS	AC=10;AF=0.00199681;AN=5008;NS=2504
+10	96332027	rs59606913	A	ACAGT	100	PASS	AC=2272;AF=0.453674;AN=5008;NS=2504
+10	96332906	rs34680800	AGTGT	A	100	PASS	AC=2201;AF=0.439497;AN=5008;NS=2504
+10	96333210	rs139468930	A	ATATTT	100	PASS	AC=918;AF=0.183307;AN=5008;NS=2504
+10	96334624	.	TACTC	T	100	PASS	AC=11;AF=0.00219649;AN=5008;NS=2504
+10	96335511	rs71031587	TGG	T	100	PASS	AC=4217;AF=0.842053;AN=5008;NS=2504
+10	96336212	rs372701599	CTTTGTTTTTTTG	C	100	PASS	AC=12;AF=0.00239617;AN=5008;NS=2504
+10	96337462	.	C	CT	100	PASS	AC=5;AF=0.000998403;AN=5008;NS=2504
+10	96338014	rs139637763	T	TAGTC	100	PASS	AC=302;AF=0.0603035;AN=5008;NS=2504
+10	96341328	rs138499717	T	TA	100	PASS	AC=119;AF=0.023762;AN=5008;NS=2504
+10	96342040	.	GAC	G	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96342500	.	CT	C	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96343460	rs200428876	TTGTGTAAACACG	T	100	PASS	AC=52;AF=0.0103834;AN=5008;NS=2504
+10	96343672	rs201120008	TC	T	100	PASS	AC=17;AF=0.00339457;AN=5008;NS=2504
+10	96345003	.	GAT	G	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96345499	rs140448887	A	AGTAGT	100	PASS	AC=207;AF=0.0413339;AN=5008;NS=2504
+10	96345888	rs35159449	A	AT	100	PASS	AC=765;AF=0.152756;AN=5008;NS=2504
+10	96345984	rs376371712	TCTC	T	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96349292	rs143099835	TATC	T	100	PASS	AC=119;AF=0.023762;AN=5008;NS=2504
+10	96349437	.	CTTTT	C	100	PASS	AC=1319;AF=0.263379;AN=5008;NS=2504
+10	96349759	.	ATAATTAATTATAAT	A	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96350046	.	CACA	C	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96350852	.	GA	G	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96352440	.	A	AT	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96352482	rs149445673	TTAA	T	100	PASS	AC=119;AF=0.023762;AN=5008;NS=2504
+10	96353422	.	ATTT	ATTTT,ATT,AT,A	100	PASS	AC=19,2749,494,3;AF=0.00379393,0.548922,0.0986422,0.000599042;AN=5008;NS=2504
+10	96354645	.	AATTGTGC	A	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96354860	rs79655609	C	CT	100	PASS	AC=207;AF=0.0413339;AN=5008;NS=2504
+10	96354984	rs35805834	C	CA	100	PASS	AC=1223;AF=0.244209;AN=5008;NS=2504
+10	96355165	.	T	TA	100	PASS	AC=11;AF=0.00219649;AN=5008;NS=2504
+10	96355895	.	GT	G	100	PASS	AC=6;AF=0.00119808;AN=5008;NS=2504
+10	96356345	rs200180588	CTGT	C	100	PASS	AC=52;AF=0.0103834;AN=5008;NS=2504
+10	96356523	.	CCTT	C	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96357796	rs150415010	C	CTTA	100	PASS	AC=96;AF=0.0191693;AN=5008;NS=2504
+10	96358363	rs58356300	GTT	G	100	PASS	AC=2676;AF=0.534345;AN=5008;NS=2504
+10	96358486	.	C	CA	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96360049	rs34515684	T	TA	100	PASS	AC=1906;AF=0.380591;AN=5008;NS=2504
+10	96360204	.	TAATA	T	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96361032	.	GACTAGCAA	G	100	PASS	AC=24;AF=0.00479233;AN=5008;NS=2504
+10	96361071	rs370717310	GTC	G	100	PASS	AC=9;AF=0.00179712;AN=5008;NS=2504
+10	96363588	rs142109679	TC	T	100	PASS	AC=2293;AF=0.457867;AN=5008;NS=2504
+10	96364826	.	GTC	G	100	PASS	AC=5;AF=0.000998403;AN=5008;NS=2504
+10	96364840	.	C	CG	100	PASS	AC=5;AF=0.000998403;AN=5008;NS=2504
+10	96365972	.	ATCTTATTTTTGTTTTGTTTTAC	A	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96366053	rs113153840	AT	A	100	PASS	AC=11;AF=0.00219649;AN=5008;NS=2504
+10	96366973	rs34737107	CTCT	C	100	PASS	AC=2252;AF=0.449681;AN=5008;NS=2504
+10	96367032	rs201347095	TC	T	100	PASS	AC=52;AF=0.0103834;AN=5008;NS=2504
+10	96368240	.	AAT	A	100	PASS	AC=15;AF=0.00299521;AN=5008;NS=2504
+10	96368393	rs140578329	G	GT	100	PASS	AC=1583;AF=0.316094;AN=5008;NS=2504
+10	96368479	rs145684376	G	GA	100	PASS	AC=119;AF=0.023762;AN=5008;NS=2504
+10	96368840	rs144523444	GT	G	100	PASS	AC=206;AF=0.0411342;AN=5008;NS=2504
+10	96369812	rs149277988	T	TA	100	PASS	AC=34;AF=0.00678914;AN=5008;NS=2504
+10	96370134	.	C	CCGAGATCG	100	PASS	AC=7;AF=0.00139776;AN=5008;NS=2504
+10	96370347	rs140646104	ATT	A	100	PASS	AC=2208;AF=0.440895;AN=5008;NS=2504
+10	96371088	.	TGAAA	T	100	PASS	AC=10;AF=0.00199681;AN=5008;NS=2504
+10	96371160	.	CACT	C	100	PASS	AC=9;AF=0.00179712;AN=5008;NS=2504
+10	96371184	rs148366586	GTAAT	G	100	PASS	AC=119;AF=0.023762;AN=5008;NS=2504
+10	96371729	rs60027571	TC	T	100	PASS	AC=52;AF=0.0103834;AN=5008;NS=2504
+10	96371824	.	GTCTA	G	100	PASS	AC=8;AF=0.00159744;AN=5008;NS=2504
+10	96372008	rs56721917	C	CTATTATAAG	100	PASS	AC=54;AF=0.0107827;AN=5008;NS=2504
+10	96372322	.	A	AT	100	PASS	AC=5;AF=0.000998403;AN=5008;NS=2504
+10	96372382	.	A	AAAAATG	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96372504	rs35084776	G	GA	100	PASS	AC=30;AF=0.00599042;AN=5008;NS=2504
+10	96372731	.	G	GCTAC	100	PASS	AC=6;AF=0.00119808;AN=5008;NS=2504
+10	96373214	.	TAA	T	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96373518	.	ATTG	A	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96374691	.	CATT	C	100	PASS	AC=14;AF=0.00279553;AN=5008;NS=2504
+10	96374749	.	GTC	G	100	PASS	AC=8;AF=0.00159744;AN=5008;NS=2504
+10	96375749	rs138372884	T	TAC	100	PASS	AC=71;AF=0.0141773;AN=5008;NS=2504
+10	96376058	.	CTT	C	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96376151	.	CAAG	C	100	PASS	AC=5;AF=0.000998403;AN=5008;NS=2504
+10	96376243	.	TCTC	T	100	PASS	AC=14;AF=0.00279553;AN=5008;NS=2504
+10	96377243	.	GC	G	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96378218	rs150727980	A	AATT	100	PASS	AC=2226;AF=0.444489;AN=5008;NS=2504
+10	96378496	.	TA	T	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96381368	.	GAA	G	100	PASS	AC=6;AF=0.00119808;AN=5008;NS=2504
+10	96383449	.	G	GTAAT	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96383776	.	GA	G	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96383955	.	GCCTGAATAAAACC	G	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96384114	rs139665478	TACTG	T	100	PASS	AC=46;AF=0.0091853;AN=5008;NS=2504
+10	96385452	rs148702562	G	GTTATT	100	PASS	AC=18;AF=0.00359425;AN=5008;NS=2504
+10	96385935	rs372921397	CTT	C	100	PASS	AC=27;AF=0.00539137;AN=5008;NS=2504
+10	96386037	rs139237241	GTTA	G	100	PASS	AC=32;AF=0.00638978;AN=5008;NS=2504
+10	96386159	rs141355653	G	GATCA	100	PASS	AC=36;AF=0.0071885;AN=5008;NS=2504
+10	96387009	rs5787118	G	GT	100	PASS	AC=3495;AF=0.697883;AN=5008;NS=2504
+10	96387132	.	CTG	C	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96389651	.	AG	A	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96390777	rs34873633	GT	G	100	PASS	AC=1215;AF=0.242612;AN=5008;NS=2504
+10	96392288	.	A	ATG	100	PASS	AC=87;AF=0.0173722;AN=5008;NS=2504
+10	96392366	rs142213480	C	CAT	100	PASS	AC=1134;AF=0.226438;AN=5008;NS=2504
+10	96392402	.	GTC	G	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96394096	rs143712806	CTTAT	CTTATTTAT,C	100	PASS	AC=16,1084;AF=0.00319489,0.216454;AN=5008;NS=2504
+10	96395466	rs200709235	G	GT	100	PASS	AC=52;AF=0.0103834;AN=5008;NS=2504
+10	96397055	rs201933706	T	TA	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96397094	.	G	GT	100	PASS	AC=33;AF=0.00658946;AN=5008;NS=2504
+10	96399007	.	C	CT	100	PASS	AC=119;AF=0.023762;AN=5008;NS=2504
+10	96400727	.	TC	T	100	PASS	AC=5;AF=0.000998403;AN=5008;NS=2504
+10	96401843	.	AGTCT	A	100	PASS	AC=5;AF=0.000998403;AN=5008;NS=2504
+10	96403724	.	A	AAAAAC	100	PASS	AC=10;AF=0.00199681;AN=5008;NS=2504
+10	96404793	.	TAA	T	100	PASS	AC=6;AF=0.00119808;AN=5008;NS=2504
+10	96405300	.	T	TTG	100	PASS	AC=15;AF=0.00299521;AN=5008;NS=2504
+10	96410609	rs138581152	GT	G	100	PASS	AC=119;AF=0.023762;AN=5008;NS=2504
+10	96414204	.	CCTT	C	100	PASS	AC=2;AF=0.000399361;AN=5008;NS=2504
+10	96416397	rs143381197	TTG	TTGTG,T	100	PASS	AC=245,309;AF=0.0489217,0.0617013;AN=5008;NS=2504
+10	96416487	.	GT	G	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96417591	.	G	GT	100	PASS	AC=6;AF=0.00119808;AN=5008;NS=2504
+10	96417813	.	AG	A	100	PASS	AC=6;AF=0.00119808;AN=5008;NS=2504
+10	96418285	.	AG	A	100	PASS	AC=6;AF=0.00119808;AN=5008;NS=2504
+10	96419314	rs57414463	G	GTTGT	100	PASS	AC=124;AF=0.0247604;AN=5008;NS=2504
+10	96420297	.	GC	G	100	PASS	AC=22;AF=0.00439297;AN=5008;NS=2504
+10	96421080	rs368479607	CTTCT	C	100	PASS	AC=1172;AF=0.234026;AN=5008;NS=2504
+10	96421338	.	G	GTTA	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96422536	.	TC	T	100	PASS	AC=21;AF=0.00419329;AN=5008;NS=2504
+10	96423537	rs374276883	ACTCCAGACC	A	100	PASS	AC=19;AF=0.00379393;AN=5008;NS=2504
+10	96425998	rs147202287	ATATAT	A	100	PASS	AC=1188;AF=0.23722;AN=5008;NS=2504
+10	96426304	rs144582944	T	TGA	100	PASS	AC=1178;AF=0.235224;AN=5008;NS=2504
+10	96427000	.	CATAATT	C	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96430713	rs201677624	G	GA	100	PASS	AC=54;AF=0.0107827;AN=5008;NS=2504
+10	96430859	rs369219399	AC	A	100	PASS	AC=5;AF=0.000998403;AN=5008;NS=2504
+10	96431135	.	A	AAG,AAGAT,AAGATAT	100	PASS	AC=167,82,3;AF=0.0333466,0.0163738,0.000599042;AN=5008;NS=2504
+10	96436958	.	CT	C	100	PASS	AC=943;AF=0.188299;AN=5008;NS=2504
+10	96438537	.	TGAGA	T	100	PASS	AC=10;AF=0.00199681;AN=5008;NS=2504
+10	96439011	rs34965442	AT	A	100	PASS	AC=1189;AF=0.23742;AN=5008;NS=2504
+10	96439514	.	TCTAAA	T	100	PASS	AC=22;AF=0.00439297;AN=5008;NS=2504
+10	96440107	rs375329525	TAATA	T	100	PASS	AC=117;AF=0.0233626;AN=5008;NS=2504
+10	96440152	.	TC	T	100	PASS	AC=5;AF=0.000998403;AN=5008;NS=2504
+10	96441584	rs142661740	GTGTT	G	100	PASS	AC=168;AF=0.0335463;AN=5008;NS=2504
+10	96441893	rs372074816	CT	C	100	PASS	AC=7;AF=0.00139776;AN=5008;NS=2504
+10	96443309	.	A	AAAC	100	PASS	AC=23;AF=0.00459265;AN=5008;NS=2504
+10	96443896	.	GATC	G	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96444285	.	A	AT	100	PASS	AC=6;AF=0.00119808;AN=5008;NS=2504
+10	96444781	rs141385927	TTTAA	TTTAATTAA,T	100	PASS	AC=35,1947;AF=0.00698882,0.388778;AN=5008;NS=2504
+10	96444794	rs200047253	TTAA	T	100	PASS	AC=173;AF=0.0345447;AN=5008;NS=2504
+10	96445087	rs142943032	GA	G	100	PASS	AC=173;AF=0.0345447;AN=5008;NS=2504
+10	96445258	rs55720577	T	TA	100	PASS	AC=2161;AF=0.43151;AN=5008;NS=2504
+10	96445977	.	ATT	A	100	PASS	AC=6;AF=0.00119808;AN=5008;NS=2504
+10	96447278	.	AAAC	A	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96449064	rs199815660	CTTTA	C	100	PASS	AC=76;AF=0.0151757;AN=5008;NS=2504
+10	96449127	rs200675106	GAA	G	100	PASS	AC=1622;AF=0.323882;AN=5008;NS=2504
+10	96449131	rs201806941	T	TG	100	PASS	AC=1622;AF=0.323882;AN=5008;NS=2504
+10	96449477	.	AG	A	100	PASS	AC=6;AF=0.00119808;AN=5008;NS=2504
+10	96449655	.	A	AAAT	100	PASS	AC=5;AF=0.000998403;AN=5008;NS=2504
+10	96450312	.	CA	C	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96450731	rs199965881	AC	A	100	PASS	AC=1141;AF=0.227835;AN=5008;NS=2504
+10	96451145	rs367747975	CAGAG	C	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96452080	.	AC	A	100	PASS	AC=10;AF=0.00199681;AN=5008;NS=2504
+10	96452161	.	C	CAAAAA	100	PASS	AC=2514;AF=0.501997;AN=5008;NS=2504
+10	96452172	rs144723200	G	GA	100	PASS	AC=4980;AF=0.994409;AN=5008;NS=2504
+10	96452425	rs201765745	TG	T	100	PASS	AC=831;AF=0.165935;AN=5008;NS=2504
+10	96453351	.	G	GCA	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96453375	.	CTAAT	C	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96454375	.	A	AT	100	PASS	AC=5;AF=0.000998403;AN=5008;NS=2504
+10	96455692	.	AG	A	100	PASS	AC=21;AF=0.00419329;AN=5008;NS=2504
+10	96455882	rs200646631	AAG	A	100	PASS	AC=117;AF=0.0233626;AN=5008;NS=2504
+10	96458438	rs141902063	TG	T	100	PASS	AC=1163;AF=0.232228;AN=5008;NS=2504
+10	96459874	.	G	GA	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96460754	.	AG	A	100	PASS	AC=5;AF=0.000998403;AN=5008;NS=2504
+10	96461752	.	TA	T	100	PASS	AC=150;AF=0.0299521;AN=5008;NS=2504
+10	96463965	.	G	GTA	100	PASS	AC=23;AF=0.00459265;AN=5008;NS=2504
+10	96464766	rs144853184	A	AT	100	PASS	AC=120;AF=0.0239617;AN=5008;NS=2504
+10	96465936	.	TGGCTGTGCTGAGCTA	T	100	PASS	AC=11;AF=0.00219649;AN=5008;NS=2504
+10	96466884	rs10669973	T	TATA	100	PASS	AC=4816;AF=0.961661;AN=5008;NS=2504
+10	96467709	rs201120187	G	GC	100	PASS	AC=175;AF=0.0349441;AN=5008;NS=2504
+10	96468341	.	TTTA	T	100	PASS	AC=5;AF=0.000998403;AN=5008;NS=2504
+10	96469203	.	AGGTT	A	100	PASS	AC=49;AF=0.00978435;AN=5008;NS=2504
+10	96469209	.	TTATATTTTTAAAA	T	100	PASS	AC=53;AF=0.0105831;AN=5008;NS=2504
+10	96469279	rs144949089	AT	A	100	PASS	AC=54;AF=0.0107827;AN=5008;NS=2504
+10	96469401	.	AT	A	100	PASS	AC=16;AF=0.00319489;AN=5008;NS=2504
+10	96469575	rs146312406	C	CAT	100	PASS	AC=175;AF=0.0349441;AN=5008;NS=2504
+10	96470657	.	C	CT	100	PASS	AC=2;AF=0.000399361;AN=5008;NS=2504
+10	96471765	rs35672164	AT	A	100	PASS	AC=1901;AF=0.379593;AN=5008;NS=2504
+10	96473956	.	AT	A	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96474731	rs377397424	CTGTT	C	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96475573	rs140517646	C	CT	100	PASS	AC=1157;AF=0.23103;AN=5008;NS=2504
+10	96476708	.	CT	C	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96478173	rs148772377	CT	C	100	PASS	AC=173;AF=0.0345447;AN=5008;NS=2504
+10	96478437	rs60866714	CTT	C	100	PASS	AC=117;AF=0.0233626;AN=5008;NS=2504
+10	96479002	.	GA	GAA,G	100	PASS	AC=173,22;AF=0.0345447,0.00439297;AN=5008;NS=2504
+10	96479167	rs200020774	AT	A	100	PASS	AC=223;AF=0.0445288;AN=5008;NS=2504
+10	96481661	rs371400320	CTGT	C	100	PASS	AC=1005;AF=0.200679;AN=5008;NS=2504
+10	96482023	rs11372825	A	AT	100	PASS	AC=50;AF=0.00998403;AN=5008;NS=2504
+10	96483532	rs138007790	C	CT	100	PASS	AC=1619;AF=0.323283;AN=5008;NS=2504
+10	96483774	rs202166859	GATTT	G	100	PASS	AC=21;AF=0.00419329;AN=5008;NS=2504
+10	96484515	rs35134373	A	AT	100	PASS	AC=1229;AF=0.245407;AN=5008;NS=2504
+10	96484540	rs59261033	GT	G	100	PASS	AC=4989;AF=0.996206;AN=5008;NS=2504
+10	96485939	rs371485374	CA	C	100	PASS	AC=108;AF=0.0215655;AN=5008;NS=2504
+10	96485947	rs199722687	AT	A	100	PASS	AC=68;AF=0.0135783;AN=5008;NS=2504
+10	96485956	.	CA	C	100	PASS	AC=12;AF=0.00239617;AN=5008;NS=2504
+10	96486464	rs138162711	A	AG	100	PASS	AC=175;AF=0.0349441;AN=5008;NS=2504
+10	96487079	.	GC	G	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96488114	rs140057337	TG	T	100	PASS	AC=175;AF=0.0349441;AN=5008;NS=2504
+10	96488579	.	GAAC	G	100	PASS	AC=11;AF=0.00219649;AN=5008;NS=2504
+10	96491136	rs149051841	C	CA	100	PASS	AC=1077;AF=0.215056;AN=5008;NS=2504
+10	96492766	rs376926395	CACCAGGGTCCAAGCTTGATGATAA	C	100	PASS	AC=116;AF=0.0231629;AN=5008;NS=2504
+10	96494868	rs10692158	T	TTC	100	PASS	AC=1349;AF=0.269369;AN=5008;NS=2504
+10	96495747	rs140228918	G	GA	100	PASS	AC=250;AF=0.0499201;AN=5008;NS=2504
+10	96496700	rs144889313	TGTTA	T	100	PASS	AC=1165;AF=0.232628;AN=5008;NS=2504
+10	96497549	.	C	CT	100	PASS	AC=5;AF=0.000998403;AN=5008;NS=2504
+10	96500263	rs34117282	C	CT	100	PASS	AC=2521;AF=0.503395;AN=5008;NS=2504
+10	96500810	rs374523274	CT	C	100	PASS	AC=5;AF=0.000998403;AN=5008;NS=2504
+10	96503501	.	T	TG	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96504737	rs71486738	T	TA	100	PASS	AC=794;AF=0.158546;AN=5008;NS=2504
+10	96504880	rs111730181	G	GGGTGGGAA	100	PASS	AC=21;AF=0.00419329;AN=5008;NS=2504
+10	96506635	.	TTTTA	T	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96507751	.	C	CTA	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96508789	rs59648911	TA	T	100	PASS	AC=450;AF=0.0898562;AN=5008;NS=2504
+10	96509157	rs145572326	A	AT	100	PASS	AC=70;AF=0.0139776;AN=5008;NS=2504
+10	96509914	rs141064312	TC	T	100	PASS	AC=428;AF=0.0854633;AN=5008;NS=2504
+10	96510213	rs111597745	G	GT	100	PASS	AC=21;AF=0.00419329;AN=5008;NS=2504
+10	96510711	rs145474674	CT	CTT,C	100	PASS	AC=4,429;AF=0.000798722,0.0856629;AN=5008;NS=2504
+10	96511081	.	CA	C	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96512626	rs200510894	AG	A	100	PASS	AC=29;AF=0.00579073;AN=5008;NS=2504
+10	96512689	.	C	CA	100	PASS	AC=41;AF=0.0081869;AN=5008;NS=2504
+10	96514609	rs201641923	TC	T	100	PASS	AC=430;AF=0.0858626;AN=5008;NS=2504
+10	96514610	.	C	CTT	100	PASS	AC=21;AF=0.00419329;AN=5008;NS=2504
+10	96518467	rs111934007	CTT	C	100	PASS	AC=21;AF=0.00419329;AN=5008;NS=2504
+10	96518644	.	TG	T	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96521539	rs149507916	A	AC	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96522186	.	A	AT	100	PASS	AC=6;AF=0.00119808;AN=5008;NS=2504
+10	96523831	.	AC	A	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96525186	.	AT	A	100	PASS	AC=15;AF=0.00299521;AN=5008;NS=2504
+10	96525713	.	A	AGT	100	PASS	AC=21;AF=0.00419329;AN=5008;NS=2504
+10	96525715	.	G	ACAA	100	PASS	AC=21;AF=0.00419329;AN=5008;NS=2504
+10	96525904	rs58247834	G	GT	100	PASS	AC=28;AF=0.00559105;AN=5008;NS=2504
+10	96525958	rs146441581	CAACAGTCATTTGCCAGGGAAGG	C	100	PASS	AC=1095;AF=0.21865;AN=5008;NS=2504
+10	96526061	rs113927974	T	TTGTA	100	PASS	AC=2545;AF=0.508187;AN=5008;NS=2504
+10	96527000	rs372962864	CCTT	C	100	PASS	AC=28;AF=0.00559105;AN=5008;NS=2504
+10	96527392	rs373863451	GA	G	100	PASS	AC=5;AF=0.000998403;AN=5008;NS=2504
+10	96528589	.	TG	T	100	PASS	AC=11;AF=0.00219649;AN=5008;NS=2504
+10	96529350	.	CTGTT	C	100	PASS	AC=11;AF=0.00219649;AN=5008;NS=2504
+10	96531977	rs150733206	TC	T	100	PASS	AC=61;AF=0.0121805;AN=5008;NS=2504
+10	96532239	.	GC	G	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96532539	.	CTT	C	100	PASS	AC=10;AF=0.00199681;AN=5008;NS=2504
+10	96534297	rs57881044	T	TG	100	PASS	AC=17;AF=0.00339457;AN=5008;NS=2504
+10	96537230	.	AAC	A	100	PASS	AC=11;AF=0.00219649;AN=5008;NS=2504
+10	96537572	.	GC	G	100	PASS	AC=5;AF=0.000998403;AN=5008;NS=2504
+10	96537705	.	GA	G	100	PASS	AC=7;AF=0.00139776;AN=5008;NS=2504
+10	96537727	rs138660413	CA	C	100	PASS	AC=417;AF=0.0832668;AN=5008;NS=2504
+10	96538876	.	T	TG	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96539308	rs142844620	T	TTTTTCTTTTC	100	PASS	AC=4539;AF=0.90635;AN=5008;NS=2504
+10	96539794	.	CT	C	100	PASS	AC=11;AF=0.00219649;AN=5008;NS=2504
+10	96539980	rs17885417	CTT	C	100	PASS	AC=244;AF=0.048722;AN=5008;NS=2504
+10	96541932	.	TG	T	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96543670	.	A	AATTCACAC	100	PASS	AC=2;AF=0.000399361;AN=5008;NS=2504
+10	96543992	rs55734964	C	CT	100	PASS	AC=4943;AF=0.987021;AN=5008;NS=2504
+10	96544363	.	A	ATTAT	100	PASS	AC=5;AF=0.000998403;AN=5008;NS=2504
+10	96547618	rs138882737	GT	G	100	PASS	AC=75;AF=0.014976;AN=5008;NS=2504
+10	96547863	rs71486739	GTTCCA	G	100	PASS	AC=1624;AF=0.324281;AN=5008;NS=2504
+10	96548736	.	T	TC	100	PASS	AC=12;AF=0.00239617;AN=5008;NS=2504
+10	96549881	rs202060631	CT	C	100	PASS	AC=402;AF=0.0802716;AN=5008;NS=2504
+10	96550139	.	AT	A	100	PASS	AC=5;AF=0.000998403;AN=5008;NS=2504
+10	96551239	.	TG	T	100	PASS	AC=11;AF=0.00219649;AN=5008;NS=2504
+10	96552969	.	TTTA	T	100	PASS	AC=6;AF=0.00119808;AN=5008;NS=2504
+10	96553470	rs200546552	CT	C	100	PASS	AC=32;AF=0.00638978;AN=5008;NS=2504
+10	96555286	.	TGGCTGGGTCAAATGGTATTTCCAGTTCTATATC	T	100	PASS	AC=29;AF=0.00579073;AN=5008;NS=2504
+10	96555605	rs200069419	GT	G	100	PASS	AC=431;AF=0.0860623;AN=5008;NS=2504
+10	96557167	.	AT	A	100	PASS	AC=11;AF=0.00219649;AN=5008;NS=2504
+10	96557388	.	TG	T	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96557836	rs201187055	A	AT	100	PASS	AC=11;AF=0.00219649;AN=5008;NS=2504
+10	96557949	.	GT	G	100	PASS	AC=11;AF=0.00219649;AN=5008;NS=2504
+10	96558571	rs148473071	ATTT	A	100	PASS	AC=1853;AF=0.370008;AN=5008;NS=2504
+10	96560346	rs141671174	AGTT	A	100	PASS	AC=15;AF=0.00299521;AN=5008;NS=2504
+10	96560551	.	CA	C	100	PASS	AC=12;AF=0.00239617;AN=5008;NS=2504
+10	96561504	.	GA	G	100	PASS	AC=5;AF=0.000998403;AN=5008;NS=2504
+10	96562454	.	GGT	G	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96562977	.	T	TAGA	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96563015	rs201925685	TC	T	100	PASS	AC=21;AF=0.00419329;AN=5008;NS=2504
+10	96563737	.	AGGT	A	100	PASS	AC=7;AF=0.00139776;AN=5008;NS=2504
+10	96564877	.	GT	G	100	PASS	AC=5;AF=0.000998403;AN=5008;NS=2504
+10	96565784	rs144540211	AC	A	100	PASS	AC=30;AF=0.00599042;AN=5008;NS=2504
+10	96566398	.	TATA	T	100	PASS	AC=22;AF=0.00439297;AN=5008;NS=2504
+10	96566685	.	GA	G	100	PASS	AC=7;AF=0.00139776;AN=5008;NS=2504
+10	96567494	.	TG	T	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96568033	rs112984453	TA	T	100	PASS	AC=457;AF=0.091254;AN=5008;NS=2504
+10	96568316	.	G	GC	100	PASS	AC=17;AF=0.00339457;AN=5008;NS=2504
+10	96570124	rs200949273	CA	C	100	PASS	AC=12;AF=0.00239617;AN=5008;NS=2504
+10	96570276	rs59589203	C	CTT	100	PASS	AC=243;AF=0.0485224;AN=5008;NS=2504
+10	96571084	.	TGAAGTGGTGCTGA	T	100	PASS	AC=11;AF=0.00219649;AN=5008;NS=2504
+10	96571710	rs150497315	G	GT	100	PASS	AC=193;AF=0.0385383;AN=5008;NS=2504
+10	96572858	.	G	GT	100	PASS	AC=16;AF=0.00319489;AN=5008;NS=2504
+10	96573589	.	T	TA	100	PASS	AC=17;AF=0.00339457;AN=5008;NS=2504
+10	96574139	.	TG	T	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96575797	.	GA	G	100	PASS	AC=13;AF=0.00259585;AN=5008;NS=2504
+10	96575849	rs34737722	AT	A	100	PASS	AC=790;AF=0.157748;AN=5008;NS=2504
+10	96576001	rs11364900	CT	C	100	PASS	AC=60;AF=0.0119808;AN=5008;NS=2504
+10	96576284	.	CTTAT	C	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96576289	.	TTA	T	100	PASS	AC=11;AF=0.00219649;AN=5008;NS=2504
+10	96576479	.	TC	T	100	PASS	AC=22;AF=0.00439297;AN=5008;NS=2504
+10	96580098	rs56007608	TG	T	100	PASS	AC=108;AF=0.0215655;AN=5008;NS=2504
+10	96580521	rs17885308	CTG	C	100	PASS	AC=35;AF=0.00698882;AN=5008;NS=2504
+10	96581553	.	CT	C	100	PASS	AC=14;AF=0.00279553;AN=5008;NS=2504
+10	96582127	.	CAT	C	100	PASS	AC=11;AF=0.00219649;AN=5008;NS=2504
+10	96582674	.	A	AT	100	PASS	AC=260;AF=0.0519169;AN=5008;NS=2504
+10	96583774	.	T	TA	100	PASS	AC=11;AF=0.00219649;AN=5008;NS=2504
+10	96584114	.	ATAAG	A	100	PASS	AC=11;AF=0.00219649;AN=5008;NS=2504
+10	96584485	.	CAT	C	100	PASS	AC=13;AF=0.00259585;AN=5008;NS=2504
+10	96586625	.	AG	A	100	PASS	AC=16;AF=0.00319489;AN=5008;NS=2504
+10	96587924	.	TG	T	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96589346	.	CT	C	100	PASS	AC=28;AF=0.00559105;AN=5008;NS=2504
+10	96589415	rs375062936	CAA	C	100	PASS	AC=5;AF=0.000998403;AN=5008;NS=2504
+10	96590970	rs201682436	C	CT	100	PASS	AC=447;AF=0.0892572;AN=5008;NS=2504
+10	96591520	rs112821760	CTA	C	100	PASS	AC=14;AF=0.00279553;AN=5008;NS=2504
+10	96593200	rs199683690	G	GT	100	PASS	AC=11;AF=0.00219649;AN=5008;NS=2504
+10	96593210	.	CT	CTTT,C	100	PASS	AC=11,21;AF=0.00219649,0.00419329;AN=5008;NS=2504
+10	96595526	rs200684934	GTA	G	100	PASS	AC=30;AF=0.00599042;AN=5008;NS=2504
+10	96596151	.	G	GT	100	PASS	AC=254;AF=0.0507188;AN=5008;NS=2504
+10	96596695	rs200441094	GC	G	100	PASS	AC=429;AF=0.0856629;AN=5008;NS=2504
+10	96596803	rs34986692	G	GA	100	PASS	AC=1167;AF=0.233027;AN=5008;NS=2504
+10	96597864	.	GT	G	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96599095	.	CT	C	100	PASS	AC=16;AF=0.00319489;AN=5008;NS=2504
+10	96599747	rs113708910	A	AT	100	PASS	AC=9;AF=0.00179712;AN=5008;NS=2504
+10	96600057	.	GTC	G	100	PASS	AC=11;AF=0.00219649;AN=5008;NS=2504
+10	96600794	.	CCCAAGATGGTGGTGATCCACTT	C	100	PASS	AC=7;AF=0.00139776;AN=5008;NS=2504
+10	96602001	rs142831041	ATTCT	A	100	PASS	AC=120;AF=0.0239617;AN=5008;NS=2504
+10	96602344	.	CT	C	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96602542	rs17878606	C	CAA	100	PASS	AC=11;AF=0.00219649;AN=5008;NS=2504
+10	96603865	rs34374889	C	CT	100	PASS	AC=1108;AF=0.221246;AN=5008;NS=2504
+10	96604211	rs75164347	C	CA	100	PASS	AC=1120;AF=0.223642;AN=5008;NS=2504
+10	96606429	.	C	CTATT	100	PASS	AC=8;AF=0.00159936;AN=5002;NS=2504
+10	96607604	.	CA	C	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96608680	.	A	AT	100	PASS	AC=9;AF=0.00179712;AN=5008;NS=2504
+10	96609004	.	GA	G	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96609074	rs199951526	T	TTTTA	100	PASS	AC=217;AF=0.0433307;AN=5008;NS=2504
+10	96609089	rs201056426	TA	T	100	PASS	AC=6;AF=0.00119808;AN=5008;NS=2504
+10	96609186	rs56881482	GA	G	100	PASS	AC=1264;AF=0.252396;AN=5008;NS=2504
+10	96609229	.	AT	A	100	PASS	AC=11;AF=0.00219649;AN=5008;NS=2504
+10	96610593	rs370018617	GC	G	100	PASS	AC=10;AF=0.00199681;AN=5008;NS=2504
+10	96611200	rs200821935	CAAATAAAT	C	100	PASS	AC=3826;AF=0.763978;AN=5008;NS=2504
+10	96611822	rs17885978	C	CTCA	100	PASS	AC=11;AF=0.00219649;AN=5008;NS=2504
+10	96611999	rs17884928	A	AG	100	PASS	AC=1097;AF=0.21905;AN=5008;NS=2504
+10	96613045	rs200806928	GT	G	100	PASS	AC=36;AF=0.0071885;AN=5008;NS=2504
+10	96613304	rs66722555	C	CT	100	PASS	AC=3380;AF=0.67492;AN=5008;NS=2504
+10	96613859	rs143377860	TCCA	T	100	PASS	AC=774;AF=0.154553;AN=5008;NS=2504
+10	96614088	.	TAAG	T	100	PASS	AC=17;AF=0.00339457;AN=5008;NS=2504
+10	96614428	.	CATAAT	C	100	PASS	AC=9;AF=0.00179712;AN=5008;NS=2504
+10	96614553	.	CA	C	100	PASS	AC=5;AF=0.000998403;AN=5008;NS=2504
+10	96614599	rs17879099	TAA	T	100	PASS	AC=11;AF=0.00219649;AN=5008;NS=2504
+10	96615570	.	C	CTT	100	PASS	AC=11;AF=0.00219649;AN=5008;NS=2504
+10	96617663	rs145755479	AG	A	100	PASS	AC=37;AF=0.00738818;AN=5008;NS=2504
+10	96618546	rs199551989	CATTA	C	100	PASS	AC=28;AF=0.00559105;AN=5008;NS=2504
+10	96619445	rs200509408	TG	T	100	PASS	AC=24;AF=0.00479233;AN=5008;NS=2504
+10	96619518	.	GC	GCC,GCCC,G	100	PASS	AC=1571,803,21;AF=0.313698,0.160343,0.00419329;AN=5008;NS=2504
+10	96620040	.	TA	T	100	PASS	AC=21;AF=0.00419329;AN=5008;NS=2504
+10	96620184	.	TAAAC	T	100	PASS	AC=32;AF=0.00638978;AN=5008;NS=2504
+10	96620620	rs35628089	C	CA	100	PASS	AC=2504;AF=0.5;AN=5008;NS=2504
+10	96620866	.	AC	A	100	PASS	AC=7;AF=0.00139776;AN=5008;NS=2504
+10	96622202	.	AG	A	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96624087	.	GTTTT	GTTTTT,G	100	PASS	AC=11,4;AF=0.00219649,0.000798722;AN=5008;NS=2504
+10	96624565	.	TG	T	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96626279	.	G	GTATATATATATATATATA	100	PASS	AC=2254;AF=0.45008;AN=5008;NS=2504
+10	96627208	rs200430610	AT	A	100	PASS	AC=47;AF=0.00938498;AN=5008;NS=2504
+10	96630250	rs67563331	CA	C	100	PASS	AC=2000;AF=0.399361;AN=5008;NS=2504
+10	96630940	rs202020554	AAG	A	100	PASS	AC=48;AF=0.00958466;AN=5008;NS=2504
+10	96631213	.	CA	C	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96631488	rs146301064	TGAA	T	100	PASS	AC=172;AF=0.034345;AN=5008;NS=2504
+10	96631814	.	CAAT	C	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96631830	rs147794977	A	ATT	100	PASS	AC=248;AF=0.0495208;AN=5008;NS=2504
+10	96632118	.	A	ATCTCCTGGAAAAACAGTT	100	PASS	AC=14;AF=0.00279553;AN=5008;NS=2504
+10	96632442	.	AAG	A	100	PASS	AC=11;AF=0.00219649;AN=5008;NS=2504
+10	96636173	rs60115964	C	CT	100	PASS	AC=734;AF=0.146565;AN=5008;NS=2504
+10	96637958	rs141953722	AC	A	100	PASS	AC=31;AF=0.0061901;AN=5008;NS=2504
+10	96638343	rs138296844	A	AT,ATT	100	PASS	AC=556,121;AF=0.111022,0.0241613;AN=5008;NS=2504
+10	96638596	.	G	GTTAGTTTAATAAATGACTTA	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96639903	rs149418835	C	CTAT	100	PASS	AC=249;AF=0.0497204;AN=5008;NS=2504
+10	96640093	.	TA	T	100	PASS	AC=14;AF=0.00279553;AN=5008;NS=2504
+10	96640759	rs149853205	AT	A	100	PASS	AC=50;AF=0.00998403;AN=5008;NS=2504
+10	96641092	rs144193573	TC	T	100	PASS	AC=241;AF=0.048123;AN=5008;NS=2504
+10	96642189	.	C	CA	100	PASS	AC=21;AF=0.00419329;AN=5008;NS=2504
+10	96642530	rs141466854	CTG	C	100	PASS	AC=7;AF=0.00139776;AN=5008;NS=2504
+10	96642571	rs143084850	GAGC	G	100	PASS	AC=12;AF=0.00239617;AN=5008;NS=2504
+10	96643270	rs11387380	C	CA	100	PASS	AC=4339;AF=0.866414;AN=5008;NS=2504
+10	96643492	rs367799018	TCCCAACAACAACAAAAA	T	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96643590	.	T	TA	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96648528	.	TA	T	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96649888	rs200288045	CTTT	C	100	PASS	AC=3794;AF=0.757588;AN=5008;NS=2504
+10	96652243	.	AGACAGTGGGTGCAG	A	100	PASS	AC=30;AF=0.00599042;AN=5008;NS=2504
+10	96656510	.	TC	T	100	PASS	AC=37;AF=0.00738818;AN=5008;NS=2504
+10	96657774	.	G	GT	100	PASS	AC=6;AF=0.00119808;AN=5008;NS=2504
+10	96659155	.	AT	A	100	PASS	AC=8;AF=0.00159744;AN=5008;NS=2504
+10	96659598	rs201579263	GC	G	100	PASS	AC=159;AF=0.0317492;AN=5008;NS=2504
+10	96660596	.	TA	T	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96661639	rs67827984	G	GC	100	PASS	AC=2800;AF=0.559105;AN=5008;NS=2504
+10	96661698	.	TAAA	T	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96662069	rs3056961	T	TAAG	100	PASS	AC=4919;AF=0.982228;AN=5008;NS=2504
+10	96664649	.	A	AC	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96664989	rs376825576	CA	C	100	PASS	AC=21;AF=0.00419329;AN=5008;NS=2504
+10	96665273	rs374805715	GCTATGC	G	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96666198	.	TC	T	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96666272	.	GT	G	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96667136	.	TTTGA	T	100	PASS	AC=15;AF=0.00299521;AN=5008;NS=2504
+10	96668006	rs201896600	AT	A	100	PASS	AC=32;AF=0.00638978;AN=5008;NS=2504
+10	96668497	rs5787125	GGT	G	100	PASS	AC=1131;AF=0.225839;AN=5008;NS=2504
+10	96670334	rs201799833	CT	C	100	PASS	AC=53;AF=0.0105831;AN=5008;NS=2504
+10	96672555	rs35882677	T	TA	100	PASS	AC=1160;AF=0.231629;AN=5008;NS=2504
+10	96673112	.	G	GA	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96673952	rs145164774	T	TATA,TATAATA	100	PASS	AC=753,8;AF=0.150359,0.00159744;AN=5008;NS=2504
+10	96674194	rs66515460	CT	C	100	PASS	AC=3268;AF=0.652556;AN=5008;NS=2504
+10	96674804	rs373417541	AAGACTCAGCTC	A	100	PASS	AC=11;AF=0.00219649;AN=5008;NS=2504
+10	96676288	.	TG	T	100	PASS	AC=10;AF=0.00199681;AN=5008;NS=2504
+10	96676711	.	TAA	TA,T	100	PASS	AC=608,311;AF=0.121406,0.0621006;AN=5008;NS=2504
+10	96677748	.	A	AT	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96678275	.	A	AT	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96680117	rs142428083	AGG	A	100	PASS	AC=31;AF=0.0061901;AN=5008;NS=2504
+10	96680379	.	TA	T	100	PASS	AC=7;AF=0.00139776;AN=5008;NS=2504
+10	96680585	rs137884905	GTTAT	G	100	PASS	AC=1070;AF=0.213658;AN=5008;NS=2504
+10	96680588	.	AT	A	100	PASS	AC=89;AF=0.0177716;AN=5008;NS=2504
+10	96680719	.	G	GT	100	PASS	AC=6;AF=0.00119808;AN=5008;NS=2504
+10	96680771	.	TG	T	100	PASS	AC=6;AF=0.00119808;AN=5008;NS=2504
+10	96680954	rs200120450	AG	A	100	PASS	AC=250;AF=0.0499201;AN=5008;NS=2504
+10	96682661	rs141074084	G	GA	100	PASS	AC=31;AF=0.0061901;AN=5008;NS=2504
+10	96684066	rs147403316	ACT	A	100	PASS	AC=250;AF=0.0499201;AN=5008;NS=2504
+10	96685188	.	CTTT	CTT,CT,C	100	PASS	AC=1934,602,258;AF=0.386182,0.120208,0.0515176;AN=5008;NS=2504
+10	96685900	rs56365269	C	CT	100	PASS	AC=504;AF=0.100639;AN=5008;NS=2504
+10	96686000	rs367753650	CT	C	100	PASS	AC=8;AF=0.00159744;AN=5008;NS=2504
+10	96687328	rs34752584	CT	C	100	PASS	AC=1094;AF=0.21845;AN=5008;NS=2504
+10	96688862	.	TGGG	T	100	PASS	AC=5;AF=0.000998403;AN=5008;NS=2504
+10	96689818	.	CT	C	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96690023	rs201592492	GT	G	100	PASS	AC=284;AF=0.0567093;AN=5008;NS=2504
+10	96690323	rs111281072	CA	C	100	PASS	AC=6;AF=0.00119808;AN=5008;NS=2504
+10	96691885	.	T	TA	100	PASS	AC=20;AF=0.00399361;AN=5008;NS=2504
+10	96692310	.	AAAG	A	100	PASS	AC=11;AF=0.00219649;AN=5008;NS=2504
+10	96692503	.	AAAAT	A	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96693039	rs200668744	ACAT	A	100	PASS	AC=36;AF=0.0071885;AN=5008;NS=2504
+10	96693269	.	TA	T	100	PASS	AC=117;AF=0.0233626;AN=5008;NS=2504
+10	96693273	rs71486742	AAAAAC	A	100	PASS	AC=742;AF=0.148163;AN=5008;NS=2504
+10	96693277	.	ACAAAAC	A	100	PASS	AC=1;AF=0.000199681;AN=5008;NS=2504
+10	96694437	.	G	GTATA	100	PASS	AC=89;AF=0.0177716;AN=5008;NS=2504
+10	96695774	rs146705863	CTG	C	100	PASS	AC=892;AF=0.178115;AN=5008;NS=2504
+10	96696176	rs60804835	T	TA	100	PASS	AC=3379;AF=0.67472;AN=5008;NS=2504
+10	96696265	rs199535915	TA	TAA,TAAAA,T	100	PASS	AC=898,711,577;AF=0.179313,0.141973,0.115216;AN=5008;NS=2504
+10	96696428	rs9332091	GA	G	100	PASS	AC=34;AF=0.00678914;AN=5008;NS=2504
+10	96697799	rs9332099	AT	A	100	PASS	AC=199;AF=0.0397364;AN=5008;NS=2504
+10	96699010	rs199789854	C	CAG	100	PASS	AC=250;AF=0.0499201;AN=5008;NS=2504
+10	96703891	rs139804441	G	GT,GTT	100	PASS	AC=610,194;AF=0.121805,0.038738;AN=5008;NS=2504
+10	96705236	.	AAC	A	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96706904	.	C	CA	100	PASS	AC=6;AF=0.00119808;AN=5008;NS=2504
+10	96706978	rs9332122	CATAACAAACTAATA	C	100	PASS	AC=41;AF=0.0081869;AN=5008;NS=2504
+10	96707270	.	CCTTTTTGTT	C	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96709038	rs9332131	GA	G	100	PASS	AC=11;AF=0.00219649;AN=5008;NS=2504
+10	96710689	.	TGGA	T	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96711202	rs201521562	GA	G	100	PASS	AC=85;AF=0.0169728;AN=5008;NS=2504
+10	96711949	rs148648466	GTCTT	G	100	PASS	AC=243;AF=0.0485224;AN=5008;NS=2504
+10	96712542	rs140376414	T	TATAG	100	PASS	AC=729;AF=0.145567;AN=5008;NS=2504
+10	96713180	rs141607195	AATATATTATT	A	100	PASS	AC=245;AF=0.0489217;AN=5008;NS=2504
+10	96714214	.	CT	C	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96714584	.	A	AT	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96714647	rs202073632	TA	T	100	PASS	AC=244;AF=0.048722;AN=5008;NS=2504
+10	96714663	.	TTTTA	TTTTATTTA,T	100	PASS	AC=160,6;AF=0.0319489,0.00119808;AN=5008;NS=2504
+10	96716763	.	CCA	C	100	PASS	AC=8;AF=0.00159744;AN=5008;NS=2504
+10	96719088	.	CT	A	100	PASS	AC=16;AF=0.00319489;AN=5008;NS=2504
+10	96719489	.	GCTGTTTTTTCCCTGT	G	100	PASS	AC=8;AF=0.00159744;AN=5008;NS=2504
+10	96722126	.	G	GT	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96723420	.	GT	G	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96724249	.	T	TC	100	PASS	AC=5;AF=0.000998403;AN=5008;NS=2504
+10	96724594	rs201164029	C	CA	100	PASS	AC=9;AF=0.00179712;AN=5008;NS=2504
+10	96725757	.	A	AT	100	PASS	AC=6;AF=0.00119808;AN=5008;NS=2504
+10	96726084	rs201798466	C	CT	100	PASS	AC=258;AF=0.0515176;AN=5008;NS=2504
+10	96726295	rs35617077	TC	T	100	PASS	AC=919;AF=0.183506;AN=5008;NS=2504
+10	96726305	.	CA	C	100	PASS	AC=10;AF=0.00199681;AN=5008;NS=2504
+10	96726315	.	TTCTC	T	100	PASS	AC=6;AF=0.00119808;AN=5008;NS=2504
+10	96727268	.	C	CTTTGT	100	PASS	AC=11;AF=0.00219649;AN=5008;NS=2504
+10	96728505	.	GT	G	100	PASS	AC=10;AF=0.00199681;AN=5008;NS=2504
+10	96729714	.	A	AT	100	PASS	AC=6;AF=0.00119808;AN=5008;NS=2504
+10	96730679	.	CA	C	100	PASS	AC=5;AF=0.000998403;AN=5008;NS=2504
+10	96731574	rs147734550	CCTT	C	100	PASS	AC=50;AF=0.00998403;AN=5008;NS=2504
+10	96731595	rs199850072	C	CA	100	PASS	AC=250;AF=0.0499201;AN=5008;NS=2504
+10	96733679	rs369443185	AG	A	100	PASS	AC=5;AF=0.000998403;AN=5008;NS=2504
+10	96733880	.	TACATATTGGGGTGA	T	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96733904	.	GGT	G	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96734292	rs10637048	G	GT	100	PASS	AC=4012;AF=0.801118;AN=5008;NS=2504
+10	96734323	.	G	GT	100	PASS	AC=7;AF=0.00139776;AN=5008;NS=2504
+10	96735126	rs138928966	T	TAG	100	PASS	AC=826;AF=0.164936;AN=5008;NS=2504
+10	96736061	.	TATTA	T	100	PASS	AC=28;AF=0.00559105;AN=5008;NS=2504
+10	96736108	rs144101608	AT	A	100	PASS	AC=1997;AF=0.398762;AN=5008;NS=2504
+10	96737025	.	TCTTTTGAGAAACATCTATTCAAA	T	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96737045	.	CA	C	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96737362	.	GGTCTTAGACTTAA	G	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96739226	rs372594569	TG	T	100	PASS	AC=13;AF=0.00259585;AN=5008;NS=2504
+10	96739476	.	C	CTT	100	PASS	AC=159;AF=0.0317492;AN=5008;NS=2504
+10	96740415	rs9332196	C	CT	100	PASS	AC=37;AF=0.00738818;AN=5008;NS=2504
+10	96742001	.	C	CAT	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96742094	.	TA	T	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96742096	.	TA	T	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96743147	rs9332215	TG	T	100	PASS	AC=114;AF=0.0227636;AN=5008;NS=2504
+10	96743502	.	G	GAGCTTCTTCATTCCCCCCTATGCAGGGC	100	PASS	AC=245;AF=0.0489217;AN=5008;NS=2504
+10	96743668	.	GCTGGATCCACTTATCTAGCTGGAGATGATAGT	G	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96744295	.	CA	CTTA,C	100	PASS	AC=252,15;AF=0.0503195,0.00299521;AN=5008;NS=2504
+10	96744727	rs111680074	AC	A	100	PASS	AC=250;AF=0.0499201;AN=5008;NS=2504
+10	96749050	.	AAT	A	100	PASS	AC=5;AF=0.000998403;AN=5008;NS=2504
+10	96749429	.	T	TTGG	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96750896	.	GC	G	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96751310	.	TC	T	100	PASS	AC=9;AF=0.00179712;AN=5008;NS=2504
+10	96751927	rs28969384	AT	A	100	PASS	AC=138;AF=0.0275559;AN=5008;NS=2504
+10	96752127	rs201285100	GCT	G	100	PASS	AC=248;AF=0.0495208;AN=5008;NS=2504
+10	96752130	rs202084486	GA	G	100	PASS	AC=248;AF=0.0495208;AN=5008;NS=2504
+10	96753516	.	AC	A	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96754962	rs111766321	AT	A	100	PASS	AC=252;AF=0.0503195;AN=5008;NS=2504
+10	96755695	rs77083337	CT	C	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96755903	.	C	CTTTTTTTTTTT	100	PASS	AC=2753;AF=0.54972;AN=5008;NS=2504
+10	96757303	.	AT	ATT,A	100	PASS	AC=908,5;AF=0.18131,0.000998403;AN=5008;NS=2504
+10	96757467	.	A	ATTCCCTTACAGGAAATGTCTTGCCTTTTGGGATAAGGCTCAAT	100	PASS	AC=235;AF=0.0469249;AN=5008;NS=2504
+10	96757885	.	C	CCA	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96759124	rs141050089	AT	A	100	PASS	AC=21;AF=0.00419329;AN=5008;NS=2504
+10	96759183	rs139311383	GTAAA	G	100	PASS	AC=230;AF=0.0459265;AN=5008;NS=2504
+10	96759253	rs10550894	AATG	A	100	PASS	AC=164;AF=0.0327476;AN=5008;NS=2504
+10	96760253	rs34159602	TC	T	100	PASS	AC=3033;AF=0.605631;AN=5008;NS=2504
+10	96760624	rs376172249	GA	G	100	PASS	AC=3088;AF=0.616613;AN=5008;NS=2504
+10	96760924	rs35351593	GA	G	100	PASS	AC=1503;AF=0.30012;AN=5008;NS=2504
+10	96761445	rs34141630	C	CT	100	PASS	AC=1115;AF=0.222644;AN=5008;NS=2504
+10	96761513	rs150158775	CA	C	100	PASS	AC=220;AF=0.0439297;AN=5008;NS=2504
+10	96761634	.	CAAG	C	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96762352	.	CT	C	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96762882	rs199887810	A	AAT	100	PASS	AC=250;AF=0.0499201;AN=5008;NS=2504
+10	96762927	.	G	GT	100	PASS	AC=8;AF=0.00159744;AN=5008;NS=2504
+10	96763114	rs143650378	TAAAC	T	100	PASS	AC=348;AF=0.0694888;AN=5008;NS=2504
+10	96763929	rs147308672	A	AT	100	PASS	AC=174;AF=0.0347444;AN=5008;NS=2504
+10	96765506	.	TG	T	100	PASS	AC=13;AF=0.00259585;AN=5008;NS=2504
+10	96766278	.	GT	G	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96766341	.	G	GC	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96767445	rs3059030	T	TTA	100	PASS	AC=1359;AF=0.271366;AN=5008;NS=2504
+10	96767790	.	AAT	A	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96767880	rs146070453	ATTTTG	A	100	PASS	AC=1504;AF=0.300319;AN=5008;NS=2504
+10	96769678	.	CT	C	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96769875	.	T	TGTTG	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96770672	.	TC	T	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96770715	rs149072804	TAAG	T	100	PASS	AC=11;AF=0.00219649;AN=5008;NS=2504
+10	96772769	.	G	GTTTTT	100	PASS	AC=29;AF=0.00579073;AN=5008;NS=2504
+10	96773690	.	CCTT	C	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96774989	.	A	AT	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96776601	.	TAG	T	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96776843	.	CT	C	100	PASS	AC=37;AF=0.00738818;AN=5008;NS=2504
+10	96776876	.	T	TTTA	100	PASS	AC=90;AF=0.0179712;AN=5008;NS=2504
+10	96776956	rs201993737	TA	T	100	PASS	AC=199;AF=0.0397364;AN=5008;NS=2504
+10	96778384	rs59307575	T	TA	100	PASS	AC=1492;AF=0.297923;AN=5008;NS=2504
+10	96778570	rs142946285	C	CTA	100	PASS	AC=1569;AF=0.313299;AN=5008;NS=2504
+10	96779847	.	GT	G	100	PASS	AC=10;AF=0.00199681;AN=5008;NS=2504
+10	96785036	.	CTG	C	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96785242	.	GT	G	100	PASS	AC=38;AF=0.00758786;AN=5008;NS=2504
+10	96786081	rs147776958	CTGCTCTCTTCA	C	100	PASS	AC=65;AF=0.0129792;AN=5008;NS=2504
+10	96786478	rs35105970	TG	T	100	PASS	AC=332;AF=0.0662939;AN=5008;NS=2504
+10	96787758	.	AC	A	100	PASS	AC=12;AF=0.00239617;AN=5008;NS=2504
+10	96789634	.	AC	A	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96790297	.	CAT	C	100	PASS	AC=11;AF=0.00219649;AN=5008;NS=2504
+10	96790412	rs57767406	C	CAAATGACTATTT	100	PASS	AC=3812;AF=0.761182;AN=5008;NS=2504
+10	96794095	rs34851666	G	GA	100	PASS	AC=774;AF=0.154553;AN=5008;NS=2504
+10	96794881	.	C	CA	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96795709	.	CTG	C	100	PASS	AC=11;AF=0.00219649;AN=5008;NS=2504
+10	96796680	rs371313864	CA	C	100	PASS	AC=11;AF=0.00219649;AN=5008;NS=2504
+10	96797597	rs11572173	AT	A	100	PASS	AC=20;AF=0.00399361;AN=5008;NS=2504
+10	96798099	.	GC	G	100	PASS	AC=11;AF=0.00219649;AN=5008;NS=2504
+10	96798102	.	AG	A	100	PASS	AC=11;AF=0.00219649;AN=5008;NS=2504
+10	96799113	.	AT	A	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96800994	.	AT	A	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96801382	.	C	CA	100	PASS	AC=268;AF=0.0535144;AN=5008;NS=2504
+10	96801617	.	T	TC	100	PASS	AC=9;AF=0.00179712;AN=5008;NS=2504
+10	96802160	.	TAA	TA,T	100	PASS	AC=2820,177;AF=0.563099,0.0353435;AN=5008;NS=2504
+10	96803147	rs11572164	CAG	C	100	PASS	AC=215;AF=0.0429313;AN=5008;NS=2504
+10	96803621	rs58419621	G	GCA,GCACA,GCACACA	100	PASS	AC=1547,284,206;AF=0.308906,0.0567093,0.0411342;AN=5008;NS=2504
+10	96803636	rs151042096	C	CAT	100	PASS	AC=1000;AF=0.199681;AN=5008;NS=2504
+10	96806188	rs34115801	TG	T	100	PASS	AC=1753;AF=0.35004;AN=5008;NS=2504
+10	96806505	rs56702266	TA	T	100	PASS	AC=2022;AF=0.403754;AN=5008;NS=2504
+10	96808161	.	TCTC	T	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96808414	rs11572146	G	GT	100	PASS	AC=1233;AF=0.246206;AN=5008;NS=2504
+10	96808630	rs200091061	G	GA	100	PASS	AC=18;AF=0.00359425;AN=5008;NS=2504
+10	96809613	.	GCTTGAGGAGTGGGGGGCTTGAATAGCTAGCAGCAATACCCAGGTACTATGTTGAGGGCTTTGGGTAAGTCTCTGAGGCTTACCGGCTT	G	100	PASS	AC=268;AF=0.0535144;AN=5008;NS=2504
+10	96809703	.	AG	A	100	PASS	AC=268;AF=0.0535144;AN=5008;NS=2504
+10	96810632	rs36110618	C	CA	100	PASS	AC=1238;AF=0.247204;AN=5008;NS=2504
+10	96810723	.	AG	A	100	PASS	AC=14;AF=0.00279553;AN=5008;NS=2504
+10	96811746	rs144668941	TAAAG	T	100	PASS	AC=165;AF=0.0329473;AN=5008;NS=2504
+10	96812247	rs34368926	T	TA	100	PASS	AC=775;AF=0.154752;AN=5008;NS=2504
+10	96812796	rs58385086	AC	A	100	PASS	AC=1986;AF=0.396565;AN=5008;NS=2504
+10	96814647	rs60905940	TAAG	T	100	PASS	AC=49;AF=0.00978435;AN=5008;NS=2504
+10	96815294	rs11572121	C	CG	100	PASS	AC=3250;AF=0.648962;AN=5008;NS=2504
+10	96816559	rs11572111	AAGT	A	100	PASS	AC=222;AF=0.0443291;AN=5008;NS=2504
+10	96817790	.	TG	T	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96818754	rs36179722	G	GT	100	PASS	AC=3217;AF=0.642372;AN=5008;NS=2504
+10	96819145	.	T	TG	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96819333	.	T	TC	100	PASS	AC=16;AF=0.00319489;AN=5008;NS=2504
+10	96819949	.	T	TA	100	PASS	AC=2994;AF=0.597843;AN=5008;NS=2504
+10	96824813	rs11572091	CA	C	100	PASS	AC=220;AF=0.0439297;AN=5008;NS=2504
+10	96827119	rs11572078	T	TA	100	PASS	AC=1752;AF=0.34984;AN=5008;NS=2504
+10	96828007	rs11572071	G	GTAACTGC	100	PASS	AC=249;AF=0.0497204;AN=5008;NS=2504
+10	96828801	.	TAGAGCGAGAC	T	100	PASS	AC=7;AF=0.00139776;AN=5008;NS=2504
+10	96829252	.	TGTAAA	T	100	PASS	AC=6;AF=0.00119808;AN=5008;NS=2504
+10	96829406	rs11572065	A	AT	100	PASS	AC=89;AF=0.0177716;AN=5008;NS=2504
+10	96829792	rs372775254	AAT	A	100	PASS	AC=229;AF=0.0457268;AN=5008;NS=2504
+10	96829808	rs201597196	CATA	C	100	PASS	AC=9;AF=0.00179712;AN=5008;NS=2504
+10	96829833	.	CATT	C	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96830011	rs368831286	TG	T	100	PASS	AC=9;AF=0.00179712;AN=5008;NS=2504
+10	96830890	rs11572063	ACT	A	100	PASS	AC=218;AF=0.0435304;AN=5008;NS=2504
+10	96831089	.	CG	C	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96831757	rs35811264	GT	G	100	PASS	AC=3279;AF=0.654752;AN=5008;NS=2504
+10	96832026	.	CAGAAT	C	100	PASS	AC=5;AF=0.000998403;AN=5008;NS=2504
+10	96832924	rs71486749	C	CT	100	PASS	AC=506;AF=0.101038;AN=5008;NS=2504
+10	96833100	.	CTT	C	100	PASS	AC=7;AF=0.00139776;AN=5008;NS=2504
+10	96833737	rs373242452	ACT	A	100	PASS	AC=6;AF=0.00119808;AN=5008;NS=2504
+10	96833798	rs3059065	TAGTC	T	100	PASS	AC=3211;AF=0.641174;AN=5008;NS=2504
+10	96835485	.	G	GT	100	PASS	AC=11;AF=0.00219649;AN=5008;NS=2504
+10	96835514	rs34263566	CA	CGA,C	100	PASS	AC=709,1272;AF=0.141573,0.253994;AN=5008;NS=2504
+10	96836499	rs150342438	GAGCTTGGAA	G	100	PASS	AC=229;AF=0.0457268;AN=5008;NS=2504
+10	96836526	rs140639560	A	AT	100	PASS	AC=219;AF=0.04373;AN=5008;NS=2504
+10	96838252	rs149218170	TACTC	T	100	PASS	AC=89;AF=0.0177716;AN=5008;NS=2504
+10	96838367	rs372261819	AT	A	100	PASS	AC=91;AF=0.0181709;AN=5008;NS=2504
+10	96838478	.	TAAAC	T	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96838947	rs67462009	CA	C	100	PASS	AC=1749;AF=0.349241;AN=5008;NS=2504
+10	96839327	.	GA	G	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96839882	.	GA	G	100	PASS	AC=82;AF=0.0163738;AN=5008;NS=2504
+10	96840423	.	CAGG	C	100	PASS	AC=5;AF=0.000998403;AN=5008;NS=2504
+10	96840431	rs200904808	CT	C	100	PASS	AC=219;AF=0.04373;AN=5008;NS=2504
+10	96844220	.	C	CA	100	PASS	AC=16;AF=0.00319489;AN=5008;NS=2504
+10	96845438	rs147559055	GT	G	100	PASS	AC=219;AF=0.04373;AN=5008;NS=2504
+10	96845663	rs59503690	CTT	C	100	PASS	AC=3206;AF=0.640176;AN=5008;NS=2504
+10	96845842	rs57939322	TA	T	100	PASS	AC=1006;AF=0.200879;AN=5008;NS=2504
+10	96846385	rs140009806	G	GA	100	PASS	AC=224;AF=0.0447284;AN=5008;NS=2504
+10	96847773	rs142948219	GA	G	100	PASS	AC=327;AF=0.0652955;AN=5008;NS=2504
+10	96847943	.	T	TC	100	PASS	AC=10;AF=0.00199681;AN=5008;NS=2504
+10	96848527	rs200644300	AT	A	100	PASS	AC=14;AF=0.00279553;AN=5008;NS=2504
+10	96848564	rs140024092	TA	T	100	PASS	AC=36;AF=0.0071885;AN=5008;NS=2504
+10	96848955	.	TA	TAA,T	100	PASS	AC=2927,182;AF=0.584465,0.0363419;AN=5008;NS=2504
+10	96849101	.	A	AC	100	PASS	AC=5;AF=0.000998403;AN=5008;NS=2504
+10	96849825	.	AC	A	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96852319	rs144834712	GTCC	G	100	PASS	AC=219;AF=0.04373;AN=5008;NS=2504
+10	96852380	rs139183845	A	AC	100	PASS	AC=3751;AF=0.749002;AN=5008;NS=2504
+10	96852876	rs149584998	CTCA	C	100	PASS	AC=43;AF=0.00858626;AN=5008;NS=2504
+10	96853364	.	C	CA	100	PASS	AC=14;AF=0.00279553;AN=5008;NS=2504
+10	96853947	.	A	AT	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96854016	rs147517983	TTAGA	T	100	PASS	AC=159;AF=0.0317492;AN=5008;NS=2504
+10	96855569	rs71034313	CA	C	100	PASS	AC=2000;AF=0.399361;AN=5008;NS=2504
+10	96857792	rs150683166	A	AAG	100	PASS	AC=13;AF=0.00259585;AN=5008;NS=2504
+10	96858110	rs199910954	A	AT	100	PASS	AC=46;AF=0.0091853;AN=5008;NS=2504
+10	96858136	rs144228482	GT	G	100	PASS	AC=115;AF=0.0229633;AN=5008;NS=2504
+10	96858697	rs202137471	G	GGCTA	100	PASS	AC=19;AF=0.00379393;AN=5008;NS=2504
+10	96859092	.	AT	A	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96859651	.	T	TG	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96860084	rs200791150	GTAT	G	100	PASS	AC=1983;AF=0.395966;AN=5008;NS=2504
+10	96860320	.	GCAAAT	G	100	PASS	AC=20;AF=0.00399361;AN=5008;NS=2504
+10	96861281	.	CA	C	100	PASS	AC=8;AF=0.00159744;AN=5008;NS=2504
+10	96861322	rs36078483	T	TA	100	PASS	AC=1739;AF=0.347244;AN=5008;NS=2504
+10	96861669	rs369662042	TAAG	T	100	PASS	AC=27;AF=0.00539137;AN=5008;NS=2504
+10	96863758	rs374545127	TTA	T	100	PASS	AC=169;AF=0.033746;AN=5008;NS=2504
+10	96864419	rs148078276	T	TTTAA	100	PASS	AC=8;AF=0.00159744;AN=5008;NS=2504
+10	96864758	rs11438647	G	GA	100	PASS	AC=1967;AF=0.392772;AN=5008;NS=2504
+10	96864873	rs147503782	C	CA	100	PASS	AC=269;AF=0.0537141;AN=5008;NS=2504
+10	96865029	.	CTTTA	C	100	PASS	AC=10;AF=0.00199681;AN=5008;NS=2504
+10	96867870	.	TC	T	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96868403	.	TTC	T	100	PASS	AC=22;AF=0.00439297;AN=5008;NS=2504
+10	96870590	.	ACATCTAAGTCTG	A	100	PASS	AC=20;AF=0.00399361;AN=5008;NS=2504
+10	96871772	.	TC	T	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96872939	rs371205379	CA	C	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96873947	.	AT	A	100	PASS	AC=11;AF=0.00219649;AN=5008;NS=2504
+10	96874350	.	AT	A	100	PASS	AC=5;AF=0.000998403;AN=5008;NS=2504
+10	96874813	rs71034314	C	CT	100	PASS	AC=2220;AF=0.443291;AN=5008;NS=2504
+10	96875730	rs56927683	C	CT,CTT	100	PASS	AC=237,21;AF=0.0473243,0.00419329;AN=5008;NS=2504
+10	96875854	rs35275042	A	AT	100	PASS	AC=1986;AF=0.396565;AN=5008;NS=2504
+10	96876459	.	ATTTAT	A	100	PASS	AC=19;AF=0.00379393;AN=5008;NS=2504
+10	96876746	rs199559180	AC	A	100	PASS	AC=22;AF=0.00439297;AN=5008;NS=2504
+10	96876765	rs371847771	TTCTC	T	100	PASS	AC=9;AF=0.00179712;AN=5008;NS=2504
+10	96877439	.	G	GTT	100	PASS	AC=10;AF=0.00199681;AN=5008;NS=2504
+10	96877618	rs58466758	CT	C	100	PASS	AC=1739;AF=0.347244;AN=5008;NS=2504
+10	96878284	rs112752034	GT	G	100	PASS	AC=9;AF=0.00179712;AN=5008;NS=2504
+10	96878981	.	TA	T	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96879432	rs371721625	AGT	A	100	PASS	AC=15;AF=0.00299521;AN=5008;NS=2504
+10	96882984	rs200551153	G	GA	100	PASS	AC=56;AF=0.0111821;AN=5008;NS=2504
+10	96885758	rs143091806	CCT	C	100	PASS	AC=247;AF=0.0493211;AN=5008;NS=2504
+10	96886715	rs372200344	TGA	T	100	PASS	AC=12;AF=0.00239617;AN=5008;NS=2504
+10	96886919	rs141002752	GTGTTGCAGGGGC	G	100	PASS	AC=1162;AF=0.232029;AN=5008;NS=2504
+10	96888147	rs74661299	CT	C	100	PASS	AC=612;AF=0.122204;AN=5008;NS=2504
+10	96890148	rs200591495	T	TG	100	PASS	AC=20;AF=0.00399361;AN=5008;NS=2504
+10	96890997	rs139977584	TA	T	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96891121	.	T	TG	100	PASS	AC=7;AF=0.00139776;AN=5008;NS=2504
+10	96891124	rs148918655	G	GA	100	PASS	AC=256;AF=0.0511182;AN=5008;NS=2504
+10	96891776	.	A	AT	100	PASS	AC=248;AF=0.0495208;AN=5008;NS=2504
+10	96892560	rs145018951	AAAAG	A	100	PASS	AC=1445;AF=0.288538;AN=5008;NS=2504
+10	96892562	.	AAG	A	100	PASS	AC=257;AF=0.0513179;AN=5008;NS=2504
+10	96892564	.	G	GA	100	PASS	AC=6;AF=0.00119808;AN=5008;NS=2504
+10	96893836	rs36046489	G	GA	100	PASS	AC=1950;AF=0.389377;AN=5008;NS=2504
+10	96894500	.	AT	A	100	PASS	AC=7;AF=0.00139776;AN=5008;NS=2504
+10	96895101	.	C	CTA	100	PASS	AC=19;AF=0.00379393;AN=5008;NS=2504
+10	96896948	.	CA	C	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96898887	.	AATAG	A	100	PASS	AC=14;AF=0.00279553;AN=5008;NS=2504
+10	96901113	.	G	GAC	100	PASS	AC=835;AF=0.166733;AN=5008;NS=2504
+10	96901113	.	GACACACACAC	GACACACACACACACACACAC,G	100	PASS	AC=18,11;AF=0.00359425,0.00219649;AN=5008;NS=2504
+10	96901516	rs111599287	AT	A	100	PASS	AC=46;AF=0.0091853;AN=5008;NS=2504
+10	96901647	rs113108298	AT	A	100	PASS	AC=45;AF=0.00898562;AN=5008;NS=2504
+10	96902729	rs34091739	GA	G	100	PASS	AC=2085;AF=0.416334;AN=5008;NS=2504
+10	96903256	rs372380675	ATATTT	A	100	PASS	AC=7;AF=0.00139776;AN=5008;NS=2504
+10	96903288	rs10628061	C	CAT	100	PASS	AC=2019;AF=0.403155;AN=5008;NS=2504
+10	96903470	rs10537137	ACAAC	A	100	PASS	AC=248;AF=0.0495208;AN=5008;NS=2504
+10	96903627	.	CTTTCT	C	100	PASS	AC=8;AF=0.00159744;AN=5008;NS=2504
+10	96903706	rs35730571	C	CT	100	PASS	AC=1930;AF=0.385383;AN=5008;NS=2504
+10	96906949	.	AATG	A	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96907004	rs3083865	AAAG	A	100	PASS	AC=1998;AF=0.398962;AN=5008;NS=2504
+10	96908916	.	ATC	A	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96909138	.	A	ACAAC	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96909707	rs142205078	TCAA	T	100	PASS	AC=245;AF=0.0489217;AN=5008;NS=2504
+10	96913275	rs111755021	T	TAATA	100	PASS	AC=216;AF=0.043131;AN=5008;NS=2504
+10	96913275	rs374565146	TAATA	T	100	PASS	AC=33;AF=0.00658946;AN=5008;NS=2504
+10	96913448	rs200957139	AAT	A	100	PASS	AC=33;AF=0.00658946;AN=5008;NS=2504
+10	96914335	rs145901636	C	CA	100	PASS	AC=1008;AF=0.201278;AN=5008;NS=2504
+10	96914591	rs368988560	AC	A	100	PASS	AC=474;AF=0.0946486;AN=5008;NS=2504
+10	96915406	rs200182780	C	CAGTA	100	PASS	AC=161;AF=0.0321486;AN=5008;NS=2504
+10	96916816	rs111351137	C	CA	100	PASS	AC=45;AF=0.00898562;AN=5008;NS=2504
+10	96916871	.	AC	A	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96917219	.	AAAC	A	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96918414	.	TACAAAA	T	100	PASS	AC=42;AF=0.00838658;AN=5008;NS=2504
+10	96918461	rs200768067	GT	G	100	PASS	AC=282;AF=0.0563099;AN=5008;NS=2504
+10	96919477	rs377530258	CAAT	C	100	PASS	AC=19;AF=0.00379393;AN=5008;NS=2504
+10	96919676	rs147033757	TAAC	T	100	PASS	AC=250;AF=0.0499201;AN=5008;NS=2504
+10	96919788	.	A	AGTAG	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96920404	rs10711583	TA	T	100	PASS	AC=45;AF=0.00898562;AN=5008;NS=2504
+10	96920640	.	CTCA	C	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96922550	rs201300921	G	GATA	100	PASS	AC=86;AF=0.0171725;AN=5008;NS=2504
+10	96923931	.	CAAACAGCATGGTACTGGTACCA	C	100	PASS	AC=7;AF=0.00139776;AN=5008;NS=2504
+10	96924553	.	G	GT	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96924554	.	C	CAAAAGA	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96924555	.	C	CA	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96924704	.	GA	G	100	PASS	AC=7;AF=0.00139776;AN=5008;NS=2504
+10	96925324	.	TA	T	100	PASS	AC=5;AF=0.000998403;AN=5008;NS=2504
+10	96926326	.	AAC	A	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96926338	rs71034317	A	ATGGTAC	100	PASS	AC=2009;AF=0.401158;AN=5008;NS=2504
+10	96926857	rs36187277	G	GA	100	PASS	AC=1702;AF=0.339856;AN=5008;NS=2504
+10	96928404	.	AAGG	A	100	PASS	AC=15;AF=0.00299521;AN=5008;NS=2504
+10	96928519	rs75147520	CAGG	C	100	PASS	AC=623;AF=0.124401;AN=5008;NS=2504
+10	96929194	rs3083886	C	CAT	100	PASS	AC=1948;AF=0.388978;AN=5008;NS=2504
+10	96930014	rs112925694	G	GAAATT	100	PASS	AC=1950;AF=0.389377;AN=5008;NS=2504
+10	96930041	rs143517502	C	CA	100	PASS	AC=234;AF=0.0467252;AN=5008;NS=2504
+10	96930217	.	AGTTTGGG	A	100	PASS	AC=5;AF=0.000998403;AN=5008;NS=2504
+10	96932998	.	AT	A	100	PASS	AC=18;AF=0.00359425;AN=5008;NS=2504
+10	96933334	.	GA	G	100	PASS	AC=7;AF=0.00139776;AN=5008;NS=2504
+10	96933520	rs71034318	A	AC	100	PASS	AC=1762;AF=0.351837;AN=5008;NS=2504
+10	96935156	.	CTT	C	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96936877	rs143334042	T	TA	100	PASS	AC=236;AF=0.0471246;AN=5008;NS=2504
+10	96938605	rs3083887	AACTT	A	100	PASS	AC=2804;AF=0.559904;AN=5008;NS=2504
+10	96938729	rs34094681	CA	C	100	PASS	AC=1953;AF=0.389976;AN=5008;NS=2504
+10	96938854	.	A	ATAGAC	100	PASS	AC=11;AF=0.00219649;AN=5008;NS=2504
+10	96939055	rs113788967	A	ATTTTGG	100	PASS	AC=1953;AF=0.389976;AN=5008;NS=2504
+10	96939436	rs138491502	ATTT	A	100	PASS	AC=248;AF=0.0495208;AN=5008;NS=2504
+10	96940338	.	TTATATA	T	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96942508	rs11443854	G	GA	100	PASS	AC=229;AF=0.0457268;AN=5008;NS=2504
+10	96946996	rs10677010	G	GTTTC	100	PASS	AC=1952;AF=0.389776;AN=5008;NS=2504
+10	96947607	.	C	CTCAAA	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96948207	rs149801557	TTTAAG	T	100	PASS	AC=5;AF=0.000998403;AN=5008;NS=2504
+10	96948296	.	CT	C	100	PASS	AC=5;AF=0.000998403;AN=5008;NS=2504
+10	96948549	rs142275119	T	TAATC	100	PASS	AC=166;AF=0.033147;AN=5008;NS=2504
+10	96951339	rs35022498	G	GT	100	PASS	AC=1184;AF=0.236422;AN=5008;NS=2504
+10	96951901	.	G	GACTT	100	PASS	AC=15;AF=0.00299521;AN=5008;NS=2504
+10	96952607	.	TC	T	100	PASS	AC=17;AF=0.00339457;AN=5008;NS=2504
+10	96955105	.	CTG	C	100	PASS	AC=6;AF=0.00119808;AN=5008;NS=2504
+10	96955753	rs71034319	G	GCCCTC	100	PASS	AC=1958;AF=0.390974;AN=5008;NS=2504
+10	96956327	.	ATTTCT	A	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96956388	.	ATAAC	A	100	PASS	AC=15;AF=0.00299521;AN=5008;NS=2504
+10	96956663	.	T	TA	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96957244	.	G	GT	100	PASS	AC=23;AF=0.00459265;AN=5008;NS=2504
+10	96958317	.	AG	A	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96958405	rs11357937	CA	C	100	PASS	AC=4473;AF=0.893171;AN=5008;NS=2504
+10	96958784	rs34659688	A	AAG	100	PASS	AC=1991;AF=0.397564;AN=5008;NS=2504
+10	96960256	.	AAAG	A	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96960303	.	AAAG	A	100	PASS	AC=5;AF=0.000998403;AN=5008;NS=2504
+10	96960312	.	GA	G	100	PASS	AC=36;AF=0.0071885;AN=5008;NS=2504
+10	96960315	rs147096448	A	AGAAGAG	100	PASS	AC=1944;AF=0.388179;AN=5008;NS=2504
+10	96960372	rs144423976	G	GAGAAGGAGA	100	PASS	AC=1745;AF=0.348442;AN=5008;NS=2504
+10	96961706	.	GACTAATATTCATATTTTAAA	G	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96961793	rs201108997	GA	G	100	PASS	AC=11;AF=0.00219649;AN=5008;NS=2504
+10	96963614	rs34969526	TA	T	100	PASS	AC=696;AF=0.138978;AN=5008;NS=2504
+10	96964301	rs368329119	ACT	A	100	PASS	AC=5;AF=0.000998403;AN=5008;NS=2504
+10	96965098	.	TG	T	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96966774	.	GTTT	G	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96966954	rs58102963	GT	G	100	PASS	AC=1984;AF=0.396166;AN=5008;NS=2504
+10	96967541	rs56827662	C	CTA	100	PASS	AC=1450;AF=0.289537;AN=5008;NS=2504
+10	96968456	rs151132182	TTTG	T	100	PASS	AC=38;AF=0.00758786;AN=5008;NS=2504
+10	96970591	rs113954745	CT	C	100	PASS	AC=37;AF=0.00738818;AN=5008;NS=2504
+10	96974018	rs202180191	CTCTA	C	100	PASS	AC=46;AF=0.0091853;AN=5008;NS=2504
+10	96974145	rs140162222	T	TTA	100	PASS	AC=2030;AF=0.405351;AN=5008;NS=2504
+10	96976474	rs112850496	G	GA	100	PASS	AC=37;AF=0.00738818;AN=5008;NS=2504
+10	96976973	.	C	CACGCACCTGCAGTCCCAGCTACTCGGGAGGCTGAGGCAGGAG	100	PASS	AC=55;AF=0.0109824;AN=5008;NS=2504
+10	96977103	rs71986766	C	CA	100	PASS	AC=1756;AF=0.350639;AN=5008;NS=2504
+10	96977259	rs111446054	T	TAGAC	100	PASS	AC=578;AF=0.115415;AN=5008;NS=2504
+10	96978641	rs71034322	TC	T	100	PASS	AC=2022;AF=0.403754;AN=5008;NS=2504
+10	96979126	rs151297957	T	TA,TAA	100	PASS	AC=292,35;AF=0.0583067,0.00698882;AN=5008;NS=2504
+10	96979999	rs199518348	T	TA	100	PASS	AC=9;AF=0.00179712;AN=5008;NS=2504
+10	96980334	.	CT	C	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96980650	rs34212653	TAG	T	100	PASS	AC=1024;AF=0.204473;AN=5008;NS=2504
+10	96980694	.	TTTC	T	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504
+10	96981343	rs373972717	CA	C	100	PASS	AC=21;AF=0.00419329;AN=5008;NS=2504
+10	96982545	rs375814985	TAAC	T	100	PASS	AC=19;AF=0.00379393;AN=5008;NS=2504
+10	96982611	.	A	ACTTATTACCAAAATTATTCTTATTACCAAAATTGTTCTTATTACCAAAATTATTAT	100	PASS	AC=185;AF=0.0369409;AN=5008;NS=2504
+10	96982624	.	TA	T	100	PASS	AC=9;AF=0.00179712;AN=5008;NS=2504
+10	96982912	.	TACAG	T	100	PASS	AC=11;AF=0.00219649;AN=5008;NS=2504
+10	96983482	.	C	CA	100	PASS	AC=6;AF=0.00119808;AN=5008;NS=2504
+10	96983485	.	C	CTGAA	100	PASS	AC=6;AF=0.00119808;AN=5008;NS=2504
+10	96983626	.	CA	C	100	PASS	AC=5;AF=0.000998403;AN=5008;NS=2504
+10	96986502	rs140405758	TAA	T	100	PASS	AC=37;AF=0.00738818;AN=5008;NS=2504
+10	96987670	.	C	CA	100	PASS	AC=10;AF=0.00199681;AN=5008;NS=2504
+10	96987943	rs35094077	AC	A	100	PASS	AC=1451;AF=0.289736;AN=5008;NS=2504
+10	96988825	rs113649158	CAATTA	C	100	PASS	AC=1453;AF=0.290136;AN=5008;NS=2504
+10	96989453	rs150701342	AAC	A	100	PASS	AC=4;AF=0.000798722;AN=5008;NS=2504
+10	96990197	rs142071835	CT	C	100	PASS	AC=162;AF=0.0323482;AN=5008;NS=2504
+10	96991300	rs199805226	ACT	A	100	PASS	AC=232;AF=0.0463259;AN=5008;NS=2504
+10	96992194	rs35451103	T	TA	100	PASS	AC=746;AF=0.148962;AN=5008;NS=2504
+10	96992576	rs35776177	T	TA	100	PASS	AC=1318;AF=0.263179;AN=5008;NS=2504
+10	96993832	rs112578697	C	CT	100	PASS	AC=13;AF=0.00259585;AN=5008;NS=2504
+10	96994331	rs71034324	AT	A	100	PASS	AC=1375;AF=0.274561;AN=5008;NS=2504
+10	96994434	rs200620201	AC	A	100	PASS	AC=232;AF=0.0463259;AN=5008;NS=2504
+10	96994632	rs35375841	C	CA	100	PASS	AC=1267;AF=0.252995;AN=5008;NS=2504
+10	96994871	rs35843209	CA	C	100	PASS	AC=1372;AF=0.273962;AN=5008;NS=2504
+10	96996467	rs45599435	C	CTGTT	100	PASS	AC=1397;AF=0.278954;AN=5008;NS=2504
+10	96997102	rs66491470	C	CA	100	PASS	AC=1772;AF=0.353834;AN=5008;NS=2504
+10	96998111	rs35704711	AT	A	100	PASS	AC=1366;AF=0.272764;AN=5008;NS=2504
+10	96998774	rs45613733	G	GACACATAGACCAATGGAAC	100	PASS	AC=1369;AF=0.273363;AN=5008;NS=2504
+10	96999261	.	G	GA	100	PASS	AC=3;AF=0.000599042;AN=5008;NS=2504

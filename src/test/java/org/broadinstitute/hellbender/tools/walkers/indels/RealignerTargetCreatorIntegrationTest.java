@@ -131,16 +131,15 @@ public class RealignerTargetCreatorIntegrationTest extends CommandLineProgramTes
                 //      -o src/test/resources/org/broadinstitute/hellbender/tools/walkers/indels/RealignerTargetCreator/test_no_mismatch.interval_list
                 {"test_no_mismatch", new ArgumentsBuilder()
                         .addArgument("intervals", interval_20_9m_11m)},
-//                // TODO: using known VCF is not working as in GATK3.8 - uncomment test to check problems
-//                // java -jar GenomeAnalysisTK-3.8-1-0-gf15c1c3ef.jar -T RealignerTargetCreator \
-//                //      -L 20:9,000,000-10,500,000 \
-//                //      -R src/test/resources/large/human_g1k_v37.20.21.fasta \
-//                //      -I src/test/resources/large/CEUTrio.HiSeq.WGS.b37.NA12878.20.21.bam  \
-//                //      --known src/test/resources/large/dbsnp_138.b37.20.21.vcf
-//                //      -o src/test/resources/org/broadinstitute/hellbender/tools/walkers/indels/RealignerTargetCreator/test_known_and_reads.interval_list
-//                {"test_known_and_reads", new ArgumentsBuilder()
-//                        .addArgument("known", dbsnp_138_b37_20_21_vcf)
-//                        .addArgument("intervals", interval_20_9m_11m)}
+                // java -jar GenomeAnalysisTK-3.8-1-0-gf15c1c3ef.jar -T RealignerTargetCreator \
+                //      -L 20:9,000,000-10,500,000 \
+                //      -R src/test/resources/large/human_g1k_v37.20.21.fasta \
+                //      -I src/test/resources/large/CEUTrio.HiSeq.WGS.b37.NA12878.20.21.bam  \
+                //      --known src/test/resources/large/dbsnp_138.b37.20.21.vcf
+                //      -o src/test/resources/org/broadinstitute/hellbender/tools/walkers/indels/RealignerTargetCreator/test_known_and_reads.interval_list
+                {"test_known_and_reads", new ArgumentsBuilder()
+                        .addArgument("known", dbsnp_138_b37_20_21_vcf)
+                        .addArgument("intervals", interval_20_9m_11m)}
         };
     }
 

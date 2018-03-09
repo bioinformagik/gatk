@@ -145,6 +145,12 @@ public class RealignerTargetCreator extends LocusWalker {
         return true;
     }
 
+    @Override
+    public boolean emitEmptyLoci() {
+        // this is required for the known variants to be used even if there is no coverage
+        return true;
+    }
+
     public List<ReadFilter> getDefaultReadFilters() {
         final List<ReadFilter> defaultFilters = new ArrayList<>(9);
         // read filters from Walker (GATK3's original implementation)

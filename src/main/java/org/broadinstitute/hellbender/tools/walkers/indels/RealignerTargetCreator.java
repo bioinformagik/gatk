@@ -94,7 +94,6 @@ import java.util.TreeSet;
                 "also requiring realignment.  Local realignment serves to transform regions with misalignments due to indels into clean reads containing a consensus " +
                 "indel suitable for standard variant discovery approaches.",
         programGroup = ReadDataManipulationProgramGroup.class
-
 )
 public class RealignerTargetCreator extends LocusWalker {
 
@@ -183,7 +182,7 @@ public class RealignerTargetCreator extends LocusWalker {
     }
 
     @Override
-    public void apply(AlignmentContext context, ReferenceContext ref, FeatureContext tracker) {
+    public void apply(final AlignmentContext context, final ReferenceContext ref, final FeatureContext tracker) {
         // TODO: this comes from the annotation @Reference(window=@Window(start=-1,stop=50)) on GATK3
         ref.setWindow(0, 50);
 
@@ -193,7 +192,7 @@ public class RealignerTargetCreator extends LocusWalker {
 
         int furthestStopPos = -1;
 
-        // look at the rods for indels or SNPs
+        // look at the known variants for indels or SNPs
         if (!known.isEmpty()) {
             for (VariantContext vc : tracker.getValues(known)) {
                 switch (vc.getType()) {
@@ -222,9 +221,10 @@ public class RealignerTargetCreator extends LocusWalker {
         // look at the normal context to get deletions and positions with high entropy
         final ReadPileup pileup = context.getBasePileup();
 
-        int mismatchQualities = 0, totalQualities = 0;
+        int mismatchQualities = 0;
+        int totalQualities = 0;
         final byte refBase = ref.getBase();
-        for (PileupElement p : pileup) {
+        for (final PileupElement p : pileup) {
 
             // check the ends of the reads to see how far they extend
             furthestStopPos = Math.max(furthestStopPos, p.getRead().getEnd());
@@ -234,10 +234,8 @@ public class RealignerTargetCreator extends LocusWalker {
                 hasIndel = true;
                 if (p.isBeforeInsertion())
                     hasInsertion = true;
-            }
-
-            // look for mismatches
-            else if (lookForMismatchEntropy) {
+            } else if (lookForMismatchEntropy) {
+                // look for mismatches
                 if (p.getBase() != refBase)
                     mismatchQualities += p.getQual();
                 totalQualities += p.getQual();
@@ -247,23 +245,25 @@ public class RealignerTargetCreator extends LocusWalker {
         // make sure we're supposed to look for high entropy
         if (lookForMismatchEntropy &&
                 pileup.size() >= minReadsAtLocus &&
-                (double) mismatchQualities / (double) totalQualities >= mismatchThreshold)
+                (double) mismatchQualities / (double) totalQualities >= mismatchThreshold) {
             hasPointEvent = true;
+        }
 
         // return null if no event occurred
         if (!hasIndel && !hasPointEvent) {
             return;
         }
-        // return if we didn't find any usable reads/rods associated with the event
+        // return if we didn't find any usable reads/variants associated with the event
         if (furthestStopPos == -1) {
             return;
         }
 
         GenomeLoc eventLoc = genomeLocParser.createGenomeLoc(context.getLocation());
-        if (hasInsertion)
+        if (hasInsertion) {
             eventLoc = genomeLocParser.createGenomeLoc(eventLoc.getContig(), eventLoc.getStart(), eventLoc.getStart() + 1);
+        }
 
-        EVENT_TYPE eventType = (hasIndel ? (hasPointEvent ? EVENT_TYPE.BOTH : EVENT_TYPE.INDEL_EVENT) : EVENT_TYPE.POINT_EVENT);
+        final EventType eventType = (hasIndel ? (hasPointEvent ? EventType.BOTH : EventType.INDEL_EVENT) : EventType.POINT_EVENT);
 
         reduce(new Event(eventLoc, furthestStopPos, eventType), sum);
     }
@@ -287,8 +287,8 @@ public class RealignerTargetCreator extends LocusWalker {
             }
             intervalList.write(out);
         } else {
-            try (BufferedWriter bufferedWriter = IOUtil.openFileForBufferedWriting(out)) {
-                for (GenomeLoc loc : sum.intervals) {
+            try (final BufferedWriter bufferedWriter = IOUtil.openFileForBufferedWriting(out)) {
+                for (final GenomeLoc loc : sum.intervals) {
                     bufferedWriter.write(loc.toString());
                     bufferedWriter.newLine();
                 }
@@ -299,9 +299,9 @@ public class RealignerTargetCreator extends LocusWalker {
         return null;
     }
 
-    public EventPair reduce(Event value, EventPair sum) {
+    private static void reduce(final Event value, final EventPair sum) {
         if (value == null) {
-            ; // do nothing
+            // do nothing
         } else if (sum.left == null) {
             sum.left = value;
         } else if (sum.right == null) {
@@ -318,33 +318,32 @@ public class RealignerTargetCreator extends LocusWalker {
                 sum.right = value;
             }
         }
-
-        return sum;
     }
 
-    static private boolean canBeMerged(Event left, Event right) {
+    private static boolean canBeMerged(final Event left, final Event right) {
         return left.loc.getContigIndex() == right.loc.getContigIndex() && left.furthestStopPos >= right.loc.getStart();
     }
 
-    static private Event mergeEvents(Event left, Event right) {
+    private static Event mergeEvents(final Event left, final Event right) {
         Utils.nonNull(left);
         Utils.nonNull(right);
         left.merge(right);
         return left;
     }
 
-    private enum EVENT_TYPE {POINT_EVENT, INDEL_EVENT, BOTH}
+    private enum EventType {POINT_EVENT, INDEL_EVENT, BOTH}
 
-    static class EventPair {
-        public Event left, right;
-        public TreeSet<GenomeLoc> intervals = new TreeSet<GenomeLoc>();
+    private static class EventPair {
+        private Event left;
+        private Event right;
+        public final TreeSet<GenomeLoc> intervals = new TreeSet<>();
 
-        public EventPair(Event left, Event right) {
+        public EventPair(final Event left, final Event right) {
             this.left = left;
             this.right = right;
         }
 
-        public EventPair(Event left, Event right, TreeSet<GenomeLoc> set1, TreeSet<GenomeLoc> set2) {
+        public EventPair(final Event left, final Event right, final TreeSet<GenomeLoc> set1, final TreeSet<GenomeLoc> set2) {
             this.left = left;
             this.right = right;
             intervals.addAll(set1);
@@ -352,21 +351,21 @@ public class RealignerTargetCreator extends LocusWalker {
         }
     }
 
-    class Event {
-        public int furthestStopPos;
+    private final class Event {
+        private int furthestStopPos;
 
-        private GenomeLoc loc;
+        private final GenomeLoc loc;
         private int eventStartPos;
         private int eventStopPos;
-        private EVENT_TYPE type;
-        private ArrayList<Integer> pointEvents = new ArrayList<Integer>();
+        private final EventType type;
+        private final ArrayList<Integer> pointEvents = new ArrayList<>();
 
-        public Event(GenomeLoc loc, int furthestStopPos, EVENT_TYPE type) {
+        private Event(final GenomeLoc loc, final int furthestStopPos, final EventType type) {
             this.loc = loc;
             this.furthestStopPos = furthestStopPos;
             this.type = type;
 
-            if (type == EVENT_TYPE.INDEL_EVENT || type == EVENT_TYPE.BOTH) {
+            if (type == EventType.INDEL_EVENT || type == EventType.BOTH) {
                 eventStartPos = loc.getStart();
                 eventStopPos = loc.getStop();
             } else {
@@ -374,22 +373,22 @@ public class RealignerTargetCreator extends LocusWalker {
                 eventStopPos = -1;
             }
 
-            if (type == EVENT_TYPE.POINT_EVENT || type == EVENT_TYPE.BOTH) {
+            if (type == EventType.POINT_EVENT || type == EventType.BOTH) {
                 pointEvents.add(loc.getStart());
             }
         }
 
-        public void merge(Event e) {
+        private void merge(final Event e) {
 
             // merges only get called for events with certain types
-            if (e.type == EVENT_TYPE.INDEL_EVENT || e.type == EVENT_TYPE.BOTH) {
+            if (e.type == EventType.INDEL_EVENT || e.type == EventType.BOTH) {
                 if (eventStartPos == -1)
                     eventStartPos = e.eventStartPos;
                 eventStopPos = e.eventStopPos;
                 furthestStopPos = e.furthestStopPos;
             }
 
-            if (e.type == EVENT_TYPE.POINT_EVENT || e.type == EVENT_TYPE.BOTH) {
+            if (e.type == EventType.POINT_EVENT || e.type == EventType.BOTH) {
                 int newPosition = e.pointEvents.get(0);
                 if (pointEvents.size() > 0) {
                     int lastPosition = pointEvents.get(pointEvents.size() - 1);
@@ -411,11 +410,11 @@ public class RealignerTargetCreator extends LocusWalker {
             }
         }
 
-        public boolean isReportableEvent() {
+        private boolean isReportableEvent() {
             return genomeLocParser.isValidGenomeLoc(loc.getContig(), eventStartPos, eventStopPos, true) && eventStopPos >= 0 && eventStopPos - eventStartPos < maxIntervalSize;
         }
 
-        public GenomeLoc getLoc() {
+        private GenomeLoc getLoc() {
             return genomeLocParser.createGenomeLoc(loc.getContig(), eventStartPos, eventStopPos);
         }
     }

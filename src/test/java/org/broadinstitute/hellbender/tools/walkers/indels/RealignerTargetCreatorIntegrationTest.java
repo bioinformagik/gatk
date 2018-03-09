@@ -1,121 +1,77 @@
-/*
-* Copyright 2012-2016 Broad Institute, Inc.
-* 
-* Permission is hereby granted, free of charge, to any person
-* obtaining a copy of this software and associated documentation
-* files (the "Software"), to deal in the Software without
-* restriction, including without limitation the rights to use,
-* copy, modify, merge, publish, distribute, sublicense, and/or sell
-* copies of the Software, and to permit persons to whom the
-* Software is furnished to do so, subject to the following
-* conditions:
-* 
-* The above copyright notice and this permission notice shall be
-* included in all copies or substantial portions of the Software.
-* 
-* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-* EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
-* OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-* NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
-* HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
-* WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
-* FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR
-* THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-*/
-
-package org.broadinstitute.gatk.tools.walkers.indels;
+package org.broadinstitute.hellbender.tools.walkers.indels;
 
 import htsjdk.samtools.reference.ReferenceSequenceFile;
 import htsjdk.samtools.util.Interval;
 import htsjdk.samtools.util.IntervalList;
-import org.broadinstitute.gatk.engine.walkers.WalkerTest;
-import org.broadinstitute.gatk.utils.BaseTest;
-import org.broadinstitute.gatk.utils.GenomeLoc;
-import org.broadinstitute.gatk.utils.GenomeLocParser;
-import org.broadinstitute.gatk.utils.fasta.CachingIndexedFastaSequenceFile;
-import org.broadinstitute.gatk.utils.interval.IntervalUtils;
+import org.broadinstitute.hellbender.CommandLineProgramTest;
+import org.broadinstitute.hellbender.utils.GenomeLoc;
+import org.broadinstitute.hellbender.utils.GenomeLocParser;
+import org.broadinstitute.hellbender.utils.IntervalUtils;
+import org.broadinstitute.hellbender.utils.fasta.CachingIndexedFastaSequenceFile;
+import org.broadinstitute.hellbender.utils.test.IntegrationTestSpec;
 import org.testng.Assert;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 
-public class RealignerTargetCreatorIntegrationTest extends WalkerTest {
+public class RealignerTargetCreatorIntegrationTest extends CommandLineProgramTest {
 
-    @DataProvider(name = "intervals1")
-    public Object[][] intervals1() {
-        String arguments = "-T RealignerTargetCreator -R " + b36KGReference + " -I " + validationDataLocation + "NA12878.1kg.p2.chr1_10mb_11_mb.SLX.bam --mismatchFraction 0.15 -L 1:10,000,000-10,050,000";
-        return new Object[][]{
-                {"test standard nt=1", arguments},
-                {"test standard nt=4", "-nt 4 " + arguments}
-        };
+    @Test(enabled = false)
+    public void testIntervals1() throws Exception {
+        // TODO: add test data exercising the mismatch fraction codepath and meaningful validation
+        final File expected = getTestFile("expected.1_10000000_10050000.mismatch_fraction0.15.targets"); // was 3f0b63a393104d0c4158c7d1538153b8
+        final File output = createTempFile("actual", "targets");
+        final List<String> args = Arrays.asList("-R", "b36KGReference", "-I", "NA12878.1kg.p2.chr1_10mb_11_mb.SLX.bam", "--mismatchFraction", "0.15", "-L", "1:10,000,000-10,050,000", "-O", output.getAbsolutePath());
+        // run the command line and check the output file
+        runCommandLine(args);
+        IntegrationTestSpec.assertEqualTextFiles(output, expected);
     }
 
-    @DataProvider(name = "intervals2")
-    public Object[][] intervals2() {
-        String arguments = "-T RealignerTargetCreator --known " + b36dbSNP129 + " -R " + b36KGReference + " -I " + validationDataLocation + "NA12878.1kg.p2.chr1_10mb_11_mb.SLX.bam -L 1:10,000,000-10,200,000";
-        return new Object[][]{
-                {"test with dbsnp nt=1", arguments},
-                {"test with dbsnp nt=4", "-nt 4 " + arguments}
-        };
+    @Test(enabled = false)
+    public void testIntervals2() throws IOException {
+        // TODO: add test data exercising the known + reads codepath and meaningful validation
+        final File expected = getTestFile("expected.1_10000000_10200000.known.targets"); // was d073237694175c75d37bd4f40b8c64db
+        final File output = createTempFile("actual", "targets");
+        final List<String> args = Arrays.asList("--known", "b36dbSNP129", "-R", "b36KGReference", "-I", "NA12878.1kg.p2.chr1_10mb_11_mb.SLX.bam", "-L", "1:10,000,000-10,200,000", "-O", output.getAbsolutePath());
+        // run the command line and check the output file
+        runCommandLine(args);
+        IntegrationTestSpec.assertEqualTextFiles(output, expected);
     }
 
-    @Test(dataProvider = "intervals1")
-    public void testIntervals1(String testName, String arguments) {
-        String md5 = "3f0b63a393104d0c4158c7d1538153b8";
-
-        WalkerTest.WalkerTestSpec spec = new WalkerTest.WalkerTestSpec(arguments + " -o %s", 1, Arrays.asList(md5));
-        executeTest(testName, spec);
+    @Test(enabled = false)
+    public void testKnownsOnly() throws IOException {
+        // TODO: add test data exercising the only known (no reads) codepath and meaningful validation
+        final File expected = getTestFile("expected.knowns_only.targets"); // was 5206cee6c01b299417bf2feeb8b3dc96
+        final File output = createTempFile("actual", "targets");
+        final List<String> args = Arrays.asList("-R", "b36KGReference", "--known", "NA12878.chr1_10mb_11mb.slx.indels.vcf4", "-L", "NA12878.chr1_10mb_11mb.slx.indels.vcf4", "-O", output.getAbsolutePath());
+        // run the command line and check the output file
+        runCommandLine(args);
+        IntegrationTestSpec.assertEqualTextFiles(output, expected);
     }
 
-    @Test(dataProvider = "intervals2")
-    public void testIntervals2(String testName, String arguments) {
-        String md5 = "d073237694175c75d37bd4f40b8c64db";
-
-        WalkerTest.WalkerTestSpec spec = new WalkerTest.WalkerTestSpec(arguments + " -o %s", 1, Arrays.asList(md5));
-        executeTest(testName, spec);
-    }
-
-    @Test
-    public void testKnownsOnly() {
-        WalkerTest.WalkerTestSpec spec3 = new WalkerTest.WalkerTestSpec(
-                "-T RealignerTargetCreator -R " + b36KGReference + " --known " + privateTestDir + "NA12878.chr1_10mb_11mb.slx.indels.vcf4 -L " + privateTestDir + "NA12878.chr1_10mb_11mb.slx.indels.vcf4 -o %s",
-                 1,
-                 Arrays.asList("5206cee6c01b299417bf2feeb8b3dc96"));
-        executeTest("test rods only", spec3);
-    }
-
-    @Test()
+    @Test(enabled = false)
     public void testBadCigarStringDoesNotFail() {
-        // Just making sure the test runs without an error, don't care about the MD5 value
-        WalkerTestSpec spec = new WalkerTestSpec(
-                "-T RealignerTargetCreator -R " + b37KGReference + " -I " + privateTestDir + "Realigner.error.bam -L 19:5787200-5787300 -o %s",
-                1,
-                Arrays.asList(""));
-        executeTest("test bad cigar string string does not fail", spec);
+        // TODO: add test data with a bad cigar that shouldn't fail
+        // Just making sure the test runs without an error, don't care about the actual output
+        runCommandLine(Arrays.asList("-R", "b37KGReference","-I", "Realigner.error.bam", "-L", "19:5787200-5787300", "-O", createTempFile("bad_cigar", "targets").getAbsolutePath()));
     }
 
-    @Test(dataProvider = "intervals1")
-    public void testTargetListAgainstIntervalList(String testName, String arguments) throws IOException {
-        final List<String> md5 = Collections.emptyList();
+    @Test(enabled = false)
+    public void testTargetListAgainstIntervalList() throws IOException {
+        // TODO: add test data exercising the mismatch fraction codepath and meaningful validation
         final File targetListFile = createTempFile("RTCTest", ".targets");
         final File intervalListFile = createTempFile("RTCTest", ".interval_list");
 
-        WalkerTest.WalkerTestSpec targetListSpec = new WalkerTest.WalkerTestSpec(arguments, 1, md5);
-        WalkerTest.WalkerTestSpec intervalListSpec = new WalkerTest.WalkerTestSpec(arguments, 1, md5);
+        // run the same command line with different output extension
+        runCommandLine(Arrays.asList("-R", "b36KGReference", "-I", "NA12878.1kg.p2.chr1_10mb_11_mb.SLX.bam", "--mismatchFraction", "0.15", "-L", "1:10,000,000-10,050,000", "-O", targetListFile.getAbsolutePath()));
+        runCommandLine(Arrays.asList("-R", "b36KGReference", "-I", "NA12878.1kg.p2.chr1_10mb_11_mb.SLX.bam", "--mismatchFraction", "0.15", "-L", "1:10,000,000-10,050,000", "-O", intervalListFile.getAbsolutePath()));
 
-        targetListSpec.setOutputFileLocation(targetListFile);
-        intervalListSpec.setOutputFileLocation(intervalListFile);
 
-        executeTest(testName + " (compare target-list and interval-list output)", targetListSpec);
-        executeTest(testName + " (compare target-list and interval-list output)", intervalListSpec);
-
-        final ReferenceSequenceFile seq = new CachingIndexedFastaSequenceFile(new File(BaseTest.hg19Reference));
+        final ReferenceSequenceFile seq = new CachingIndexedFastaSequenceFile(new File("hg19Reference").toPath());
         final GenomeLocParser hg19GenomeLocParser = new GenomeLocParser(seq);
         final List<GenomeLoc> targetList = IntervalUtils.intervalFileToList(hg19GenomeLocParser,
                 targetListFile.getAbsolutePath());

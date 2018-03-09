@@ -342,13 +342,6 @@ public class RealignerTargetCreator extends LocusWalker {
             this.left = left;
             this.right = right;
         }
-
-        public EventPair(final Event left, final Event right, final TreeSet<GenomeLoc> set1, final TreeSet<GenomeLoc> set2) {
-            this.left = left;
-            this.right = right;
-            intervals.addAll(set1);
-            intervals.addAll(set2);
-        }
     }
 
     private final class Event {

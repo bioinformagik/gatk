@@ -30,7 +30,7 @@ public class RealignerTargetCreatorIntegrationTest extends CommandLineProgramTes
     private final static File TEMP_DIR = createTempDir("RealignerTargetCreatorIntegrationTest");
 
 
-    private final File reference = getTestFile("hg38_Shl01.fasta");
+    private final File reference = getTestFile("hg38_Shl01/hg38_Shl01.fasta");
     private final File hgSample = getTestFile("data_hg38_Shl01/HG02759_markduplicates.bam");
     private final File naSample = getTestFile("data_hg38_Shl01/NA19771_markduplicates.bam");
     private final File known = getTestFile("data_hg38_Shl01/indelsandmixedtype.vcf.gz");
@@ -191,17 +191,18 @@ public class RealignerTargetCreatorIntegrationTest extends CommandLineProgramTes
             final Double mismatchFraction,
             final File output) {
         // TODO: this should be change if tests are required with other tool (or a different path)
-        final File gatk3 = new File("~/Downloads/GenomeAnalysisTK-3.8-1-0-gf15c1c3ef/GenomeAnalysisTK.jar");
+        final File gatk3 = new File("/Users/daniel/Downloads/GenomeAnalysisTK-3.8-1-0-gf15c1c3ef/GenomeAnalysisTK.jar");
 
-        final List<String> gatk3Command = new ArrayList<>(Arrays.asList("java", "-jar", gatk3.getAbsolutePath(),
+        final List<String> gatk3Command = new ArrayList<>(Arrays.asList("java", "-jar", gatk3.toString(),
                 "-T", "RealignerTargetCreator",
-                "-R", reference.getAbsolutePath()));
+                "-R", reference.getAbsolutePath(),
+                "-o", output.getAbsolutePath()));
         if (interval != null) {
             gatk3Command.add("-L");
             gatk3Command.add(interval);
         }
         for (final File r: reads) {
-            gatk3Command.add("-R");
+            gatk3Command.add("-I");
             gatk3Command.add(r.getAbsolutePath());
         }
         if (known != null) {
@@ -212,8 +213,6 @@ public class RealignerTargetCreatorIntegrationTest extends CommandLineProgramTes
             gatk3Command.add("--mismatchFraction");
             gatk3Command.add(mismatchFraction.toString());
         }
-        gatk3Command.add("-o");
-        gatk3Command.add(output.getAbsolutePath());
 
         runProcess(new ProcessController(), gatk3Command.toArray(new String[gatk3Command.size()]));
     }

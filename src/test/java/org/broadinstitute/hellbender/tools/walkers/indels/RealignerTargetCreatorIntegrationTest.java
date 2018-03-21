@@ -182,8 +182,7 @@ public class RealignerTargetCreatorIntegrationTest extends CommandLineProgramTes
     }
 
 
-    // TODO: should disable
-    @Test(dataProvider = "gatk3Arguments")
+    @Test(dataProvider = "gatk3Arguments", enabled = false)
     public void generateGatk3RealignerTargetCreatorOutputs(
             final String interval,
             final List<File> reads,

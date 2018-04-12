@@ -1,6 +1,8 @@
 package org.broadinstitute.hellbender.engine;
 
 import htsjdk.samtools.SAMSequenceDictionary;
+import org.broadinstitute.barclay.argparser.ArgumentCollection;
+import org.broadinstitute.hellbender.cmdline.argumentcollections.SlidingWindowArgumentCollection;
 import org.broadinstitute.hellbender.engine.filters.CountingReadFilter;
 import org.broadinstitute.hellbender.exceptions.UserException;
 import org.broadinstitute.hellbender.utils.IntervalUtils;
@@ -22,10 +24,20 @@ import java.util.List;
 // TODO: another option is to always keep a reference and advise the implementer to deepCopy if the read is modified
 public class SlidingWindowWalker extends GATKTool {
 
-    // TODO: make parameters
-    public int windowSize;
-    public int windowStep;
-    public int windowPad;
+    /** Argument collection for sliding window traversal. */
+    @ArgumentCollection
+    private final SlidingWindowArgumentCollection slidingWindowArgs = getSlidingWindowArguments();
+
+    /**
+     * Returns the arguments for the sliding-window analysis.
+     *
+     * <p>This method allows to implement a walker with some default parameters hiden from the final user (e.g., window-padding).
+     */
+    public SlidingWindowArgumentCollection getSlidingWindowArguments() {
+        // TODO: make abstract
+        return null;
+    }
+
 
     @Override
     public String getProgressMeterRecordLabel() {
@@ -54,7 +66,8 @@ public class SlidingWindowWalker extends GATKTool {
         }
 
         // generate the windows
-        windows = makeWindows((hasIntervals()) ? intervalsForTraversal : IntervalUtils.getAllIntervalsForReference(dictionary), dictionary, windowSize, windowStep, windowPad);
+        windows = makeWindows((hasIntervals()) ? intervalsForTraversal : IntervalUtils.getAllIntervalsForReference(dictionary), dictionary,
+                slidingWindowArgs.getWindowSize(), slidingWindowArgs.getWindowStep(), slidingWindowArgs.getWindowPad());
     }
 
     // generate the windows

@@ -1,0 +1,5 @@
+@HD	VN:1.5
+@SQ	SN:chr6	LN:5483	M5:fa359449ce8d88d91aee96986e96ff73	UR:file:/Users/shlee/Documents/gatk4/grch38_testdata/hg38_Shl01/hg38_Shl01.fasta
+@SQ	SN:chr11	LN:218001	M5:824fa300cac184832fda87652fccfc21	UR:file:/Users/shlee/Documents/gatk4/grch38_testdata/hg38_Shl01/hg38_Shl01.fasta
+@SQ	SN:chr11_KI270927v1_alt	LN:218612	M5:159fb3a622d456897c41d93f4627d169	UR:file:/Users/shlee/Documents/gatk4/grch38_testdata/hg38_Shl01/hg38_Shl01.fasta
+@SQ	SN:HLA-A*24:03:01	LN:3502	M5:d866111fbc6e2ea2cf086915b28442b7	UR:file:/Users/shlee/Documents/gatk4/grch38_testdata/hg38_Shl01/hg38_Shl01.fasta

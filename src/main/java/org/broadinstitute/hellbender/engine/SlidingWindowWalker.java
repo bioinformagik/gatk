@@ -22,21 +22,18 @@ import java.util.List;
 // TODO: duplication can be set that is doing a deepCopy if the read should not be modified from window to window
 // TODO: or just a reference to the object, if it is expected to be modified in place and keep state (e.g., avoid re-computation of statistic)
 // TODO: another option is to always keep a reference and advise the implementer to deepCopy if the read is modified
-public class SlidingWindowWalker extends GATKTool {
+public abstract class SlidingWindowWalker extends GATKTool {
 
     /** Argument collection for sliding window traversal. */
     @ArgumentCollection
-    private final SlidingWindowArgumentCollection slidingWindowArgs = getSlidingWindowArguments();
+    protected final SlidingWindowArgumentCollection slidingWindowArgs = getSlidingWindowArguments();
 
     /**
      * Returns the arguments for the sliding-window analysis.
      *
      * <p>This method allows to implement a walker with some default parameters hiden from the final user (e.g., window-padding).
      */
-    public SlidingWindowArgumentCollection getSlidingWindowArguments() {
-        // TODO: make abstract
-        return null;
-    }
+    public abstract SlidingWindowArgumentCollection getSlidingWindowArguments();
 
 
     @Override
@@ -73,6 +70,7 @@ public class SlidingWindowWalker extends GATKTool {
     // generate the windows
     private static List<ShardBoundary> makeWindows(final List<SimpleInterval> intervals, final SAMSequenceDictionary dictionary,
                                                   final int windowSize, final int windowStep, final int windowPad) {
+        // TODO: also require validation of the window arguments
         final List<ShardBoundary> windows = new ArrayList<>(intervals.size());
         for (final SimpleInterval i: intervals) {
             windows.addAll(Shard.divideIntervalIntoShards(i, windowSize, windowStep, windowPad, dictionary));
@@ -96,10 +94,7 @@ public class SlidingWindowWalker extends GATKTool {
         logger.info(readFilter.getSummaryLine());
     }
 
-    public void apply(final ShardBoundary window, final ReadsContext reads, final ReferenceContext reference, final FeatureContext features) {
-        // TODO: make abstract
-    }
-
+    public abstract void apply(final ShardBoundary window, final ReadsContext reads, final ReferenceContext reference, final FeatureContext features);
 
     /**
      * Marked final so that tool authors don't override it. Tool authors should override onTraversalDone() instead.

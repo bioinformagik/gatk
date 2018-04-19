@@ -5,7 +5,7 @@ package org.broadinstitute.hellbender.cmdline.argumentcollections;
  *
  * @author Daniel Gomez-Sanchez (magicDGS)
  */
-public interface SlidingWindowArgumentCollection {
+public interface ShardingArgumentCollection {
 
     /**
      * Returns the window-size applied to the data.

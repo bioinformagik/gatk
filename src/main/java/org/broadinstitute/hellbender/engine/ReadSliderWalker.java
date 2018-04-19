@@ -2,7 +2,7 @@ package org.broadinstitute.hellbender.engine;
 
 import htsjdk.samtools.SAMSequenceDictionary;
 import org.broadinstitute.barclay.argparser.ArgumentCollection;
-import org.broadinstitute.hellbender.cmdline.argumentcollections.SlidingWindowArgumentCollection;
+import org.broadinstitute.hellbender.cmdline.argumentcollections.ShardingArgumentCollection;
 import org.broadinstitute.hellbender.engine.filters.CountingReadFilter;
 import org.broadinstitute.hellbender.exceptions.UserException;
 import org.broadinstitute.hellbender.utils.IntervalUtils;
@@ -23,14 +23,14 @@ public abstract class ReadSliderWalker extends GATKTool {
 
     /** Argument collection for sliding window traversal. */
     @ArgumentCollection
-    protected final SlidingWindowArgumentCollection slidingWindowArgs = getSlidingWindowArguments();
+    protected final ShardingArgumentCollection slidingWindowArgs = getSlidingWindowArguments();
 
     /**
      * Returns the arguments for the sliding-window analysis.
      *
      * <p>This method allows to implement a walker with some default parameters hiden from the final user (e.g., window-padding).
      */
-    public abstract SlidingWindowArgumentCollection getSlidingWindowArguments();
+    public abstract ShardingArgumentCollection getSlidingWindowArguments();
 
 
     @Override

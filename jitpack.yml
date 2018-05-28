@@ -1,0 +1,4 @@
+jdk:
+  - openjdk8
+before_install:
+   - ./scripts/download_lfs_files.sh

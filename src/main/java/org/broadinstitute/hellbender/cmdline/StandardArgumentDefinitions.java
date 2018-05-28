@@ -76,12 +76,13 @@ public final class StandardArgumentDefinitions {
      */
     public static final String GATK_CONFIG_FILE_OPTION = "gatk-config-file";
 
+    // TODO: ReadTools requires old-style GATK arguments (pre-release) - only CommandLineProgram arguments
     public static final String TMP_DIR_NAME = "TMP_DIR";
     public static final String QUIET_NAME = "QUIET";
-    public static final String USE_JDK_DEFLATER_LONG_NAME = "use-jdk-deflater";
-    public static final String USE_JDK_DEFLATER_SHORT_NAME = "jdk-deflater";
-    public static final String USE_JDK_INFLATER_LONG_NAME = "use-jdk-inflater";
-    public static final String USE_JDK_INFLATER_SHORT_NAME = "jdk-inflater";
-    public static final String NIO_MAX_REOPENS_LONG_NAME = "gcs-max-retries";
-    public static final String NIO_MAX_REOPENS_SHORT_NAME = "gcs-retries";
+    public static final String USE_JDK_DEFLATER_LONG_NAME = "use_jdk_deflater";
+    public static final String USE_JDK_DEFLATER_SHORT_NAME = "jdk_deflater";
+    public static final String USE_JDK_INFLATER_LONG_NAME = "use_jdk_inflater";
+    public static final String USE_JDK_INFLATER_SHORT_NAME = "jdk_inflater";
+    public static final String NIO_MAX_REOPENS_LONG_NAME = "gcs_max_retries";
+    public static final String NIO_MAX_REOPENS_SHORT_NAME = "gcs_retries";
 }

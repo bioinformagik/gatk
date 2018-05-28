@@ -82,6 +82,8 @@ public abstract class CommandLineProgram implements CommandLinePluginProvider {
     @Argument(fullName = StandardArgumentDefinitions.NIO_MAX_REOPENS_LONG_NAME, shortName = StandardArgumentDefinitions.NIO_MAX_REOPENS_SHORT_NAME, doc = "If the GCS bucket channel errors out, how many times it will attempt to re-initiate the connection", optional = true)
     public int NIO_MAX_REOPENS = ConfigFactory.getInstance().getGATKConfig().gcsMaxRetries();
 
+    // TODO: ReadTools does not expose to the user the config-file - commented argument to avoid it
+    /*
     // This option is here for documentation completeness.
     // This is actually parsed out in Main to initialize configuration files because
     // we need to have the configuration completely set up before we create our CommandLinePrograms.
@@ -92,6 +94,7 @@ public abstract class CommandLineProgram implements CommandLinePluginProvider {
                 common = true,
                 optional = true)
     public String GATK_CONFIG_FILE = null;
+    */
 
     private CommandLineParser commandLineParser;
 
